@@ -30,10 +30,10 @@ const Register = ({ history }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     axios
-      .post(`https://portal.speedtalk.mobi/service.aspx?cmd=stActivate&agid=symbol%40seedalarm.com&agpass=ZynetInc4199&sku=8035&amount=1.5&sim=${activate.sim}&firstName=${activate.fullName}&lastName=&address1=&address2=&city=&state=&zip=${activate.zip}&phone=&email=&campaign=`, activate)
+      .post(`https://cors-anywhere.herokuapp.com/https://portal.speedtalk.mobi/service.aspx?cmd=stActivate&agid=symbol%40seedalarm.com&agpass=ZynetInc4199&sku=8035&amount=1.5&sim=${activate.sim}&firstName=${activate.fullName}&lastName=&address1=&address2=&city=&state=&zip=${activate.zip}&phone=&email=&campaign=`, activate)
       .then(res => {
         console.log(res.data);
-        localStorage.setItem("test", res.data);
+        localStorage.setItem("register", res.data);
         localStorage.setItem("sim", activate.sim);
         history.push("/dashboard");
       })
