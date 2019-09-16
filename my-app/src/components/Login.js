@@ -64,16 +64,6 @@ const Login = ({ history }) => {
                 value={creds.sim}
               />
             </FormGroup>
-            <FormGroup>
-              <label htmlFor="#username">Username</label>
-              <FormInput
-                id="#sim"
-                name="sim"
-                placeholder="SpeedTalk Mobile Sim Card Number (only numbers)"
-                onChange={handleChange}
-                value={creds.sim}
-              />
-            </FormGroup>
             <Row className="login-btn">
               <Button block squared>
                 Login
