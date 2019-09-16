@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "react-stripe-checkout": "^2.6.3",
+    "react-stripe-elements": "^5.0.0",
+    "react-toastify": "^5.3.2"
+  }
+}

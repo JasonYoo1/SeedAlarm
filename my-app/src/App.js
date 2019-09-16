@@ -14,6 +14,7 @@ import Menu from "./components/menu";
 import Dashboard from "./components/Dashboard";
 import Registration from './components/Register'
 import SearchInfo from './components/Search'
+import CheckOut from './components/Checkout'
 
 function App() {
   // const [creds, setCreds] = useState([]);
@@ -46,6 +47,7 @@ function App() {
             <Route exact path="/dashboard" component={Dashboard} />
             <Route exact path="/activate" component={Registration} />
             <Route exact path ="/search" component={SearchInfo}/>
+            <Route exact path ="/checkout" component={CheckOut}/>
           </Switch>
           <Footer />
         </div>
