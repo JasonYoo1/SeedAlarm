@@ -13,12 +13,16 @@ import {
 } from "shards-react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import {CardElement, injectStripe} from 'react-stripe-elements';
+
 import Footer from "./footer";
 import Menu from "./menu";
 import Dashboard from "./Dashboard";
 import { Route, Switch } from "react-router-dom";
 
 import { UserContext } from './context/UserContext'
+
+
 
 const Register = ({ history }) => {
   const [activate, setActivate] = useState({ sim: "", zip:"", fullName:"", city: "", contact: "", email:"", state: ""});
@@ -50,7 +54,6 @@ const Register = ({ history }) => {
         <Col lg="6">
           <h1> Speed Talk </h1>
           <p>
-            
             <p>
               {" "}
             </p>

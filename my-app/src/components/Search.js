@@ -24,7 +24,7 @@ const SearchInfo = () => {
     let searchInfo = localStorage.getItem('testing')
     console.log('this is from site', searchInfo)
 
-    if(localStorage.getItem('testing').length<9){
+    if(localStorage.getItem('testing') == null){
         let phoneNumber = null
         let simNumber = null
         let status = null
