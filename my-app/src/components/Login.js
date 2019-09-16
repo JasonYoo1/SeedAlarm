@@ -18,7 +18,7 @@ import { Route, Switch } from "react-router-dom";
 import { UserContext } from './context/UserContext'
 
 const Login = ({ history }) => {
-  const [creds, setCreds] = useState({ sim: ""});
+  const [creds, setCreds] = useState({ sim: "",});
 
   const handleChange = event => {
     setCreds({ ...creds, [event.target.name]: event.target.value });
@@ -54,6 +54,16 @@ const Login = ({ history }) => {
         </Col>
         <Col lg="6">
           <Form onSubmit={handleSubmit}>
+            <FormGroup>
+              <label htmlFor="#username">Username</label>
+              <FormInput
+                id="#sim"
+                name="sim"
+                placeholder="SpeedTalk Mobile Sim Card Number (only numbers)"
+                onChange={handleChange}
+                value={creds.sim}
+              />
+            </FormGroup>
             <FormGroup>
               <label htmlFor="#username">Username</label>
               <FormInput

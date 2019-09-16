@@ -24,7 +24,7 @@ const SearchInfo = () => {
     let searchInfo = localStorage.getItem('testing')
     console.log('this is from site', searchInfo)
 
-    if(localStorage.getItem('testing')===null){
+    if(localStorage.getItem('testing').length<9){
         let phoneNumber = null
         let simNumber = null
         let status = null
@@ -71,6 +71,7 @@ const SearchInfo = () => {
             console.log('this is from site', searchInfo)
             let XMLParser = require('react-xml-parser');
             let xml = new XMLParser().parseFromString(searchInfo);
+            
             let phoneNumber = xml.children[2].value
             let simNumber = xml.children[1].value
             let status = xml.children[4].value

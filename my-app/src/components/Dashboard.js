@@ -60,6 +60,16 @@ export default function Dashboard({history}) {
                 value={searchCreds.searchSim}
               />
             </FormGroup>
+            <FormGroup>
+              <label htmlFor="#searchSim">Search By Phone</label>
+              <FormInput
+                id="#phone"
+                name="phone"
+                placeholder="Search by Phone Number (only numbers)"
+                onChange={handleChange}
+                value={searchCreds.phone}
+              />
+            </FormGroup>
             <Row className="login-btn">
               <Button block squared>
                 Search
