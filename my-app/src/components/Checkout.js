@@ -6,13 +6,27 @@ import { toast } from "react-toastify";
 
 import "react-toastify/dist/ReactToastify.css";
 
+import {
+    Form,
+    FormInput,
+    FormTextarea,
+    FormGroup,
+    Col,
+    Card,
+    CardHeader,
+    CardBody,
+    Container,
+    Button,
+    Row
+  } from "shards-react";
+
 toast.configure();
 
 function CheckOut() {
   const [product] = React.useState({
     name: "PLANS",
     price: 14.99,
-    description: "lorem Ipsum"
+    description: "something"
   });
 
   async function handleToken(token, addresses) {
@@ -31,20 +45,62 @@ function CheckOut() {
 
   return (
     <div className="container">
-      <div className="product">
-        <h1>{product.name}</h1>
-        <h3>PLAN: Custom Plan (70 SMS, 5MB) <br></br>
-         (NO VOICE) for 30 days</h3>
+      <div className="product">       
+       <Row>
+       <Container style={{ maxWidth: "250px" }}  className="card-container">
+      <Card className="card">
+        <CardHeader className="card-header">PLAN 1</CardHeader>
+        <CardBody className="card-body">
+         <p>
+         30 Days<br></br>
+         2¢ per MIN<br></br>
+         2¢ per SMS<br></br>
+         2¢ per MB
+         </p>
+        </CardBody>
+      </Card>
+      </Container>
+      <Container style={{ maxWidth: "250px" }}  className="card-container">
+      <Card className="card">
+        <CardHeader className="card-header">PLAN 2</CardHeader>
+        <CardBody className="card-body">
+         <p>
+         30 Days<br></br>
+         2¢ per MIN<br></br>
+         2¢ per SMS<br></br>
+         2¢ per MB
+         </p>
+        </CardBody>
+      </Card>
+      </Container>
+      <Container style={{ maxWidth: "250px" }}  className="card-container">
+      <Card className="card">
+        <CardHeader className="card-header">PLAN 3</CardHeader>
+        <CardBody className="card-body">
+         <p>
+         30 Days<br></br>
+         2¢ per MIN<br></br>
+         2¢ per SMS<br></br>
+         2¢ per MB
+         </p>
+        </CardBody>
+      </Card>
+      </Container>
+        </Row>
+
+      
       </div>
+      <br></br>
       <StripeCheckout
         stripeKey="pk_test_4TbuO6qAW2XPuce1Q6ywrGP200NrDZ2233"
         token={handleToken}
         amount={product.price * 100}
-        name="Speed Talk Option"
+        name="Speed Talk Payment"
         billingAddress
         shippingAddress
       />
     </div>
+    
   );
 }
 
