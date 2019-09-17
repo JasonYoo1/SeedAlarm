@@ -68,10 +68,10 @@ export default class Menu extends React.Component {
               </DropdownToggle>
               <DropdownMenu>
                 <DropdownItem>
-                  <Link to="/login">Login/Logout</Link>
+                  <Link to="/login">Account Information</Link>
                 </DropdownItem>
                 <DropdownItem>
-                  <Link to="/register">Register</Link>
+                  <Link to="/checkout">Select Plans</Link>
                 </DropdownItem>
               </DropdownMenu>
             </Dropdown>
