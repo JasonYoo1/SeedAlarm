@@ -47,7 +47,7 @@ function App() {
             <Route exact path="/dashboard" component={Dashboard} />
             <Route exact path="/activate" component={Registration} />
             <Route exact path ="/search" component={SearchInfo}/>
-            <Route exact path ="/checkout" component={CheckOut}/>
+            <Route exact path="/checkout" component={CheckOut} />
           </Switch>
           <Footer />
         </div>

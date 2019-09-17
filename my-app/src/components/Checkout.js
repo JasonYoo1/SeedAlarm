@@ -1,4 +1,5 @@
-import React, { useState, useRef, useEffect, Component } from 'react';import ReactDOM from "react-dom";
+import React, { useState, useRef, useEffect, Component } from 'react';
+import ReactDOM from "react-dom";
 import StripeCheckout from "react-stripe-checkout";
 import axios from "axios";
 import { toast } from "react-toastify";
@@ -106,90 +107,29 @@ import {
 // export default CheckOut
 
 
-// function CheckOut() {
-//   const [paidFor, setPaidFor] = useState(false);
-//   const [loaded, setLoaded] = useState(false);
 
-//   let paypalRef = useRef();
-
-//   const product = {
-//     price: 14.99,
-//     description: 'Phone Plan',
-//   }
-
-//   useEffect(()=>{
-//     const script = document.createElement('script');
-//     script.src = 'https://www.paypal.com/sdk/js?client-id=AV8lajyotjfPgoPbS0z6Gk7LsmGjSR9FAReOM4r7_yvQLdTlDoxxEfyLbbjVgIfMDFNF05LbJmXtMw2Z'
-//     script.addEventListener('load', () => setLoaded(true));
-    
-//     if(loaded){
-//       setTimeout(()=>{
-//         window.paypal
-//         .Buttons({
-//           createOrder: (data, actions) =>{
-//             return actions.order.create({
-//               purchase_units:[
-//                 {
-//                   description: product.description,
-//                   amount: {
-//                     currency_code:'USD',
-//                     value: product.price
-//                   }
-//                 }
-//               ]
-//             });
-//           },
-//           onApprove: async (data,actions)=>{
-//             const order = await actions.order.capture();
-            
-//             setPaidFor(true);
-
-//             console.log(order)
-//           }
-//         })
-//       })
-//     }
-//   })
-
-//   return (
-//     <div className ='CheckOut'>
-//       {paidFor ? (
-//         <div>
-//         <h1>Congrats, Please check your email!</h1>
-//         </div>
-//       ):(
-//         <div>
-//           <h1>{product.description} for ${product.price}</h1>
-//           <div ref={v=>(paypalRef = v)}>
-
-//           </div>
-//         </div>
-//       )}
-//     </div>
-//   );
-// }
-
-// export default CheckOut;
-
-
-function CheckOut (){
-
-    return (
-      <PayPalButton
-        amount="0.01"
-        onSuccess={(details, data) => {
-          alert("Transaction completed by " + details.payer.name.given_name);
- 
-          // OPTIONAL: Call your server to save the transaction
-          return fetch("/paypal-transaction-complete", {
-            method: "post",
-            body: JSON.stringify({
-              orderID: data.orderID
-            })
-          });
-        }}
-      />
-    );
+export default class CheckOut extends React.Component {
+    render() {
+      return (
+          <div>
+        <PayPalButton
+          amount="0.01"
+          onSuccess={(details, data) => {
+            alert("Transaction completed by " + details.payer.name.given_name);
+   
+            // OPTIONAL: Call your server to save the transaction
+            return fetch("/paypal-transaction-complete", {
+              method: "post",
+              body: JSON.stringify({
+                orderId: data.orderID
+              })
+            });
+          }}
+          options={{
+            clientId: "Ac82qeONuJNMP32o8kE_DVQOpFZCoTtr2ovk5AM-oSotdXq6Xe1XdBCN1s_E-1NTEICVMSOJLwUaofOY"
+          }}
+        />
+        </div>
+      );
+    }
   }
-
-  export default CheckOut
