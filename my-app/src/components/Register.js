@@ -39,6 +39,7 @@ const Register = ({ history }) => {
         console.log(res.data);
         localStorage.setItem("register", res.data);
         localStorage.setItem("sim", activate.sim);
+        localStorage.setItem("token", null);
         history.push("/dashboard");
       })
       .catch(err => console.log(err.response));

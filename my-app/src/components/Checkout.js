@@ -6,6 +6,7 @@ import { toast } from "react-toastify";
 import { PayPalButton } from "react-paypal-button-v2";
 import "react-toastify/dist/ReactToastify.css";
 import { Redirect } from 'react-router-dom';
+import axiosWithAuth from '../Utils/axiosWithAuth'
 
 
 import "../App.css"
@@ -118,7 +119,7 @@ export default class CheckOut extends React.Component {
       return (
           <div className='checkout'>
             <Card className="card">
-            <CardHeader className="card-header">PLAN 2</CardHeader>
+            <CardHeader className="card-header">PLAN 1</CardHeader>
          <CardBody className="card-body">
           <p>
           30 Days<br></br>
@@ -133,6 +134,8 @@ export default class CheckOut extends React.Component {
           amount="0.01"
           onSuccess={(details, data) => {
             alert("Transaction completed by " + details.payer.name.given_name);
+            localStorage.setItem("token", true);
+            axiosWithAuth()
             window.location.href='/activate'
             return fetch("/paypal-transaction-complete", {
               method: "post",
