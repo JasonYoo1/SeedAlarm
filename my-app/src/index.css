@@ -19,3 +19,8 @@ code {
 .DashboardContainer {
   /* This section is for stylizing the dashboard container found in dashboard.js */
 }
+
+.checkout{
+  width: 30%;
+  margin: auto;
+}
