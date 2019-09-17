@@ -5,6 +5,11 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import { PayPalButton } from "react-paypal-button-v2";
 import "react-toastify/dist/ReactToastify.css";
+import { Redirect } from 'react-router-dom';
+
+
+import "../App.css"
+import "../index.css"
 
 import {
     Form,
@@ -111,18 +116,29 @@ import {
 export default class CheckOut extends React.Component {
     render() {
       return (
-          <div>
+          <div className='checkout'>
+            <Card className="card">
+            <CardHeader className="card-header">PLAN 2</CardHeader>
+         <CardBody className="card-body">
+          <p>
+          30 Days<br></br>
+          2¢ per MIN<br></br>
+          2¢ per SMS<br></br>
+          2¢ per MB
+          </p>
+         </CardBody>
+       </Card>
+
         <PayPalButton
           amount="0.01"
           onSuccess={(details, data) => {
             alert("Transaction completed by " + details.payer.name.given_name);
-   
-            // OPTIONAL: Call your server to save the transaction
+            window.location.href='/activate'
             return fetch("/paypal-transaction-complete", {
               method: "post",
               body: JSON.stringify({
                 orderId: data.orderID
-              })
+              }),
             });
           }}
           options={{
