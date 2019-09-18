@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import axiosWithAuth from "../Utils/axiosWithAuth.js.js";
+import axiosWithAuth from "../Utils/axiosWithAuth";
 import axios from 'axios'
 
 import { Link } from "react-router-dom";

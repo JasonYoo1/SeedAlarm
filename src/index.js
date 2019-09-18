@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter as Router } from "react-router-dom";
+import { PayPalButton } from "react-paypal-button-v2";
 
 //styles
 import "bootstrap/dist/css/bootstrap.min.css";
