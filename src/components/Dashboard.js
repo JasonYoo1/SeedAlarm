@@ -21,6 +21,7 @@ import UserInfo from './UserInfo'
 import SearchInfo from './Search'
 
 
+
 export default function Dashboard({history}) {
   const [searchCreds, setSearchCreds] = useState({ phone:"", searchSim: ""});
 
