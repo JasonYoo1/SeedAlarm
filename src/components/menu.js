@@ -48,16 +48,16 @@ export default class Menu extends React.Component {
   render() {
     return (
       <Navbar sticky="true" type="dark" className="navbar" expand="md">
-        <NavbarBrand href="/">SpeedTalk</NavbarBrand>
+      <NavbarBrand><a href="https://www.seedalarm.com" >Seed Alarm</a></NavbarBrand>
         <NavbarToggler onClick={this.toggleNavbar} />
 
         <Collapse open={this.state.collapseOpen} navbar>
           <Nav navbar>
-            <NavItem>
+            {/* <NavItem>
               <Link to="/dashboard" active href="dashboard">
                 <NavLink>Dashboard</NavLink>
               </Link>
-            </NavItem>
+            </NavItem> */}
 
             <Dropdown
               open={this.state.dropdownOpen}
