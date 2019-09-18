@@ -24,14 +24,8 @@ const SearchInfo = () => {
     let searchInfo = localStorage.getItem('testing')
     console.log('this is from site', searchInfo)
 
-    if(localStorage.getItem('testing') == null){
-        let phoneNumber = null
-        let simNumber = null
-        let status = null
-        let endDate = null
-        let useageData = null
-        let useageSMS = null
-        let activationDate = null
+    if(localStorage.getItem('testing') == "<net><ret>1</ret><retmess>Account not found</retmess></net>"){
+        let simNumber = 'That account does not exist'
         return (
       
             <Container className="card-container">
@@ -40,12 +34,6 @@ const SearchInfo = () => {
                 <CardBody className="card-body">
                  <p>Search Info:<br/>
                  {simNumber}<br/>
-                  Phone#: {phoneNumber}<br/>
-                  Status: {status} <br/>
-                  Activation: {activationDate}<br/>
-                  End Cycle: {endDate}<br/>
-                  Current Usage: {useageData}<br/>
-                  SMS Usage: {useageSMS}<br/>
                  </p>
                 </CardBody>
               </Card>

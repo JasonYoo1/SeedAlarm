@@ -118,7 +118,7 @@ export default class CheckOut extends React.Component {
     render() {
       return (
           <div className='checkout'>
-            <Card className="card">
+            {/* <Card className="card">
             <CardHeader className="card-header">PLAN 1</CardHeader>
          <CardBody className="card-body">
           <p>
@@ -128,8 +128,8 @@ export default class CheckOut extends React.Component {
           2¢ per MB
           </p>
          </CardBody>
-       </Card>
-
+       </Card> */}Current Plans
+                <img width="100%" src='https://images.unsplash.com/photo-1477013743164-ffc3a5e556da?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80' alt=""></img>
         <PayPalButton
           amount="0.01"
           onSuccess={(details, data) => {

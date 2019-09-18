@@ -91,11 +91,6 @@ if(localStorage.getItem('test')===null){
       </Card>
       <CardBody className='testing'>
       <Form>
-      <Link to={"/activate"}>
-        <Button block squared >
-          Activate a new Line
-        </Button>
-      </Link>
     </Form>
 
       </CardBody>
@@ -121,13 +116,8 @@ return (
     </Card>
     <CardBody className='testing'>
     <Form>
-    <Link to={"/activate"}>
-      <Button style={{ maxWidth: "250px" }}block squared >
-        Activate a new Line
-      </Button>
-    </Link>
     <Link to={"/checkout"}>
-      <Button style={{ background: "red", maxWidth: "250px" }}block squared >
+      <Button style={{margin:"auto" , maxWidth: "250px" }}block squared >
         Select a Plan
       </Button>
     </Link>

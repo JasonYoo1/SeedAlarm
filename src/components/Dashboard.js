@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import axiosWithAuth from "../Utils/axiosWithAuth.js";
+import axiosWithAuth from "../Utils/axiosWithAuth.js.js";
 import axios from 'axios'
 
 import { Link } from "react-router-dom";
@@ -19,6 +19,7 @@ import "../App.css";
 
 import UserInfo from './UserInfo'
 import SearchInfo from './Search'
+
 
 
 export default function Dashboard({history}) {
