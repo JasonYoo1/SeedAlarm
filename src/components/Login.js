@@ -55,7 +55,7 @@ const Login = ({ history }) => {
         <Col lg="6">
           <Form onSubmit={handleSubmit}>
             <FormGroup>
-              <label htmlFor="#username">Username</label>
+              <label htmlFor="#username">Check Status</label>
               <FormInput
                 id="#sim"
                 name="sim"
@@ -66,7 +66,7 @@ const Login = ({ history }) => {
             </FormGroup>
             <Row className="login-btn">
               <Button block squared>
-                Login
+                Enter
               </Button>
             </Row>
           </Form>
