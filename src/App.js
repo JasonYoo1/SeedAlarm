@@ -1,7 +1,7 @@
 import React, { useState, useEffect, Component } from "react";
 import { Route, Switch } from "react-router-dom";
 import "./App.css";
-import axiosWithAuth from "./Utils/axiosWithAuth.js.js";
+import axiosWithAuth from "./Utils/axiosWithAuth.js";
 import axios from 'axios'
 
 // Context
