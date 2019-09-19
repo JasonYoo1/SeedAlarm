@@ -29,6 +29,7 @@ import Refill from './Refill'
 
 export default function Dashboard({history}) {
   const [searchCreds, setSearchCreds] = useState({ phone:"", searchSim: ""});
+  const [newRefill, setNewRefill] = useState({refillPhone:""})
 
   const handleChange = event => {
     setSearchCreds({ ...searchCreds, [event.target.name]: event.target.value });
@@ -47,6 +48,7 @@ export default function Dashboard({history}) {
       })
       .catch(err => console.log(err.response));
   };
+
   return (
       <div>
         <UserInfo/>

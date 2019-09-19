@@ -17,7 +17,7 @@ import SearchInfo from './components/Search'
 import CheckOut from './components/Checkout'
 import PrivateRoute from './PrivateRoute'
 import Refill from './components/Refill'
-
+import RefillInfo from './components/RefillInfo'
 
 function App() {
   // const [creds, setCreds] = useState([]);
@@ -52,6 +52,7 @@ function App() {
             <Route exact path ="/search" component={SearchInfo}/>
             <Route exact path="/checkout" component={CheckOut} />
             <PrivateRoute exact path="/refill" component={Refill} />
+            <Route exact path="/refillinfo" component={RefillInfo} />
           </Switch>
           <Footer />
         </div>

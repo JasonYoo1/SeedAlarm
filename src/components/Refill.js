@@ -25,27 +25,28 @@ import { UserContext } from './context/UserContext'
 
 
 const Refill = ({ history }) => {
-  const [refill, setRefill] = useState({ phone: ""});
+  const [newRefill, setnewRefill] = useState({ phone: ''});
 
   const handleChange = event => {
-    setRefill({ ...refill, [event.target.name]: event.target.value });
+    setnewRefill({ ...newRefill, [event.target.name]: event.target.value });
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
     axios
-      .post(`https://cors-anywhere.herokuapp.com/https://portal.speedtalk.mobi/service.aspx?cmd=stRefill&agid=symbol%40seedalarm.com&agpass=ZynetInc4199&phone=${refill.phone}&sku=8035&amount=14.99`, refill)
+      .post(`https://cors-anywhere.herokuapp.com/https://portal.speedtalk.mobi/service.aspx?cmd=stRefill&agid=symbol%40seedalarm.com&agpass=ZynetInc4199&phone=${newRefill.phone}&sku=8035&amount=1.5`, newRefill)
       .then(res => {
         console.log(res.data);
-        localStorage.setItem("register", res.data);
-        localStorage.setItem("sim", refill.sim);
+        localStorage.setItem("refillInfo", res.data);
+        localStorage.setItem('currentPhone', newRefill.phone)
+        // localStorage.setItem("sim", newRefill.sim);
         localStorage.setItem("token", null);
-        history.push("/dashboard");
+        history.push("/refillInfo");
       })
       .catch(err => console.log(err.response));
   };
 
-  let sim = localStorage.getItem('sim')
+  // let sim = localStorage.getItem('sim')
 
   return (
     
@@ -53,7 +54,7 @@ const Refill = ({ history }) => {
     <Container className="login-container">
       <Row>
         <Col lg="6">
-          <h2> Refill Account </h2>
+          <h1>Refill Your Account </h1>
           <p>
             <p>
               {" "}
@@ -62,19 +63,19 @@ const Refill = ({ history }) => {
         </Col>
         <Col lg="6">
           <Form onSubmit={handleSubmit}>
-          <FormGroup>
-              <label htmlFor="#username">Refill Your account!</label>
+            <FormGroup>
+              <label htmlFor="#username">Phone</label>
               <FormInput
                 id="#phone"
                 name="phone"
                 placeholder="Phone Number"
                 onChange={handleChange}
-                value={refill.phone}
+                value={newRefill.phone}
               />
             </FormGroup>
             <Row className="login-btn">
               <Button block squared>
-                Refill!
+                CONTINUE
               </Button>
             </Row>
           </Form>
