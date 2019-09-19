@@ -139,6 +139,7 @@ export default class CheckOut extends React.Component {
             clientId: "Ac82qeONuJNMP32o8kE_DVQOpFZCoTtr2ovk5AM-oSotdXq6Xe1XdBCN1s_E-1NTEICVMSOJLwUaofOY"
           }}
         />
+        <h2>MONTHLY SUBSCRIPTION</h2>
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
         <input type="hidden" name="cmd" value="_s-xclick"></input>
         <input type="hidden" name="hosted_button_id" value="85ZW2K2LS9RCA"></input>

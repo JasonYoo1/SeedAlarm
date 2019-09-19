@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axiosWithAuth from "../Utils/axiosWithAuth";
 import axios from 'axios'
+import { Map, GoogleApiWrapper } from 'google-maps-react';
 
 import { Link } from "react-router-dom";
 import {
@@ -19,6 +20,8 @@ import "../App.css";
 
 import UserInfo from './UserInfo'
 import SearchInfo from './Search'
+import SimpleMap from './Maps'
+
 
 
 
@@ -48,13 +51,7 @@ export default function Dashboard({history}) {
         <Container className="login-container">
       <Row>
         <Col lg="6">
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-          <input type="hidden" name="cmd" value="_s-xclick"></input>
-          <input type="hidden" name="hosted_button_id" value="85ZW2K2LS9RCA"></input>
-          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"></input>
-          <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"/>
-        </form>
-
+          <SimpleMap/>
         </Col>
         <Col lg="6">
           <Form onSubmit={handleSubmit}>
