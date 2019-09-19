@@ -115,20 +115,11 @@ import {
 
 
 export default class CheckOut extends React.Component {
+  
     render() {
       return (
           <div className='checkout'>
-            {/* <Card className="card">
-            <CardHeader className="card-header">PLAN 1</CardHeader>
-         <CardBody className="card-body">
-          <p>
-          30 Days<br></br>
-          2¢ per MIN<br></br>
-          2¢ per SMS<br></br>
-          2¢ per MB
-          </p>
-         </CardBody>
-       </Card> */}Current Plans
+            Current Plans
                 <img width="100%" src='https://images.unsplash.com/photo-1477013743164-ffc3a5e556da?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80' alt=""></img>
         <PayPalButton
           amount="0.01"
@@ -148,6 +139,12 @@ export default class CheckOut extends React.Component {
             clientId: "Ac82qeONuJNMP32o8kE_DVQOpFZCoTtr2ovk5AM-oSotdXq6Xe1XdBCN1s_E-1NTEICVMSOJLwUaofOY"
           }}
         />
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick"></input>
+        <input type="hidden" name="hosted_button_id" value="85ZW2K2LS9RCA"></input>
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"></input>
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"/>
+        </form>
         </div>
       );
     }
