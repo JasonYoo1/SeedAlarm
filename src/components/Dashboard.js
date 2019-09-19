@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axiosWithAuth from "../Utils/axiosWithAuth";
 import axios from 'axios'
 import { Map, GoogleApiWrapper } from 'google-maps-react';
+import { PayPalButton } from "react-paypal-button-v2";
 
 import { Link } from "react-router-dom";
 import {
@@ -21,6 +22,7 @@ import "../App.css";
 import UserInfo from './UserInfo'
 import SearchInfo from './Search'
 import SimpleMap from './Maps'
+import Refill from './Refill'
 
 
 
@@ -51,7 +53,25 @@ export default function Dashboard({history}) {
         <Container className="login-container">
       <Row>
         <Col lg="6">
-          <SimpleMap/>
+          Refill Your Account!
+        <PayPalButton
+          amount="0.01"
+          onSuccess={(details, data) => {
+            alert("Transaction completed by " + details.payer.name.given_name);
+            localStorage.setItem("token", true);
+            axiosWithAuth()
+            window.location.href='/refill'
+            return fetch("/paypal-transaction-complete", {
+              method: "post",
+              body: JSON.stringify({
+                orderId: data.orderID
+              }),
+            });
+          }}
+          options={{
+            clientId: "Ac82qeONuJNMP32o8kE_DVQOpFZCoTtr2ovk5AM-oSotdXq6Xe1XdBCN1s_E-1NTEICVMSOJLwUaofOY"
+          }}
+        />
         </Col>
         <Col lg="6">
           <Form onSubmit={handleSubmit}>

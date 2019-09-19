@@ -16,6 +16,7 @@ import Registration from './components/Register'
 import SearchInfo from './components/Search'
 import CheckOut from './components/Checkout'
 import PrivateRoute from './PrivateRoute'
+import Refill from './components/Refill'
 
 
 function App() {
@@ -50,6 +51,7 @@ function App() {
             <PrivateRoute exact path="/activate" component={Registration} />
             <Route exact path ="/search" component={SearchInfo}/>
             <Route exact path="/checkout" component={CheckOut} />
+            <PrivateRoute exact path="/refill" component={Refill} />
           </Switch>
           <Footer />
         </div>

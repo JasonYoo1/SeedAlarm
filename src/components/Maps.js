@@ -17,7 +17,8 @@ class SimpleMap extends Component {
       <div style={{ height: '45vh', width: '100%' }}>
         Check Coverage by Zip
         <GoogleMapReact
-          // bootstrapURLKeys={{ key: /* YOUR KEY HERE */ }}
+          bootstrapURLKeys={{ key: Date.now()
+           }}
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
         >
