@@ -40,7 +40,7 @@ const Register = ({ history }) => {
         localStorage.setItem("register", res.data);
         localStorage.setItem("sim", activate.sim);
         localStorage.setItem("token", null);
-        history.push("/dashboard");
+        history.push("/activationinfo");
       })
       .catch(err => console.log(err.response));
   };

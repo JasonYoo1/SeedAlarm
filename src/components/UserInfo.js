@@ -92,7 +92,6 @@ if(localStorage.getItem('test')===null){
       <CardBody className='testing'>
       <Form>
     </Form>
-
       </CardBody>
     </Container>
     //this is the activate sim below:

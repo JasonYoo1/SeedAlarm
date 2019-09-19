@@ -40,7 +40,7 @@ const Refill = ({ history }) => {
         localStorage.setItem("refillInfo", res.data);
         localStorage.setItem('currentPhone', newRefill.phone)
         // localStorage.setItem("sim", newRefill.sim);
-        localStorage.setItem("token", null);
+        localStorage.setItem("token", false);
         history.push("/refillInfo");
       })
       .catch(err => console.log(err.response));
