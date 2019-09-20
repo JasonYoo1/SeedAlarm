@@ -14,7 +14,7 @@ import {  Navbar,
   Collapse} from 'react-bootstrap';
 
 import Seed_Alarm___No_Background_01_A1_Rectangle_4_pattern from './Seed_Alarm___No_Background_01_A1_Rectangle_4_pattern.png'
-
+import Seed_Alarm___No_Background_01_A1_Rectangle_4_pattern2x from './Seed_Alarm___No_Background_01_A1_Rectangle_4_pattern2x.png'
 export default class Menu extends React.Component {
   constructor(props) {
     super(props);
@@ -49,19 +49,19 @@ export default class Menu extends React.Component {
   render() {
     return (
 
-      <Navbar sticky="top" collapseOnSelect expand="lg" bg="dark" variant="light" overflow="visible">
+      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" overflow="visible">
   <Navbar.Brand href="#home">
-  <img src= { Seed_Alarm___No_Background_01_A1_Rectangle_4_pattern } />
+  <img width="50%" src= { Seed_Alarm___No_Background_01_A1_Rectangle_4_pattern2x } />
   </Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="mr-auto">
-      <Nav.Link href="#features">Features</Nav.Link>
-      <Nav.Link href="#pricing">Pricing</Nav.Link>
-      <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+      <Nav.Link href="#features"> </Nav.Link>
+      <Nav.Link href="#pricing"> </Nav.Link>
+      {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
         <NavDropdown.Divider />
-        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-      </NavDropdown>
+        <NavDropdown.Item href="#action/3.4"> </NavDropdown.Item>
+      </NavDropdown> */}
     </Nav>
     <Nav>
       <Nav.Link href="#deets">Seed Alarm</Nav.Link>
