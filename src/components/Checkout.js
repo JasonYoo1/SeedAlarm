@@ -120,8 +120,8 @@ export default class CheckOut extends React.Component {
     render() {
       return (
           <div className='checkout'>
-            Current Plans
-                <img width="100%" src={plan} alt="hello" margin-bottom="30%"></img>
+            Current Plans<br/>
+                <img width="200rem" src={plan} alt="hello" margin-bottom="30%"></img>
         {/* <PayPalButton
           amount="0.01"
           onSuccess={(details, data) => {

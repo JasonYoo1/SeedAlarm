@@ -5,7 +5,7 @@ export default class Footer extends React.Component {
   render() {
     return (
       <Container className="footer-container">
-        <Col>Speed Talk</Col>
+        <Col> </Col>
       </Container>
     );
   }
