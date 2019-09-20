@@ -9,6 +9,7 @@ import { PayPalButton } from "react-paypal-button-v2";
 //styles
 import "bootstrap/dist/css/bootstrap.min.css";
 import "shards-ui/dist/css/shards.min.css";
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(

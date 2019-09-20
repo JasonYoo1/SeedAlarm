@@ -9,8 +9,15 @@ import {
   Button,
   Container,
   Row,
-  Col
+  Col,
 } from "shards-react";
+
+import {
+  Carousel
+} from 'react-bootstrap'
+
+
+
 import axios from "axios";
 import { Link } from "react-router-dom";
 import {CardElement, injectStripe} from 'react-stripe-elements';
@@ -27,6 +34,14 @@ import '../App.css'
 import bg_A1_Rectangle_2_pattern from './bg_A1_Rectangle_2_pattern@2x.png'
 import SIM_card_with_barcode_01_A1_Rectangle_13_pattern from './SIM_card_with_barcode_01_A1_Rectangle_13_pattern.png'
 import Seed_Alarm___No_Background_01_A1_Rectangle_4_pattern from './Seed_Alarm___No_Background_01_A1_Rectangle_4_pattern.png'
+
+
+var sectionStyle = {
+  width: "100%",
+  height: "9000px",
+  backgroundImage: `url(${bg_A1_Rectangle_2_pattern})`
+};
+
 const Register = ({ history }) => {
   const [activate, setActivate] = useState({ sim: "", zip:"", fullName:"", city: "", contact: "", email:"", state: ""});
 
@@ -52,15 +67,25 @@ const Register = ({ history }) => {
 
   return (
     <div>
+      <Carousel>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src= {bg_A1_Rectangle_2_pattern }
+      alt="First slide"
+    />
+    <Carousel.Caption>
     <Container classNameName="login-container">
       <Row>
         <Col lg="6">
-          <h1> Speed Talk </h1>
+          <h3> Activate your SIM card </h3>
           <p>
-            <p>
-              {" "}
+          Activate your SIM cardActivateFull NameFull NameSIM Card NumberSIM Card Number *CityZIP Code *EmailEmailRequired *To activate, enter the 19 digit code located on the back of the SIM. Do not enter the letters only numbers.
+          <p>
+              <img src = {SIM_card_with_barcode_01_A1_Rectangle_13_pattern}></img>
             </p>
           </p>
+
         </Col>
         <Col lg="6">
           <Form onSubmit={handleSubmit}>
@@ -106,13 +131,19 @@ const Register = ({ history }) => {
             </FormGroup>
             <Row classNameName="login-btn">
               <Button block squared>
-                CONTINUE
+                ACTIVATE
               </Button>
             </Row>
           </Form>
         </Col>
       </Row>
     </Container>
+
+
+    </Carousel.Caption>
+    </Carousel.Item>
+</Carousel>
+
 
     </div>
   );
