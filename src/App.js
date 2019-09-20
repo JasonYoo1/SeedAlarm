@@ -56,6 +56,7 @@ function App() {
             <Route exact path="/refillinfo" component={RefillInfo} />
             <Route exact path="/activationinfo" component={ActivateInfo}/>
           </Switch>
+          <Footer/>
         </div>
 
     //  {/* </ActivityContext.Provider> */}

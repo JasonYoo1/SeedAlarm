@@ -51,6 +51,11 @@ h4 {
 
 .login-container {
   margin-top: 40px;
+  background-color: #bdc3c7;
+  border-radius: 10px;
+  overflow: visible;
+  padding: 30px;
+  opacity: 0.9;
 }
 
 /* Header & Nav */
@@ -112,7 +117,7 @@ h4 {
 
 .card-header {
   font-size: 2em;
-  color: #286a93;
+  color:Black;
   background: #efefef;
 }
 

@@ -75,7 +75,7 @@ const Register = ({ history }) => {
       alt="First slide"
     />
     <Carousel.Caption>
-    <Container classNameName="login-container">
+    <Container className="login-container">
       <Row>
         <Col lg="6">
           <h3> Activate your SIM card </h3>
