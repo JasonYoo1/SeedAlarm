@@ -50,13 +50,14 @@ h4 {
 /* Login */
 
 .login-container {
-  margin-top: 40px;
   background-color: #bdc3c7;
   border-radius: 10px;
   overflow: visible;
   padding: 30px;
   opacity: 0.9;
+  margin: auto;
 }
+
 
 /* Header & Nav */
 
@@ -211,11 +212,7 @@ h4 {
 :root {
   --web-view-ids: Activate;
 }
-* {
-  /* margin: auto; */
-  /* padding: 0; */
-  /* align-content: center; */
-}
+
 #Activate {
   position: absolute;
   box-sizing: border-box;

@@ -13,8 +13,12 @@ import {
 } from "shards-react";
 
 import {
-  Carousel
+  Carousel,
+  Card
 } from 'react-bootstrap'
+
+import { PayPalButton } from "react-paypal-button-v2";
+import axiosWithAuth from '../Utils/axiosWithAuth'
 
 
 
@@ -67,31 +71,29 @@ const Register = ({ history }) => {
 
   return (
     <div>
-      <Carousel>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src= {bg_A1_Rectangle_2_pattern }
-      alt="First slide"
-    />
-    <Carousel.Caption>
-    <Container className="login-container">
-      <Row>
-        <Col lg="6">
-          <h3> Activate your SIM card </h3>
-          <p>
-          Activate your SIM cardActivateFull NameFull NameSIM Card NumberSIM Card Number *CityZIP Code *EmailEmailRequired *To activate, enter the 19 digit code located on the back of the SIM. Do not enter the letters only numbers.
-          <p>
-              <img width= "80%" src = {SIM_card_with_barcode_01_A1_Rectangle_13_pattern}></img>
-            </p>
-          </p>
+      <Card className="bg-dark text-white">
+      <Card.Img src= {bg_A1_Rectangle_2_pattern } />
+      <Card.ImgOverlay>
+        <br></br>
+        <br></br>
+        <br></br>
+       <Container className="login-container">
+       <Row>
+         <Col lg="6">
+           <h3> Activate your SIM card </h3>
+           <p>
+           Activate your SIM cardActivateFull NameFull NameSIM Card NumberSIM Card Number *CityZIP Code *EmailEmailRequired *To activate, enter the 19 digit code located on the back of the SIM. Do not enter the letters only numbers.
+           <p>
+               <img width= "80%" src = {SIM_card_with_barcode_01_A1_Rectangle_13_pattern}></img>
+             </p>
+           </p>
 
-        </Col>
-        <Col lg="6">
-          <Form onSubmit={handleSubmit}>
-          <FormGroup>
-              <label htmlFor="#username">Full Name</label>
-              <FormInput
+         </Col>
+         <Col lg="6">
+           <Form onSubmit={handleSubmit}>
+           <FormGroup>
+               <label htmlFor="#username">Full Name</label>
+               <FormInput
                 id="#fullName"
                 name="fullName"
                 placeholder="Full Name"
@@ -138,13 +140,8 @@ const Register = ({ history }) => {
         </Col>
       </Row>
     </Container>
-
-
-    </Carousel.Caption>
-    </Carousel.Item>
-</Carousel>
-
-
+  </Card.ImgOverlay>
+</Card>
     </div>
   );
 };
