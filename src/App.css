@@ -73,9 +73,9 @@ h4 {
 
 /* Login/Signup */
 
-.login-btn {
+/* .login-btn {
   margin: 0px !important;
-}
+} */
 .login-container {
   text-align: left;
 }
@@ -118,9 +118,9 @@ h4 {
   margin-top: 40px;
   border-radius: 10px;
 }
-.rf-username {
+/* .rf-username {
   margin-bottom: 40px !important;
-}
+} */
 /* Activity Update Form */
 .update-form-container {
   margin-top: 40px;
@@ -183,6 +183,10 @@ h4 {
   background-color: silver;
 }
 
+.container{
+  margin: auto;
+}
+
 .mediaViewInfo {
   --web-view-name: Activate;
   --web-view-id: Activate;
@@ -192,8 +196,9 @@ h4 {
   --web-view-ids: Activate;
 }
 * {
-  margin: 0;
+  margin: auto;
   padding: 0;
+  align-content: center;
 }
 #Activate {
   position: absolute;
