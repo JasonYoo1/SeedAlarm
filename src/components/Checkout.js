@@ -7,6 +7,7 @@ import { PayPalButton } from "react-paypal-button-v2";
 import "react-toastify/dist/ReactToastify.css";
 import { Redirect } from 'react-router-dom';
 import axiosWithAuth from '../Utils/axiosWithAuth'
+import plan from './plan.png'
 
 
 import "../App.css"
@@ -120,8 +121,8 @@ export default class CheckOut extends React.Component {
       return (
           <div className='checkout'>
             Current Plans
-                <img width="100%" src='https://images.unsplash.com/photo-1477013743164-ffc3a5e556da?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80' alt=""></img>
-        <PayPalButton
+                <img width="100%" src={plan} alt="hello" margin-bottom="30%"></img>
+        {/* <PayPalButton
           amount="0.01"
           onSuccess={(details, data) => {
             alert("Transaction completed by " + details.payer.name.given_name);
@@ -138,8 +139,8 @@ export default class CheckOut extends React.Component {
           options={{
             clientId: "Ac82qeONuJNMP32o8kE_DVQOpFZCoTtr2ovk5AM-oSotdXq6Xe1XdBCN1s_E-1NTEICVMSOJLwUaofOY"
           }}
-        />
-        <h2>MONTHLY SUBSCRIPTION</h2>
+        /> */}
+
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
         <input type="hidden" name="cmd" value="_s-xclick"></input>
         <input type="hidden" name="hosted_button_id" value="85ZW2K2LS9RCA"></input>
