@@ -83,11 +83,11 @@ const Register = ({ history }) => {
            <h3> Activate your SIM card </h3>
            <p>
            Activate your SIM cardActivateFull NameFull NameSIM Card NumberSIM Card Number *CityZIP Code *EmailEmailRequired *To activate, enter the 19 digit code located on the back of the SIM. Do not enter the letters only numbers.
+           <br/>
            <p>
                <img width= "80%" src = {SIM_card_with_barcode_01_A1_Rectangle_13_pattern}></img>
              </p>
            </p>
-
          </Col>
          <Col lg="6">
            <Form onSubmit={handleSubmit}>

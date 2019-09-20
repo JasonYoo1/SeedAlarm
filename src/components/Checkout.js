@@ -8,7 +8,8 @@ import "react-toastify/dist/ReactToastify.css";
 import { Redirect } from 'react-router-dom';
 import axiosWithAuth from '../Utils/axiosWithAuth'
 import plan from './plan.png'
-
+import bg_A1_Rectangle_2_pattern from './bg_A1_Rectangle_2_pattern@2x.png'
+import uploadingPlan from './uploadingPlan.png'
 
 
 import "../App.css"
@@ -20,13 +21,18 @@ import {
     FormTextarea,
     FormGroup,
     Col,
-    Card,
+    // Card,
     CardHeader,
     CardBody,
     Container,
     Button,
     Row
   } from "shards-react";
+
+  import {
+    Carousel,
+    Card
+  } from 'react-bootstrap'
 
 // toast.configure();
 
@@ -116,14 +122,15 @@ import {
 
 
 
-export default class CheckOut extends React.Component {
+const CheckOut = ({ history }) => {
   
-    render() {
+
       return (
-          <div className='checkout'>
-            Current Plans<br/>
+        
+          <div>
+            {/* Current Plans<br/>
                 <img width="200rem" src={plan} alt="hello" margin-bottom="30%"></img>
-        {/* <PayPalButton
+        <PayPalButton
           amount="0.01"
           onSuccess={(details, data) => {
             alert("Transaction completed by " + details.payer.name.given_name);
@@ -140,15 +147,52 @@ export default class CheckOut extends React.Component {
           options={{
             clientId: "Ac82qeONuJNMP32o8kE_DVQOpFZCoTtr2ovk5AM-oSotdXq6Xe1XdBCN1s_E-1NTEICVMSOJLwUaofOY"
           }}
-        /> */}
+        />
 
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
         <input type="hidden" name="cmd" value="_s-xclick"></input>
         <input type="hidden" name="hosted_button_id" value="85ZW2K2LS9RCA"></input>
         <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"></input>
         <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"/>
-        </form>
-        </div>
+        </form> */}
+
+<Card>
+      <Card.Img src= {bg_A1_Rectangle_2_pattern } />
+      <Card.ImgOverlay>
+        <br></br>
+        <br></br>
+        <br></br>
+       <Container className="login-container">
+       <Row>
+         <Col lg="6">
+           <h3> Activate your SIM card </h3>
+           <p>
+           <br/>
+           <p className = 'checkoutCard'>
+               <img width= "200rem" src = {uploadingPlan}></img>
+               <div className = 'checkoutPay'>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick"></input>
+                <input type="hidden" name="hosted_button_id" value="85ZW2K2LS9RCA"></input>
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"></input>
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"/>
+                </form>
+               </div>
+             </p>
+           </p>
+         </Col>
+      </Row>
+    </Container>
+  </Card.ImgOverlay>
+</Card>
+
+
+
+
+
+    </div>
       );
     }
-  }
+
+  export default CheckOut
+
