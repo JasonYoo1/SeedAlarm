@@ -45,6 +45,7 @@ function App() {
     // <ReflectionContext.Provider value={{ reflectionsArray }}>
       // <UserContext.Provider value={{ creds }}>
         <div className="App">
+          <Menu/>
           <Switch>
             <Route exact path="/login" component={Login} />
             <Route exact path="/dashboard" component={Dashboard} />

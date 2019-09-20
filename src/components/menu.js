@@ -1,83 +1,84 @@
-// import React from "react";
-// import { Link } from "react-router-dom";
-// import {
-//   Navbar,
-//   NavbarToggler,
-//   NavbarBrand,
-//   Nav,
-//   NavItem,
-//   NavLink,
-//   Dropdown,
-//   DropdownToggle,
-//   DropdownMenu,
-//   DropdownItem,
-//   Collapse
-// } from "shards-react";
+import React from "react";
+import { Link } from "react-router-dom";
+import {
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+  Dropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  Collapse
+} from "shards-react";
 
-// export default class Menu extends React.Component {
-//   constructor(props) {
-//     super(props);
+import Seed_Alarm___No_Background_01_A1_Rectangle_4_pattern from './Seed_Alarm___No_Background_01_A1_Rectangle_4_pattern.png'
 
-//     this.toggleDropdown = this.toggleDropdown.bind(this);
-//     this.toggleNavbar = this.toggleNavbar.bind(this);
+export default class Menu extends React.Component {
+  constructor(props) {
+    super(props);
 
-//     this.state = {
-//       dropdownOpen: false,
-//       collapseOpen: false
-//     };
-//   }
+    this.toggleDropdown = this.toggleDropdown.bind(this);
+    this.toggleNavbar = this.toggleNavbar.bind(this);
 
-//   toggleDropdown() {
-//     this.setState({
-//       ...this.state,
-//       ...{
-//         dropdownOpen: !this.state.dropdownOpen
-//       }
-//     });
-//   }
+    this.state = {
+      dropdownOpen: false,
+      collapseOpen: false
+    };
+  }
 
-//   toggleNavbar() {
-//     this.setState({
-//       ...this.state,
-//       ...{
-//         collapseOpen: !this.state.collapseOpen
-//       }
-//     });
-//   }
+  toggleDropdown() {
+    this.setState({
+      ...this.state,
+      ...{
+        dropdownOpen: !this.state.dropdownOpen
+      }
+    });
+  }
 
-//   render() {
-//     return (
-//       // <Navbar sticky="true" type="dark" className="navbar" expand="md">
-//       // <NavbarBrand><a href="https://www.seedalarm.com" >Seed Alarm</a></NavbarBrand>
-//       //   <NavbarToggler onClick={this.toggleNavbar} />
+  toggleNavbar() {
+    this.setState({
+      ...this.state,
+      ...{
+        collapseOpen: !this.state.collapseOpen
+      }
+    });
+  }
 
-//       //   <Collapse open={this.state.collapseOpen} navbar>
-//       //     <Nav navbar>
-//       //       {/* <NavItem>
-//       //         <Link to="/dashboard" active href="dashboard">
-//       //           <NavLink>Dashboard</NavLink>
-//       //         </Link>
-//       //       </NavItem> */}
-
-//       //       <Dropdown
-//       //         open={this.state.dropdownOpen}
-//       //         toggle={this.toggleDropdown}
-//       //       >
-//       //         <DropdownToggle nav caret>
-//       //           Hello
-//       //         </DropdownToggle>
-//       //         <DropdownMenu>
-//       //           <DropdownItem>
-//       //             <Link to="/login">Account Information</Link>
-//       //           </DropdownItem>
-//       //           <DropdownItem>
-//       //             <Link to="/checkout">Select Plans</Link>
-//       //           </DropdownItem>
-//       //         </DropdownMenu>
-//       //       </Dropdown>
-//       //     </Nav>
-//       //   </Collapse>
-//       // </Navbar>
-//     );
-//   }
-// }
+  render() {
+    return (
+      <Navbar sticky="true" type="dark" className="navbar" expand="md">
+      <NavbarBrand>				
+        <img src= { Seed_Alarm___No_Background_01_A1_Rectangle_4_pattern } />
+	    </NavbarBrand>
+        <NavbarToggler onClick={this.toggleNavbar} />
+        <Collapse open={this.state.collapseOpen} navbar>
+          <Nav navbar>
+          <NavItem>
+              <NavLink active href="#">
+                Seed Alarm
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#" disabled>
+                Activate
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#" disabled>
+                Refill
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#" disabled>
+                Account
+              </NavLink>
+            </NavItem>
+          </Nav>
+        </Collapse>
+      </Navbar>
+    );
+  }
+}

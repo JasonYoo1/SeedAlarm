@@ -58,6 +58,7 @@ h4 {
 }
 .navbar {
   background-color: #286a93;
+  overflow: visible;
 }
 
 .nav a {
@@ -65,11 +66,17 @@ h4 {
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 2rem;
+  border: 1px solid black;
+  margin-left: 50rem;
 }
 .nav a:hover {
   text-decoration: underline;
   color: #bdc3c7;
 }
+.navbar-dark .navbar-nav .nav-link.active{
+  margin-left: 50rem;
+}
+
 
 /* Login/Signup */
 
@@ -196,9 +203,9 @@ h4 {
   --web-view-ids: Activate;
 }
 * {
-  margin: auto;
-  padding: 0;
-  align-content: center;
+  /* margin: auto; */
+  /* padding: 0; */
+  /* align-content: center; */
 }
 #Activate {
   position: absolute;
