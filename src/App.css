@@ -182,3 +182,639 @@ h4 {
 .testing{
   background-color: silver;
 }
+
+.mediaViewInfo {
+  --web-view-name: Activate;
+  --web-view-id: Activate;
+  --web-enable-deep-linking: true;
+}
+:root {
+  --web-view-ids: Activate;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+#Activate {
+  position: absolute;
+  box-sizing: border-box;
+  background: #E5E5E5;
+  width: 1440px;
+  height: 1175px;
+  background-color: rgba(255,255,255,1);
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  --web-view-name: Activate;
+  --web-view-id: Activate;
+  --web-enable-deep-linking: true;
+}
+.bg {
+  position: absolute;
+  overflow: visible;
+  width: 1440px;
+  height: 827px;
+  left: 0px;
+  top: 0px;
+}
+#Seed_Alarm {
+  position: absolute;
+  left: 720px;
+  top: 84px;
+  overflow: visible;
+  width: 99px;
+  white-space: nowrap;
+  line-height: 28px;
+  margin-top: -5px;
+  text-align: left;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  color: rgba(255,255,255,1);
+}
+#Activate_A1_Text_2 {
+  position: absolute;
+  left: 877px;
+  top: 84px;
+  overflow: visible;
+  width: 71px;
+  white-space: nowrap;
+  line-height: 28px;
+  margin-top: -5px;
+  text-align: left;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  color: rgba(255,255,255,1);
+}
+#Refill {
+  position: absolute;
+  left: 1005px;
+  top: 84px;
+  overflow: visible;
+  width: 45px;
+  white-space: nowrap;
+  line-height: 28px;
+  margin-top: -5px;
+  text-align: left;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  color: rgba(255,255,255,1);
+}
+#Account {
+  position: absolute;
+  left: 1108px;
+  top: 84px;
+  overflow: visible;
+  width: 73px;
+  white-space: nowrap;
+  line-height: 28px;
+  margin-top: -5px;
+  text-align: left;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  color: rgba(255,255,255,1);
+}
+.Seed_Alarm___No_Background_01 {
+  position: absolute;
+  overflow: visible;
+  width: 186.109px;
+  height: 72.071px;
+  left: 75px;
+  top: 36px;
+}
+#Group_641 {
+  position: absolute;
+  width: 1440px;
+  height: 347px;
+  left: 0px;
+  top: 827px;
+  overflow: visible;
+}
+.bg_A1_Rectangle_5 {
+  position: absolute;
+  overflow: visible;
+  width: 1440px;
+  height: 347px;
+  left: 0px;
+  top: 0px;
+}
+#Group_640 {
+  position: absolute;
+  width: 346px;
+  height: 221.764px;
+  left: 547px;
+  top: 63px;
+  overflow: visible;
+}
+#Need_Help_ {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+  width: 347px;
+  white-space: nowrap;
+  line-height: 80px;
+  margin-top: -8px;
+  text-align: left;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  color: rgba(0,0,0,1);
+  letter-spacing: -0.1px;
+}
+#Group_639 {
+  position: absolute;
+  width: 303px;
+  height: 119.764px;
+  left: 22px;
+  top: 102px;
+  overflow: visible;
+}
+#Group_637 {
+  position: absolute;
+  width: 66.777px;
+  height: 66.777px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+.Ellipse_2 {
+  position: absolute;
+  overflow: visible;
+  width: 68.191px;
+  height: 68.191px;
+  left: 0px;
+  top: 0px;
+  transform: rotate(-45deg);
+}
+#Group_636 {
+  position: absolute;
+  width: 31.899px;
+  height: 19.825px;
+  left: 17.95px;
+  top: 22.935px;
+  overflow: visible;
+}
+.Path_430 {
+  overflow: visible;
+  position: absolute;
+  top: 0.561px;
+  left: 0px;
+  width: 9.096px;
+  height: 18.192px;
+  transform: matrix(1,0,0,1,0,0);
+}
+.Path_431 {
+  overflow: visible;
+  position: absolute;
+  top: 10.308px;
+  left: 0.23px;
+  width: 15.113px;
+  height: 9.516px;
+  transform: matrix(1,0,0,1,0,0);
+}
+.Path_432 {
+  overflow: visible;
+  position: absolute;
+  top: 0px;
+  left: 0.741px;
+  width: 30.507px;
+  height: 15.254px;
+  transform: matrix(1,0,0,1,0,0);
+}
+.Path_433 {
+  overflow: visible;
+  position: absolute;
+  top: 0.652px;
+  left: 22.609px;
+  width: 9.291px;
+  height: 18.582px;
+  transform: matrix(1,0,0,1,0,0);
+}
+.Path_434 {
+  overflow: visible;
+  position: absolute;
+  top: 10.594px;
+  left: 16.646px;
+  width: 14.542px;
+  height: 9.231px;
+  transform: matrix(1,0,0,1,0,0);
+}
+.Path_435 {
+  overflow: visible;
+  position: absolute;
+  top: 15.905px;
+  left: 11.423px;
+  width: 9.143px;
+  height: 3.92px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Group_638 {
+  position: absolute;
+  width: 52.395px;
+  height: 52.701px;
+  left: 6.937px;
+  top: 67.063px;
+  overflow: visible;
+}
+.Path_437 {
+  overflow: visible;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 53.6px;
+  height: 53.906px;
+  transform: rotate(-76.555deg);
+}
+.Path_436 {
+  overflow: visible;
+  position: absolute;
+  top: 11.586px;
+  left: 14.01px;
+  width: 25.023px;
+  height: 28.417px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#info_seedalarm_com {
+  position: absolute;
+  left: 76px;
+  top: 20px;
+  overflow: visible;
+  width: 228px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  color: rgba(0,0,0,1);
+}
+#ID1_800_201_0674 {
+  position: absolute;
+  left: 76px;
+  top: 80px;
+  overflow: visible;
+  width: 168px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  color: rgba(0,0,0,1);
+}
+#Group_650 {
+  position: absolute;
+  width: 1022px;
+  height: 557px;
+  left: 210px;
+  top: 186px;
+  overflow: visible;
+}
+#Rectangle_320 {
+  opacity: 0.815;
+}
+.Rectangle_320 {
+  position: absolute;
+  overflow: visible;
+  width: 1022px;
+  height: 557px;
+  left: 0px;
+  top: 0px;
+}
+#Activate_your_SIM_card {
+  position: absolute;
+  left: 321.5px;
+  top: 21.5px;
+  overflow: visible;
+  width: 378px;
+  white-space: nowrap;
+  line-height: 55px;
+  margin-top: -10px;
+  text-align: left;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  color: rgba(0,0,0,1);
+}
+#Group_630 {
+  position: absolute;
+  width: 415px;
+  height: 59px;
+  left: 566px;
+  top: 455.552px;
+  overflow: visible;
+}
+#Button {
+  position: absolute;
+  width: 415px;
+  height: 59px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+.Rectangle_301 {
+  position: absolute;
+  overflow: visible;
+  width: 415px;
+  height: 59px;
+  left: 0px;
+  top: 0px;
+}
+#Activate_A1_Text_9 {
+  position: absolute;
+  left: 164.154px;
+  top: 16px;
+  overflow: visible;
+  width: 86px;
+  white-space: nowrap;
+  line-height: 38px;
+  margin-top: -7px;
+  text-align: left;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  color: rgba(255,255,255,1);
+}
+#Repeat_Grid_44 {
+  position: absolute;
+  width: 415px;
+  height: 349px;
+  left: 566px;
+  top: 72px;
+  overflow: hidden;
+}
+#Repeat_Grid_44_0 {
+  position: absolute;
+  width: 408px;
+  height: 77px;
+  left: 0px;
+  top: 3px;
+  overflow: visible;
+}
+#Group_633 {
+  position: absolute;
+  width: 408px;
+  height: 52px;
+  left: 0px;
+  top: 25px;
+  overflow: visible;
+}
+.Rectangle_319 {
+  position: absolute;
+  overflow: visible;
+  width: 408px;
+  height: 52px;
+  left: 0px;
+  top: 0px;
+}
+#Full_Name {
+  position: absolute;
+  left: 27px;
+  top: 15px;
+  overflow: visible;
+  width: 92px;
+  white-space: nowrap;
+  line-height: 31px;
+  margin-top: -5.5px;
+  text-align: left;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  color: rgba(163,163,163,1);
+}
+#Full_Name_A1_Text_11 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+  width: 74px;
+  white-space: nowrap;
+  line-height: 20px;
+  margin-top: -2px;
+  text-align: left;
+  font-family: Basic Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: rgba(0,0,0,1);
+}
+#Repeat_Grid_44_1 {
+  position: absolute;
+  width: 408px;
+  height: 77px;
+  left: 0px;
+  top: 89px;
+  overflow: visible;
+}
+#Group_633_A1_Group_12 {
+  position: absolute;
+  width: 408px;
+  height: 52px;
+  left: 0px;
+  top: 25px;
+  overflow: visible;
+}
+.Rectangle_319_A1_Rectangle_9 {
+  position: absolute;
+  overflow: visible;
+  width: 408px;
+  height: 52px;
+  left: 0px;
+  top: 0px;
+}
+#SIM_Card_Number {
+  position: absolute;
+  left: 27px;
+  top: 15px;
+  overflow: visible;
+  width: 162px;
+  white-space: nowrap;
+  line-height: 31px;
+  margin-top: -5.5px;
+  text-align: left;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  color: rgba(163,163,163,1);
+}
+#SIM_Card_Number__ {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+  width: 141px;
+  white-space: nowrap;
+  line-height: 20px;
+  margin-top: -2px;
+  text-align: left;
+  font-family: Basic Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: rgba(0,0,0,1);
+}
+#Repeat_Grid_44_2 {
+  position: absolute;
+  width: 408px;
+  height: 77px;
+  left: 0px;
+  top: 175px;
+  overflow: visible;
+}
+#Group_633_A1_Group_14 {
+  position: absolute;
+  width: 408px;
+  height: 52px;
+  left: 0px;
+  top: 25px;
+  overflow: visible;
+}
+.Rectangle_319_A1_Rectangle_10 {
+  position: absolute;
+  overflow: visible;
+  width: 408px;
+  height: 52px;
+  left: 0px;
+  top: 0px;
+}
+#City {
+  position: absolute;
+  left: 27px;
+  top: 15px;
+  overflow: visible;
+  width: 35px;
+  white-space: nowrap;
+  line-height: 31px;
+  margin-top: -5.5px;
+  text-align: left;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  color: rgba(163,163,163,1);
+}
+#ZIP_Code__ {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+  width: 79px;
+  white-space: nowrap;
+  line-height: 20px;
+  margin-top: -2px;
+  text-align: left;
+  font-family: Basic Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: rgba(0,0,0,1);
+}
+#Repeat_Grid_44_3 {
+  position: absolute;
+  width: 408px;
+  height: 77px;
+  left: 0px;
+  top: 261px;
+  overflow: visible;
+}
+#Group_633_A1_Group_16 {
+  position: absolute;
+  width: 408px;
+  height: 52px;
+  left: 0px;
+  top: 25px;
+  overflow: visible;
+}
+.Rectangle_319_A1_Rectangle_11 {
+  position: absolute;
+  overflow: visible;
+  width: 408px;
+  height: 52px;
+  left: 0px;
+  top: 0px;
+}
+#Email {
+  position: absolute;
+  left: 27px;
+  top: 15px;
+  overflow: visible;
+  width: 51px;
+  white-space: nowrap;
+  line-height: 31px;
+  margin-top: -5.5px;
+  text-align: left;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  color: rgba(163,163,163,1);
+}
+#Email_A1_Text_17 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+  width: 41px;
+  white-space: nowrap;
+  line-height: 20px;
+  margin-top: -2px;
+  text-align: left;
+  font-family: Basic Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: rgba(0,0,0,1);
+}
+#Required__ {
+  position: absolute;
+  left: 566px;
+  top: 421px;
+  overflow: visible;
+  width: 77px;
+  white-space: nowrap;
+  line-height: 20px;
+  margin-top: -2px;
+  text-align: left;
+  font-family: Basic Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: rgba(234,49,49,1);
+}
+.SIM_card_with_barcode_01 {
+  position: absolute;
+  overflow: visible;
+  width: 448.231px;
+  height: 281.032px;
+  left: 48px;
+  top: 190px;
+}
+#To_activate__enter_the_19_digi {
+  position: absolute;
+  left: 47.905px;
+  top: 104.552px;
+  overflow: hidden;
+  width: 491px;
+  height: 74px;
+  line-height: 36px;
+  margin-top: -8px;
+  text-align: left;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  color: rgba(0,0,0,1);
+}

@@ -49,11 +49,11 @@ function App() {
           <Switch>
             <Route exact path="/login" component={Login} />
             <Route exact path="/dashboard" component={Dashboard} />
-            <PrivateRoute exact path="/activate" component={Registration} />
+            <Route exact path="/activate" component={Registration} />
             <Route exact path ="/search" component={SearchInfo}/>
             <Route exact path="/checkout" component={CheckOut} />
-            <PrivateRoute exact path="/refill" component={Refill} />
-            <PrivateRoute exact path="/refillinfo" component={RefillInfo} />
+            <Route exact path="/refill" component={Refill} />
+            <Route exact path="/refillinfo" component={RefillInfo} />
             <Route exact path="/activationinfo" component={ActivateInfo}/>
           </Switch>
           <Footer />
