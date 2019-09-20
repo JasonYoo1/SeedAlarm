@@ -106,7 +106,20 @@ h4 {
   padding: 20px;
 }
 
+
+/* CheckoutCard */
+
+.checkoutCard{
+  /* border: 3px solid blue; */
+  margin-left: 25rem;
+}
+.checkoutPay{
+  /* border: 3px solid red; */
+  margin-left: 1.5rem;
+}
+
 /* Activity Card Styles */
+
 .card-container {
   display: grid;
   grid-template-columns: auto;
