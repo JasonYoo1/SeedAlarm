@@ -61,6 +61,7 @@ h4 {
 .navbar {
   background-color: #286a93;
   overflow: visible;
+  margin-bottom: 2rem;
 }
 
 .nav a {
@@ -78,6 +79,7 @@ h4 {
 .navbar-dark .navbar-nav .nav-link.active{
   margin-left: 50rem;
 }
+
 
 
 /* Login/Signup */
