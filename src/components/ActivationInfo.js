@@ -19,20 +19,51 @@ import {
 
 const ActivateInfo = (event) => {
 
-    let register = localStorage.getItem('register')
-    console.log('this is from site', register)
-    let XMLParser = require('react-xml-parser');
-    let xml = new XMLParser().parseFromString(register);
-    console.log(xml.children[3].value)
-    let newPhone = xml.children[3].value
-    let plan = xml.children[4].value
-    localStorage.setItem('newPhone', newPhone)
+    // let register = localStorage.getItem('register')
+    // console.log('this is from site', register)
+    // let XMLParser = require('react-xml-parser');
+    // let xml = new XMLParser().parseFromString(register);
+    // console.log(xml.children[3].value)
+    // let newPhone = xml.children[3].value
+    // let plan = xml.children[4].value
+    // localStorage.setItem('newPhone', newPhone)
 
 
-    return(
-        <div>
+    if(localStorage.getItem('register') == "<net><ret>99</ret></net>"){
+      let newPhone = 'Error in registering. Please Try again'
+      return (
+        <div> 
+          <h2>
+          Welcome to the Speed Talk Family!
+        Your Phone Number is {newPhone}<br/>
+        Custom Plan (70 SMS, 5 MB) (NO VOICE) for 30 days <br/>
+          </h2>
+
+        {Date()}
+        <Link to='/dashboard'>
+                <Button block squared >
+                  Back to Dashboard
+                </Button>
+        </Link>
+    </div>
+      
+        );
+      }else{
+        let register = localStorage.getItem('register')
+        console.log('this is from site', register)
+        let XMLParser = require('react-xml-parser');
+        let xml = new XMLParser().parseFromString(register);
+        console.log(xml.children[3].value)
+        let newPhone = xml.children[3].value
+        let plan = xml.children[4].value
+        localStorage.setItem('newPhone', newPhone)
+
+
+      
+          return (
+            <div>
             Welcome to the Speed Talk Family!
-            Your Phone Number is {newPhone}<br/>
+            Your Phone Number is <strong>{newPhone}</strong><br/>
             Custom Plan (70 SMS, 5 MB) (NO VOICE) for 30 days <br/>
             {Date()}
             <Link to='/dashboard'>
@@ -41,7 +72,11 @@ const ActivateInfo = (event) => {
                     </Button>
             </Link>
         </div>
-    )
+            );
+      }
+
+
+
 }
 
 
