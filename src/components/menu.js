@@ -64,12 +64,12 @@ export default class Menu extends React.Component {
       </NavDropdown> */}
     </Nav>
     <Nav>
-      <Nav.Link href="#deets">Seed Alarm</Nav.Link>
-      <Nav.Link eventKey={2} href="#memes">
+      <Nav.Link href="https://www.seedalarm.com">Seed Alarm</Nav.Link>
+      <Nav.Link eventKey={2} href="/checkout">
         Activate
       </Nav.Link>
-      <Nav.Link href="#deets">Refill</Nav.Link>
-      <Nav.Link href="#deets">Account</Nav.Link>
+      <Nav.Link href="/refill">Refill</Nav.Link>
+      <Nav.Link href="/dashboard">Account</Nav.Link>
     </Nav>
   </Navbar.Collapse>
 </Navbar>
