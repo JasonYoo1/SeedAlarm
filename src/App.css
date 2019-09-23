@@ -158,16 +158,19 @@ h4 {
   margin-left: 50rem;
 } */
 
-
+.FormGroup{
+  /* border: 1px solid blue; */
+  width: 90%;
+}
 
 /* Login/Signup */
 
 .activateBtn {
-  /* margin: auto; */
+  margin-top: 30px;
   /* border: 1px solid red; */
-  width: 100%;
-  /* margin: auto; */
-  /* padding-left: 1rem; */
+  width: 103%;
+  padding-left: 1rem;
+  /* border: 1px solid blue; */
 }
 
 .login-container {

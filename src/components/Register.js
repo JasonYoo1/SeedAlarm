@@ -91,8 +91,8 @@ const Register = ({ history }) => {
            </p>
          </Col>
          <Col lg="6">
-           <Form onSubmit={handleSubmit}>
-           <FormGroup>
+           <Form  onSubmit={handleSubmit}>
+           <FormGroup className = 'FormGroup' >
                <label htmlFor="#username">Full Name</label>
                <FormInput
                 id="#fullName"
@@ -102,7 +102,7 @@ const Register = ({ history }) => {
                 value={activate.fullName}
               />
             </FormGroup>
-            <FormGroup>
+            <FormGroup className = 'FormGroup'>
               <label htmlFor="#username">Sim Card Number</label>
               <FormInput
                 id="#sim"
@@ -112,7 +112,7 @@ const Register = ({ history }) => {
                 value={activate.sim}
               />
             </FormGroup>
-            <FormGroup>
+            <FormGroup className = 'FormGroup'>
               <label htmlFor="#username">Required: ZIP CODE</label>
               <FormInput
                 id="#zip"
@@ -122,7 +122,7 @@ const Register = ({ history }) => {
                 value={activate.zip}
               />
             </FormGroup>
-            <FormGroup>
+            <FormGroup className = 'FormGroup'>
               <label htmlFor="#username">E-mail</label>
               <FormInput
                 id="#email"
