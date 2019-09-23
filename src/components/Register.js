@@ -38,7 +38,7 @@ import '../App.css'
 import bg_A1_Rectangle_2_pattern from './bg_A1_Rectangle_2_pattern@2x.png'
 import SIM_card_with_barcode_01_A1_Rectangle_13_pattern from './SIM_card_with_barcode_01_A1_Rectangle_13_pattern.png'
 import Seed_Alarm___No_Background_01_A1_Rectangle_4_pattern from './Seed_Alarm___No_Background_01_A1_Rectangle_4_pattern.png'
-
+import Sim2 from './Sim2.png'
 
 var sectionStyle = {
   width: "100%",
@@ -71,8 +71,8 @@ const Register = ({ history }) => {
 
   return (
     <div>
-      <Card className="bg-dark text-white">
-      <Card.Img src= {bg_A1_Rectangle_2_pattern } />
+      <Card className="backgroundTesting">
+      <Card.Img className="backgroundTest" src= {bg_A1_Rectangle_2_pattern } />
       <Card.ImgOverlay>
         <br></br>
         <br></br>
@@ -84,9 +84,10 @@ const Register = ({ history }) => {
            <p>
            Activate your SIM cardActivateFull NameFull NameSIM Card NumberSIM Card Number *CityZIP Code *EmailEmailRequired *To activate, enter the 19 digit code located on the back of the SIM. Do not enter the letters only numbers.
            <br/>
+           <br/>
            <p>
-               <img width= "80%" src = {SIM_card_with_barcode_01_A1_Rectangle_13_pattern}></img>
-             </p>
+               <img width= "100%" src = {Sim2}></img>
+            </p>
            </p>
          </Col>
          <Col lg="6">
@@ -131,10 +132,10 @@ const Register = ({ history }) => {
                 value={activate.email}
               />
             </FormGroup>
-            <Row classNameName="login-btn">
-              <Button block squared>
+            <Row className="activateBtn">
+              <button className="actualButton" block>
                 ACTIVATE
-              </Button>
+              </button>
             </Row>
           </Form>
         </Col>
