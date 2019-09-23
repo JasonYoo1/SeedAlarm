@@ -131,12 +131,13 @@ const Register = ({ history }) => {
                 onChange={handleChange}
                 value={activate.email}
               />
-            </FormGroup>
-            <Row className="activateBtn">
+              <Row className="activateBtn">
               <button className="actualButton" block>
                 ACTIVATE
               </button>
             </Row>
+            </FormGroup>
+
           </Form>
         </Col>
       </Row>
