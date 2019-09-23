@@ -97,12 +97,12 @@ const ActivateInfo = (event) => {
                 <h3 className='congratsfont'>Number: {newPhone}</h3>
                 <div className = 'actBtnCont'>
                 <Link to='/dashboard'>
-                          <button className="activationInfoBtn" id='backSeed' >
-                            Account Dashboard
-                          </button>
-                          <button className="activationInfoBtn" id='backDash' >
-                            Back to SeedAlarm
-                          </button>
+                  <button className="activationInfoBtn" id='backSeed' >
+                    Account Dashboard
+                  </button>
+                  <button className="activationInfoBtn" id='backDash' >
+                    Back to SeedAlarm
+                  </button>
                 </Link>
                 </div>
           </Container>
