@@ -11,6 +11,8 @@ import plan from './plan.png'
 import bg_A1_Rectangle_2_pattern from './bg_A1_Rectangle_2_pattern@2x.png'
 import uploadingPlan from './uploadingPlan.png'
 
+import paypalbtn from './paypalbtn.png'
+
 
 import "../App.css"
 import "../index.css"
@@ -156,32 +158,30 @@ const CheckOut = ({ history }) => {
         <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"/>
         </form> */}
 
-<Card>
+<Card >
       <Card.Img src= {bg_A1_Rectangle_2_pattern } />
       <Card.ImgOverlay>
         <br></br>
         <br></br>
         <br></br>
-       <Container className="login-container">
-       <Row>
-         <Col lg="6">
-           <h3> Activate your SIM card </h3>
-           <p>
-           <br/>
+       <Container style={{ width: '20rem' }} className="RegCheckOut">
+           <h1 className = 'activateSimCard'> Plans </h1>
+           <Card style={{  width: '18rem' }}>
+             <h3 className='paraText'>Plan 1</h3>
+             <p className='paraText' >Texts: 70</p>
+            <p className='paraText' id ='paraborder'>DATA: 5 MB</p>
+            <p className='paraText' id ='paraborder'>30 Days</p>
+            <h3 className= 'paraText' id ='textamount'>$ 14.99</h3>
+           </Card>
            <p className = 'checkoutCard'>
-               <img width= "200rem" src = {uploadingPlan}></img>
                <div className = 'checkoutPay'>
                 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                 <input type="hidden" name="cmd" value="_s-xclick"></input>
                 <input type="hidden" name="hosted_button_id" value="85ZW2K2LS9RCA"></input>
-                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"></input>
-                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"/>
+                <input type="image" width="100%" src={paypalbtn} border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"></input>
                 </form>
                </div>
              </p>
-           </p>
-         </Col>
-      </Row>
     </Container>
   </Card.ImgOverlay>
 </Card>

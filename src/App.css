@@ -31,6 +31,28 @@ h4 {
 
 }
 
+.RegCheckOut{
+  text-align: center;
+  background-color: #d4d4d4;
+  border-radius: 10px;
+  overflow: visible;
+  padding: 30px;
+  height: 35rem;
+  opacity: 0.9;
+  margin: auto;
+  text-align: left;
+  /* border: 30px solid black; */
+  margin-top: -3rem;
+  /* padding-left: -90rem;
+  padding-right: -10rem; */
+}
+
+.activateSimCard{
+  /* border: 1px solid blue; */
+  text-align: center;
+}
+
+
 /* Login */
 
 .login-container {
@@ -196,12 +218,16 @@ h4 {
 /* CheckoutCard */
 
 .checkoutCard{
-  /* border: 3px solid blue; */
-  margin-left: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .checkoutPay{
   /* border: 3px solid red; */
-  margin-left: 1.5rem;
+  /* margin-left: 1.5rem; */
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
 }
 
 /* Activity Card Styles */
@@ -303,3 +329,25 @@ h4 {
   text-align: center;
 }
 
+.paraText{
+  color: black;
+  text-align: center;
+}
+
+#paraborder{
+  border-top: 1px solid black;
+  width: 80%;
+  margin-left: 2rem;
+  padding-top: 1rem;
+}
+
+#textamount{
+  background-color: #d6fcff;
+  text-align: center;
+  height: 5rem;
+  padding-top: 1rem;
+}
+
+.planCard{
+  background-color: #d6fcff;
+}
