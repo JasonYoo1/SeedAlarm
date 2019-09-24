@@ -82,11 +82,11 @@ const ActivateInfo = (event) => {
             <div> 
             <Card className="backgroundTesting">
             <Card.Img className="backgroundTest" src= {bg_A1_Rectangle_2_pattern } />
-            <Card.ImgOverlay style={{  width: '15rem' }}>
+            <Card.ImgOverlay >
               <br></br>
               <br></br>
               <br></br>
-             <Container style={{  width: '20rem' }} className="login-container">
+             <Container className="login-container">
                 <h1 className='congratsfont'>Congratulations!</h1>
                 <br/>
                 <h3 className='congratsfont'><svg xmlns="http://www.w3.org/2000/svg" width="520" height="72" viewBox="0 0 520 72">
