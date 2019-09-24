@@ -8,7 +8,6 @@ import {
   FormTextarea,
   FormGroup,
   Col,
-  Card,
   CardHeader,
   CardBody,
   Container,
@@ -16,7 +15,11 @@ import {
   Row
 } from "shards-react";
 
+import{
+  Card
+} from 'react-bootstrap'
 
+import bg_A1_Rectangle_2_pattern from './bg_A1_Rectangle_2_pattern.png'
 
 
 
@@ -24,35 +27,35 @@ const RefillInfo = () => {
     let refillInfo = localStorage.getItem('testing')
     console.log('this is from site', refillInfo)
 
-    if(localStorage.getItem('testing') == "<net><ret>1</ret><retmess>No web-credit available.</retmess></net>"){
+    if(localStorage.getItem('testing') == "<net><ret>1</ret><retmess>No web-credit available.</retmess></net>" || "<net><ret>1</ret><retmess>Account not found</retmess></net>"){
         let simNumber = 'Error'
         return (
       
-            <Container className="card-container">
-              <Card className="card">
-                <CardHeader className="card-header">Welcome</CardHeader>
-                <CardBody className="card-body">
-                 <p>Search Info:<br/>
-                 {simNumber}<br/>
-                 </p>
-                </CardBody>
-              </Card>
-              <CardBody className='testing'>
-              <Form>
+          <Card className="backgroundTesting">
+          <Card.Img className="backgroundTest" src= {bg_A1_Rectangle_2_pattern } />
+          <Card.ImgOverlay >
+            <br></br>
+            <br></br>
+            <br></br>
+            <br/>
+           <Container className="login-container">
+              <h1 className='congratsRefill'>Congratulations!</h1>
+              <br/>
+              <p className='congratsRefill'>Your refill has been successful! Thank you for choosing Seed Alarm.</p>
+              <br/>
+              <div className = 'actBtnCont'>
               <Link to='/dashboard'>
-                <Button block squared >
-                  Back to Dashboard
-                </Button>
-                <Button block squared >
-                  Search Another SIM/PHONE
-                </Button>
+                <button className="activationInfoBtn" id='backSeed' >
+                  Account Dashboard
+                </button>
+                <button className="activationInfoBtn" id='backDash' >
+                  Back to SeedAlarm
+                </button>
               </Link>
-            </Form>
-        
-              </CardBody>
-            </Container>
-            //this is the activate sim below:
-        
+              </div>
+        </Container>
+      </Card.ImgOverlay>
+        </Card>        
           );
         }else{
             let refillInfo = localStorage.getItem('refillInfo')

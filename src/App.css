@@ -383,3 +383,34 @@ h4 {
   display: inline-block;
   /* height: 10rem; */
 }
+
+.accountImg{
+  border: 100px solid blue;
+}
+
+.fitCont{
+  border: 10px sold
+}
+
+.congratsRefill{
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+  margin: 4rem auto auto auto;
+  text-align: center;
+}
+
+.refillBtn{
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  width: 95%;
+  border-radius: 1rem;
+  height: 3rem;
+  /* background-color: white; */
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.refillBtn:hover {
+  background: #2196F3;
+  color: white;
+}
