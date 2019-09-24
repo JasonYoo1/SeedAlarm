@@ -50,6 +50,7 @@ h4 {
 .activateSimCard{
   /* border: 1px solid blue; */
   text-align: center;
+  
 }
 
 
@@ -346,8 +347,4 @@ h4 {
   text-align: center;
   height: 5rem;
   padding-top: 1rem;
-}
-
-.planCard{
-  background-color: #d6fcff;
 }
