@@ -22,7 +22,7 @@ import { Route, Switch } from "react-router-dom";
 
 import { UserContext } from './context/UserContext'
 
-import simTest2 from './simTest2.gif'
+import testingGif2 from './testingGif2.gif'
 
 
 
@@ -62,7 +62,7 @@ const Refill = ({ history }) => {
           {/* <h1>Refill Your Account </h1> */}
           <p>
             <p>
-              <img width='80%' src ={simTest2} />
+              <img width='80%' src ={testingGif2} />
             </p>
           </p>
         </Col>
