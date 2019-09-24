@@ -70,7 +70,7 @@ const SearchInfo = () => {
 </g>
 </svg>
               <div className = 'searchBtns'>
-                  <Link to='/refill'>
+                  <Link to='/RefillCheckOut'>
                     <button className="activationInfoBtn" id='backSeed' >
                       Refill
                     </button>
@@ -139,7 +139,7 @@ const SearchInfo = () => {
   </g>
 </svg>
                   <div className = 'searchBtns'>
-                  <Link to='/refill'>
+                  <Link to='/RefillCheckOut'>
                     <button className="activationInfoBtn" id='backSeed' >
                       Refill
                     </button>

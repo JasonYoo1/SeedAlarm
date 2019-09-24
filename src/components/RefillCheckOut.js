@@ -53,20 +53,19 @@ const RefillCheckOut = ({ history }) => {
         <br></br>
         <br></br>
         <Container className="login-container">
-       <Row>
-         <Col className =' refillLeft' lg="6">
+       <Row >
+         <Col className =' refillLeft' sm="4">
            <h3>Refill</h3>
            <p className='refillText'>1. Pay to refill your Plan<br/><br/>
            2. Enter SIM card phone number<br/><br/>
            3. ENJOY! </p>
          <PayPalButton 
-         width='50%'
           amount="0.01"
           onSuccess={(details, data) => {
             alert("Transaction completed by " + details.payer.name.given_name);
             localStorage.setItem("token", true);
             axiosWithAuth()
-            window.location.href='/activate'
+            window.location.href='/refill'
             return fetch("/paypal-transaction-complete", {
               method: "post",
               body: JSON.stringify({
