@@ -82,8 +82,8 @@ const Register = ({ history }) => {
          <Col lg="6">
            <h3> Activate your SIM card </h3>
            <p>
-           Activate your SIM cardActivateFull NameFull NameSIM Card NumberSIM Card Number *CityZIP Code *EmailEmailRequired *To activate, enter the 19 digit code located on the back of the SIM. Do not enter the letters only numbers.
-           <br/>
+            To activate, enter the 19 digit code located on the back of the SIM. Do not enter the letters, Please enter the numbers only.
+                       <br/>
            <br/>
            <p>
                <img width= "100%" src = {Sim2}></img>
@@ -107,7 +107,7 @@ const Register = ({ history }) => {
               <FormInput
                 id="#sim"
                 name="sim"
-                placeholder = {sim}
+                placeholder = 'SIM Card Number'
                 onChange={handleChange}
                 value={activate.sim}
               />
@@ -117,17 +117,17 @@ const Register = ({ history }) => {
               <FormInput
                 id="#zip"
                 name="zip"
-                placeholder="ZIP CODE for the new phone number"
+                placeholder="City Zip Code"
                 onChange={handleChange}
                 value={activate.zip}
               />
             </FormGroup>
             <FormGroup className = 'FormGroup'>
-              <label htmlFor="#username">E-mail</label>
+              <label htmlFor="#username">Email</label>
               <FormInput
                 id="#email"
                 name="email"
-                placeholder="Please Enter an email"
+                placeholder="Email"
                 onChange={handleChange}
                 value={activate.email}
               />
