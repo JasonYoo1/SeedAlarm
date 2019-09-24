@@ -51,7 +51,7 @@ export default function Dashboard({history}) {
 
   return (
       <div>
-        <UserInfo/>
+        {/* <UserInfo/> */}
         <Container className="login-container">
       <Row>
         <Col lg="6">
@@ -78,6 +78,8 @@ export default function Dashboard({history}) {
         <Col lg="6">
           <Form onSubmit={handleSubmit}>
             <FormGroup>
+            <h2>Account</h2>
+           <p>Enter your 10 cellphone number you recieved when activating your SiM card or enter the 19 digit code located on the SIM. Do not enter the letters.(Numbers Only)</p>
               <label htmlFor="#searchSim">Search By Sim</label>
               <FormInput
                 id="#searchSim"
