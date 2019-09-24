@@ -164,10 +164,10 @@ const CheckOut = ({ history }) => {
         <br></br>
         <br></br>
         <br></br>
-       <Container style={{ width: '20rem' }} className="RegCheckOut">
+       <Container style={{  width: '20rem' }} className="RegCheckOut">
            <h1 className = 'activateSimCard'> Plans </h1>
-           <Card style={{  width: '18rem' }}>
-             <h3 className='paraText'>Plan 1</h3>
+           <Card style={{ padding: '40rem 0 0 auto', width: '18rem' }}>
+            <h3 className='paraText'>Plan 1</h3>
              <p className='paraText' >Texts: 70</p>
             <p className='paraText' id ='paraborder'>DATA: 5 MB</p>
             <p className='paraText' id ='paraborder'>30 Days</p>
