@@ -41,7 +41,7 @@ const ActivateInfo = (event) => {
         <br></br>
         <br></br>
         <br></br>
-       <Container className="login-container" id ='activationCont'>
+       <Container style = {{}}className="login-container" id ='activationCont'>
           <h1 className='congratsfont'>Congratulations!</h1>
           <br/>
           <h3 className='congratsfont'><svg xmlns="http://www.w3.org/2000/svg" width="520" height="72" viewBox="0 0 520 72">

@@ -10,20 +10,25 @@ import {
   FormInput,
   FormGroup,
   Col,
-  Card,
   CardHeader,
   CardBody,
   Container,
   Button,
   Row
 } from "shards-react";
+
+import {
+  Card
+} from 'react-bootstrap'
+
 import "../App.css";
 
 import UserInfo from './UserInfo'
 import SearchInfo from './Search'
 import SimpleMap from './Maps'
 import Refill from './Refill'
-
+import dashboardimage from './dashboardimage.png'
+import bg_A1_Rectangle_2_pattern from './bg_A1_Rectangle_2_pattern.png'
 
 
 
@@ -51,29 +56,16 @@ export default function Dashboard({history}) {
 
   return (
       <div>
-        {/* <UserInfo/> */}
-        <Container className="login-container">
+              <Card className="backgroundTesting">
+      <Card.Img className="backgroundTest" src= {bg_A1_Rectangle_2_pattern } />
+      <Card.ImgOverlay>
+        <br></br>
+        <br></br>
+        <br></br>
+        <Container style={{margin: '40px auto auto auto'}}className="login-container">
       <Row>
         <Col lg="6">
-          Refill Your Account!
-        <PayPalButton
-          amount="0.01"
-          onSuccess={(details, data) => {
-            alert("Transaction completed by " + details.payer.name.given_name);
-            localStorage.setItem("token", true);
-            axiosWithAuth()
-            window.location.href='/refill'
-            return fetch("/paypal-transaction-complete", {
-              method: "post",
-              body: JSON.stringify({
-                orderId: data.orderID
-              }),
-            });
-          }}
-          options={{
-            clientId: "Ac82qeONuJNMP32o8kE_DVQOpFZCoTtr2ovk5AM-oSotdXq6Xe1XdBCN1s_E-1NTEICVMSOJLwUaofOY"
-          }}
-        />
+          <img className = 'dashImg' width = '80%' src = {dashboardimage}/>
         </Col>
         <Col lg="6">
           <Form onSubmit={handleSubmit}>
@@ -100,14 +92,17 @@ export default function Dashboard({history}) {
               />
             </FormGroup>
             <Row className="login-btn">
-              <Button block squared>
+            <button width='80%' className="dashboardBtn" block>
                 Search
-              </Button>
+              </button>
             </Row>
           </Form>
         </Col>
       </Row>
     </Container>
+
+  </Card.ImgOverlay>
+    </Card>
       </div>
   );
 }
