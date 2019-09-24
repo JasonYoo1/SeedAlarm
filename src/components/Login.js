@@ -8,6 +8,11 @@ import {
   Row,
   Col
 } from "shards-react";
+
+import{
+  Card
+} from 'react-bootstrap'
+
 import axios from "axios";
 import { Link } from "react-router-dom";
 import Footer from "./footer";
@@ -16,6 +21,8 @@ import Dashboard from "./Dashboard";
 import { Route, Switch } from "react-router-dom";
 
 import { UserContext } from './context/UserContext'
+
+import bg_A1_Rectangle_2_pattern from './bg_A1_Rectangle_2_pattern.png'
 
 const Login = ({ history }) => {
   const [creds, setCreds] = useState({ sim: "",});
@@ -41,7 +48,7 @@ const Login = ({ history }) => {
   return (
     
     <div>
-    <Container className="login-container">
+    {/* <Container className="login-container">
       <Row>
         <Col lg="6">
           <h1> Speed Talk  </h1>
@@ -72,10 +79,50 @@ const Login = ({ history }) => {
           </Form>
         </Col>
       </Row>
+    </Container> */}
+          <Card className="backgroundTesting">
+      <Card.Img className="backgroundTest" src= {bg_A1_Rectangle_2_pattern } />
+      <Card.ImgOverlay>
+        <br></br>
+        <br></br>
+        <br></br>
+       <Container className="login-container">
+       <Row>
+         <Col lg="6">
+
+               {/* <img width= "100%" src = {Sim2}></img> */}
+
+         </Col>
+         <Col lg="6">
+           <h2>Account</h2>
+           <p>Enter your 10 cellphone number you recieved when activating your SiM card or enter the 19 digit code located on the SIM. Do not enter the letters.(Numbers Only)</p>
+           <Form  onSubmit={handleSubmit}>
+            <FormGroup className = 'FormGroup'>
+              <label htmlFor="#username">E-mail</label>
+              <FormInput
+                id="#email"
+                name="email"
+                placeholder="Please Enter an email"
+                onChange={handleChange}
+              />
+              <Row className="activateBtn">
+              <button className="actualButton" block>
+                ACTIVATE
+              </button>
+            </Row>
+            </FormGroup>
+
+          </Form>
+        </Col>
+      </Row>
     </Container>
+  </Card.ImgOverlay>
+</Card>
+
 
     </div>
   );
 };
 
 export default Login;
+
