@@ -389,7 +389,6 @@ h4 {
 }
 
 .fitCont{
-  border: 10px sold
 }
 
 .congratsRefill{
@@ -413,4 +412,26 @@ h4 {
 .refillBtn:hover {
   background: #2196F3;
   color: white;
+}
+
+.refillText{
+  /* border: 1px solid black; */
+  color: black;
+}
+
+
+.refillLeft{
+  margin-left: 15rem;
+  /* border: 1px solid blue; */
+
+}
+
+.refillFormGroup{
+  /* border: 1px solid green; */
+  width: 80%;
+  /* margin-left: 8rem; */
+}
+
+.refillPay{
+  border: 1px solid black;
 }

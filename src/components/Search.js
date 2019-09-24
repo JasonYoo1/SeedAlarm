@@ -70,15 +70,17 @@ const SearchInfo = () => {
 </g>
 </svg>
               <div className = 'searchBtns'>
-              <Link to='/refill'>
-                <button className="activationInfoBtn" id='backSeed' >
-                  Refill
-                </button>
-                <button className="activationInfoBtn" id='backDash' >
-                  Back to SeedAlarm
-                </button>
-              </Link>
-              </div>
+                  <Link to='/RefillCheckOut'>
+                    <button className="activationInfoBtn" id='backSeed' >
+                      Refill
+                    </button>
+                    </Link>
+                    <Link to='/dashboard'>
+                    <button className="activationInfoBtn" id='backDash' >
+                      Back to SeedAlarm
+                    </button>
+                    </Link>
+                  </div>
         </Container>
       </Card.ImgOverlay>
         </Card>
@@ -137,14 +139,16 @@ const SearchInfo = () => {
   </g>
 </svg>
                   <div className = 'searchBtns'>
-                  <Link to='/dashboard'>
+                  <Link to='/RefillCheckOut'>
                     <button className="activationInfoBtn" id='backSeed' >
-                      Account Dashboard
+                      Refill
                     </button>
+                    </Link>
+                    <Link to='/dashboard'>
                     <button className="activationInfoBtn" id='backDash' >
                       Back to SeedAlarm
                     </button>
-                  </Link>
+                    </Link>
                   </div>
             </Container>
           </Card.ImgOverlay>

@@ -68,7 +68,7 @@ export default class Menu extends React.Component {
       <Nav.Link eventKey={2} href="/checkout">
         Activate
       </Nav.Link>
-      <Nav.Link href="/refill">Refill</Nav.Link>
+      <Nav.Link href="/RefillCheckOut">Refill</Nav.Link>
       <Nav.Link href="/dashboard">Account</Nav.Link>
     </Nav>
   </Navbar.Collapse>
