@@ -247,7 +247,7 @@ h4 {
 
 @media(max-width: 800px){
   .footer{
-    margin-top: 10rem;
+    display: none;
   }
 }
 
@@ -255,6 +255,13 @@ h4 {
   margin: auto;
   text-align: center;
 }
+@media(max-width: 800px){
+  .footerContainer{
+    display: none;
+  }
+}
+
+
 /* CheckoutCard */
 
 .checkoutCard{
@@ -286,6 +293,13 @@ h4 {
   font-family: 'Times New Roman', Times, serif;
 
 }
+
+@media(max-width: 800px){
+  .footerText{
+    display: none;
+  }
+}
+
 
 .card-header {
   font-size: 2em;
