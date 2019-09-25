@@ -747,3 +747,68 @@ margin-top: -3rem;
     margin-left: 15rem;
   }
 }
+
+.accountInfo{
+  /* border: 10px solid green; */
+}
+
+.searchCont{
+  background-color: #d4d4d4;
+  border-radius: 10px;
+  overflow: visible;
+  padding: 20px;
+  opacity: 0.9;
+  margin: auto;
+  text-align: left;
+  /* border: 30px solid black; */
+  margin-top: -3rem;
+}
+@media(max-width:800px){
+  .searchCont{
+    background: none;
+  }
+}
+
+
+@media(max-width:800px){
+  .tryingTest{
+    /* border: 30px solid red; */
+    margin-left: -4.5rem;
+    width: 31rem;
+    margin-top: 11rem;
+    margin-bottom: -2.5rem;
+  }
+}
+
+#backDashSearch {
+  border-color: #2196F3;
+  color: black;
+  width: 20%;
+  /* border: 30px solid red; */
+  margin-left: 30px;
+  background-color: #d4d4d4;
+}
+
+@media(max-width:800px){
+  #backDashSearch {
+    /* width: 100%; */
+    /* border: 40px solid blue; */
+    width: 100%;
+    margin-top: -40rem;
+    margin-left: 0.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+
+#backSeedSearch{
+  background-color: #00CCFF;
+  color: white;
+  width: 20%;
+  margin-left: 15rem;
+}
+@media(max-width:800px){
+  #backSeedSearch {
+    display: none;
+  }
+}
