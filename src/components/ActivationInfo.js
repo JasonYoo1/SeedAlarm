@@ -44,10 +44,7 @@ const ActivateInfo = (event) => {
        <Container style = {{}}className="login-container" id ='activationCont'>
           <h1 className='congratsfont'>Congratulations!</h1>
           <br/>
-          <h3 className='congratsfont'><svg xmlns="http://www.w3.org/2000/svg" width="520" height="72" viewBox="0 0 520 72">
-          <text id="Your_activation_has_been_successful_thank_you_for_choosing_Seed_Alarm._See_your_SIM_cards_phone_number_below._We_recommend_writing_down_for_your_reference." data-name="Your activation has been successful, thank you for choosing Seed Alarm. See your SIM cards phone number below. We recommend writing down for your reference." font-size="16" font-family="ArialMT, Arial"><tspan x="0" y="14">Your activation has been successful, thank you for choosing Seed Alarm. </tspan><tspan x="0" y="39">See your SIM cards phone number below. We recommend writing down </tspan><tspan x="0" y="64">for your reference.</tspan></text>
-          </svg>
-          </h3>
+          <p className='activationParagraph'>Your activation has been successful, thank you for choosing Seed Alarm. See your SIM cards phone number below. We recommend writing this number down for your reference</p>
           <br/>
           <h3 className='congratsfont'>Number: {newPhone}</h3>
           <div className = 'actBtnCont'>
