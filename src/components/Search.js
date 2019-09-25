@@ -41,8 +41,10 @@ const SearchInfo = () => {
             <br></br>
             <br></br>
             <br></br>
+            
            <Container style={{width :'90%', height: '95%'}} className="login-container">
-<svg xmlns="http://www.w3.org/2000/svg" margin= 'auto' width="500" className ='tryingTest' height="483" viewBox="0 0 608 483">
+             
+<svg xmlns="http://www.w3.org/2000/svg" margin= '400px auto auto auto' width="500" className ='tryingTest' height="483" viewBox="0 0 608 483">
 <g id="Group_648" data-name="Group 648" transform="translate(-339 -277)">
 <g id="Component_1" data-name="Component 1" transform="translate(339 277)">
   <g id="Rectangle_293" data-name="Rectangle 293" fill="#fff" stroke="#dadbe6" stroke-width="1">
