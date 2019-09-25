@@ -431,7 +431,7 @@ h4 {
 
 
 .refillLeft{
-  margin-left: 15rem;
+  margin-left: 14rem;
   /* border: 1px solid blue; */
 
 }
@@ -578,3 +578,35 @@ h4 {
   }
 }
 
+@media(max-width: 800px){
+  .dashImg{
+    /* display: none; */
+    width: 30%;
+    margin-left: 30%;
+  }
+}
+
+.dashcontainer{
+  background-color: #d4d4d4;
+  border-radius: 10px;
+  overflow: visible;
+  padding: 20px;
+  opacity: 0.9;
+  /* margin: auto; */
+  text-align: left;
+  /* border: 30px solid black; */
+  margin-top: 2rem;
+}
+
+@media(max-width: 800px){
+  .dashcontainer{
+    /* border: 13px solid green; */
+    margin-top: 17rem;
+  }
+}
+
+@media(max-width: 800px){
+  .dashText{
+    text-align: center;
+  }
+}
