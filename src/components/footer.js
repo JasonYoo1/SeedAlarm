@@ -21,7 +21,6 @@ export default class Footer extends React.Component {
 
   </Container>
 </Navbar>
-
     );
   }
 }

@@ -247,7 +247,7 @@ h4 {
 
 @media(max-width: 800px){
   .footer{
-
+    margin-top: 10rem;
   }
 }
 
