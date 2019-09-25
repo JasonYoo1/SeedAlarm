@@ -27,6 +27,7 @@ import { UserContext } from './context/UserContext'
 
 import bg_A1_Rectangle_2_pattern from './bg_A1_Rectangle_2_pattern.png'
 import clockwise from './clockwise.gif'
+import '../App.css'
 
 
 
@@ -66,21 +67,21 @@ const Refill = ({ history }) => {
               <br></br>
               <br></br>
               <br></br>
-              <Container className="login-container">
+              <Container className="refillCont">
       <Row>
         <Col lg="6">
           {/* <h1>Refill Your Account </h1> */}
           <p>
             <p>
-              <img width='80%' src ={clockwise} />
+              <img className='responsiveImg' width='80%' src ={clockwise} />
             </p>
           </p>
         </Col>
         <Col lg="6">
-          <Form onSubmit={handleSubmit}>
+          <Form className='responsiveForm' onSubmit={handleSubmit}>
             <FormGroup>
               <h1 htmlFor="#username">Refill</h1>
-              <p>Enter your 10 digit cellphone number you recived when activating your SIM card or enter the 19 digit code located on the SIM. Do not enter the letters. Only Numbers.</p>
+              <p className='refillFont'>Enter your 10 digit cellphone number you recived when activating your SIM card or enter the 19 digit code located on the SIM. Do not enter the letters. Only Numbers.</p>
               <FormInput
                 id="#phone"
                 name="phone"

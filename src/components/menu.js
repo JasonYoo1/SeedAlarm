@@ -15,6 +15,10 @@ import {  Navbar,
 
 import Seed_Alarm___No_Background_01_A1_Rectangle_4_pattern from './Seed_Alarm___No_Background_01_A1_Rectangle_4_pattern.png'
 import Seed_Alarm___No_Background_01_A1_Rectangle_4_pattern2x from './Seed_Alarm___No_Background_01_A1_Rectangle_4_pattern2x.png'
+
+import "../App.css"
+
+
 export default class Menu extends React.Component {
   constructor(props) {
     super(props);
@@ -49,7 +53,7 @@ export default class Menu extends React.Component {
   render() {
     return (
 
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" overflow="visible">
+      <Navbar className='menuBar' collapseOnSelect expand="lg" bg="dark" variant="dark" overflow="visible">
   <Navbar.Brand href="#home">
   <img width="50%" src= { Seed_Alarm___No_Background_01_A1_Rectangle_4_pattern2x } />
   </Navbar.Brand>
