@@ -5,6 +5,13 @@
   margin: auto;
 }
 
+@media(max-width: 900px){
+  .App{
+    width: 500px;
+
+  }
+}
+
 
 .App-link {
   color: #61dafb;
@@ -63,6 +70,9 @@ h4 {
   padding: 20px;
   opacity: 0.9;
   margin: auto;
+  text-align: left;
+  /* border: 30px solid black; */
+  margin-top: -3rem;
 }
 
 .blueSim{
@@ -206,12 +216,6 @@ h4 {
   width: 103%;
   padding-left: 1rem;
   /* border: 1px solid blue; */
-}
-
-.login-container {
-  text-align: left;
-  /* border: 30px solid black; */
-  margin-top: -3rem;
 }
 
 #activationCont{
@@ -434,4 +438,69 @@ h4 {
 
 .refillPay{
   border: 1px solid black;
+}
+
+@media(max-width: 850px){
+  .menuBar{
+      /* border: 10px solid green; */
+      width: 500px;
+      
+  }
+}
+
+.refillCont{
+  background-color: #d4d4d4;
+  border-radius: 10px;
+  overflow: visible;
+  padding: 20px;
+  opacity: 0.9;
+  margin: auto;
+  text-align: left;
+  /* border: 30px solid black; */
+  margin-top: -3rem;
+}
+
+
+@media(max-width: 850px){
+  .refillCont{
+      /* border: 10px solid blue; */
+      margin-top: 15rem;
+      height: 25rem;
+  }
+}
+
+@media(max-width: 850px){
+  .responsiveForm{
+    /* border: 1px solid red; */
+  }
+}
+
+.responsiveImg{
+  /* border: 1px solid green; */
+}
+
+@media(max-width: 850px){
+  .responsiveImg{
+    display: none;
+  }
+}
+
+@media(max-width: 850px){
+  .backgroundTest{
+    height: 100%;
+  }
+}
+
+@media(max-width: 850px){
+  .refillFont{
+    color: black;
+  }
+}
+
+
+@media(max-width: 800px){
+  .footerSht{
+    /* border: 1px solid blue; */
+    margin-top: 35rem;
+  }
 }
