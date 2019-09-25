@@ -75,6 +75,8 @@ h4 {
   margin-top: -3rem;
 }
 
+
+
 @media(max-width:800px){
   .login-container{
     margin-top: 13.5rem;
@@ -191,6 +193,10 @@ h4 {
 .navbar {
   /* background-color: #286a93; */
   /* overflow: visible; */
+  /* margin-bottom: 2rem; */
+}
+
+.menuBar{
   margin-bottom: 2rem;
 }
 
@@ -230,14 +236,23 @@ h4 {
 
 /* footer */
 
-.footer-container {
-  background-color: #286a93;
-  color: white;
-  margin-top: 40px;
-  padding: 20px;
+.footer{
+  text-align: center;
+  max-width: 1150px;
+  margin: auto;
+  border-radius: 1rem;
 }
 
+@media(max-width: 800px){
+  .footer{
 
+  }
+}
+
+.footerContainer{
+  margin: auto;
+  text-align: center;
+}
 /* CheckoutCard */
 
 .checkoutCard{
@@ -262,6 +277,12 @@ h4 {
 
 #footerCard {
   margin-top: 40px;
+}
+.footerText{
+  /* border: 1px solid blue; */
+  margin: auto;
+  font-family: 'Times New Roman', Times, serif;
+
 }
 
 .card-header {
@@ -436,10 +457,31 @@ h4 {
 
 }
 
+@media(max-width:800px){
+  .refillLeft{
+    /* border: 1px solid blue; */
+    margin-left: -0.3rem;
+  }
+}
+
+@media(max-width:800px){
+  .refillText{
+    border: 1px solid green;
+    display: none;
+  }
+}
+
 .refillFormGroup{
   /* border: 1px solid green; */
   width: 80%;
   /* margin-left: 8rem; */
+}
+
+@media(max-width:800px){
+  .refillFormGroup{
+    /* border: 1px solid green; */
+    /* margin-left: 8rem; */
+  }
 }
 
 .refillPay{
@@ -470,7 +512,7 @@ h4 {
 @media(max-width: 850px){
   .refillCont{
       /* border: 10px solid blue; */
-      margin-top: 15rem;
+      margin-top: 12rem;
       height: 25rem;
   }
 }
@@ -504,18 +546,18 @@ h4 {
   }
 }
 
-
+/* 
 @media(max-width: 850px){
   .footerSht{
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
     margin-top: 36rem;
   }
-}
+} */
 
 @media(max-width: 800px){
   .RegCheckOut{
     /* border: 1px solid red; */
-    margin-top: 13.5rem;
+    margin-top: 9.2rem;
   }
 }
 
@@ -610,3 +652,61 @@ h4 {
     text-align: center;
   }
 }
+
+.refillContainer{
+  background-color: #d4d4d4;
+  border-radius: 10px;
+  overflow: visible;
+  padding: 20px;
+  opacity: 0.9;
+  margin: auto;
+  text-align: left;
+  /* border: 30px solid black; */
+  margin-top: -3rem;
+}
+
+@media(max-width: 800px){
+  .refillContainer{
+    border: 10px solid blue;
+    margin-top: 15rem;
+
+  }
+}
+
+
+@media(max-width: 800px){
+  .payPalBtnRefill{
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media(max-width: 800px){
+  .checkoutCont{
+    width: 80%;
+    margin: -3rem auto auto auto;
+  }
+}
+
+
+.refillInfoCont{
+  background-color: #d4d4d4;
+border-radius: 10px;
+overflow: visible;
+padding: 20px;
+opacity: 0.9;
+margin: auto;
+text-align: left;
+/* border: 30px solid black; */
+margin-top: -3rem;
+}
+
+@media(max-width:800px){
+  .refillInfoCont{
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 13rem;
+  }
+}
+
+

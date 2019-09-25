@@ -38,10 +38,10 @@ const RefillInfo = () => {
             <br></br>
             <br></br>
             <br/>
-           <Container className="login-container">
-              <h1 className='congratsRefill'>Congratulations!</h1>
+           <Container className="refillInfoCont">
+              <h1 className='congratsRefill'>There was a problem with your request. </h1>
               <br/>
-              <p className='congratsRefill'>Your refill has been successful! Thank you for choosing Seed Alarm.</p>
+              <p className='congratsRefill'>Please check if you have credit's available.</p>
               <br/>
               <div className = 'actBtnCont'>
               <Link to='/dashboard'>
@@ -70,34 +70,32 @@ const RefillInfo = () => {
         
             return (
       
-                <Container className="card-container">
-                  <Card className="card">
-                    <CardHeader className="card-header">Welcome</CardHeader>
-                    <CardBody className="card-body">
-                     <p>
-                         Thank you!<br/><br/>
-                         {effective}<br/><br/>
-                        {plan}
-                         
-                     </p>
-                    </CardBody>
-                  </Card>
-                  <CardBody className='testing'>
-                  <Form>
+              <Card className="backgroundTesting">
+              <Card.Img className="backgroundTest" src= {bg_A1_Rectangle_2_pattern } />
+              <Card.ImgOverlay >
+                <br></br>
+                <br></br>
+                <br></br>
+                <br/>
+               <Container className="refillInfoCont">
+                  <h1 className='congratsRefill'>Congratulations!</h1>
+                  <br/>
+                  <p className='congratsRefill'>Your refill has been successful! Your refill is effective: {effective} Thank you for choosing Seed Alarm.</p>
+                  <br/>
+                  <div className = 'actBtnCont'>
                   <Link to='/dashboard'>
-                    <Button block squared >
-                      Back to Dashboard
-                    </Button>
-                    <Button block squared >
-                      Search Another SIM/PHONE
-                    </Button>
+                    <button className="activationInfoBtn" id='backSeed' >
+                      Account Dashboard
+                    </button>
+                    <button className="activationInfoBtn" id='backDash' >
+                      Back to SeedAlarm
+                    </button>
                   </Link>
-                </Form>
-            
-                  </CardBody>
-                </Container>
-                //this is the activate sim below:
-            
+                  </div>
+            </Container>
+          </Card.ImgOverlay>
+            </Card>        
+                
               );
         }
 

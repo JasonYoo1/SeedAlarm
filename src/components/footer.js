@@ -13,13 +13,15 @@ import '../App.css'
 export default class Footer extends React.Component {
   render() {
     return (
-      <div className='footerSht'>
-      <Card fixed="bottom" className="text-center" id ='footerCard'>
-        <Card.Header>Need Help?</Card.Header>
-        <Card.Footer className="text-muted">info@seedalarm.com<br/>1.800.201.0674</Card.Footer>
-      </Card>
-      </div>
-      
+
+      <Navbar className='footer' fixed="bottom" expand="lg" variant="light" bg="light">
+  <Container className='footerContainer'>
+    <h6 className='footerText'><h2 className='footerText'>Need Help?</h2>info@seedalarm.com<br/>
+    1.800.201.0674</h6>
+
+  </Container>
+</Navbar>
+
     );
   }
 }

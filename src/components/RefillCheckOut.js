@@ -44,21 +44,22 @@ const RefillCheckOut = ({ history }) => {
       return (
         
           <div>
-
-
+<br></br>
 <Card >
       <Card.Img src= {bg_A1_Rectangle_2_pattern } />
       <Card.ImgOverlay>
         <br></br>
         <br></br>
         <br></br>
-        <Container className="login-container">
+        <br></br>
+        <Container className="refillContainer">
        <Row >
          <Col className =' refillLeft' sm="4">
-           <h3>Refill</h3>
+           <h3 className='refillText'>Refill</h3>
            <p className='refillText'>1. Pay to refill your Plan<br/><br/>
            2. Enter SIM card phone number<br/><br/>
            3. ENJOY! </p>
+           <div className= "payPalBtnRefill">
          <PayPalButton 
           amount="0.01"
           onSuccess={(details, data) => {
@@ -76,7 +77,7 @@ const RefillCheckOut = ({ history }) => {
           options={{
             clientId: "Ac82qeONuJNMP32o8kE_DVQOpFZCoTtr2ovk5AM-oSotdXq6Xe1XdBCN1s_E-1NTEICVMSOJLwUaofOY"
           }}
-        />
+        /></div>
          </Col>
          <Col sm="4">
            {/* <h2>Account</h2>
