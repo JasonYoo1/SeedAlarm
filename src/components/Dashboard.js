@@ -61,7 +61,6 @@ export default function Dashboard({history}) {
       <Card.ImgOverlay>
         <br></br>
         <br></br>
-        <br></br>
         <Container style={{margin: '40px auto auto auto'}}className="login-container">
       <Row>
         <Col lg="6">

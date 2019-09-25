@@ -11,6 +11,9 @@ import {
   Row,
   Col
 } from "shards-react";
+import {
+  Card 
+} from 'react-bootstrap';
 import axios from "axios";
 import { Link } from "react-router-dom";
 import {CardElement, injectStripe} from 'react-stripe-elements';
@@ -22,6 +25,7 @@ import { Route, Switch } from "react-router-dom";
 
 import { UserContext } from './context/UserContext'
 
+import bg_A1_Rectangle_2_pattern from './bg_A1_Rectangle_2_pattern.png'
 import clockwise from './clockwise.gif'
 
 
@@ -54,9 +58,15 @@ const Refill = ({ history }) => {
     
     <div>
       <br/>
-      <br/>
-      <br/>
-    <Container className="login-container">
+      <Card className="backgroundTesting">
+            <Card.Img className="backgroundTest" src= {bg_A1_Rectangle_2_pattern } />
+            <Card.ImgOverlay >
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <Container className="login-container">
       <Row>
         <Col lg="6">
           {/* <h1>Refill Your Account </h1> */}
@@ -88,6 +98,8 @@ const Refill = ({ history }) => {
         </Col>
       </Row>
     </Container>
+        </Card.ImgOverlay>
+          </Card>
 
     </div>
   );
