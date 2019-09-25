@@ -158,7 +158,7 @@ const CheckOut = ({ history }) => {
         <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"/>
         </form> */} */}
 
-<Card >
+<Card className='checkoutCont'>
       <Card.Img src= {bg_A1_Rectangle_2_pattern } />
       <Card.ImgOverlay>
         <br></br>

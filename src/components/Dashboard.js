@@ -61,7 +61,7 @@ export default function Dashboard({history}) {
       <Card.ImgOverlay>
         <br></br>
         <br></br>
-        <Container style={{margin: '40px auto auto auto'}}className="login-container">
+        <Container  className="dashcontainer">
       <Row>
         <Col lg="6">
           <img className = 'dashImg' width = '80%' src = {dashboardimage}/>
@@ -69,8 +69,8 @@ export default function Dashboard({history}) {
         <Col lg="6">
           <Form onSubmit={handleSubmit}>
             <FormGroup>
-            <h2>Account</h2>
-           <p>Enter your 10 cellphone number you recieved when activating your SiM card or enter the 19 digit code located on the SIM. Do not enter the letters.(Numbers Only)</p>
+            <h2 className='dashText'>Account</h2>
+           <p className='dashText'>Enter your 10 cellphone number you recieved when activating your SiM card or enter the 19 digit code located on the SIM. Do not enter the letters.(Numbers Only)</p>
               <label htmlFor="#searchSim">Search By Sim</label>
               <FormInput
                 id="#searchSim"

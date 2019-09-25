@@ -42,9 +42,9 @@ const SearchInfo = () => {
             <br></br>
             <br></br>
             
-           <Container style={{width :'90%', height: '95%'}} className="login-container">
-             
-<svg xmlns="http://www.w3.org/2000/svg" margin= '400px auto auto auto' width="500" className ='tryingTest' height="483" viewBox="0 0 608 483">
+           <Container style={{width :'90%', height: '95%'}}className="searchCont">
+             <div className='accountInfo'>
+<svg xmlns="http://www.w3.org/2000/svg" width="500" className ='tryingTest' height="483" viewBox="0 0 608 483">
 <g id="Group_648" data-name="Group 648" transform="translate(-339 -277)">
 <g id="Component_1" data-name="Component 1" transform="translate(339 277)">
   <g id="Rectangle_293" data-name="Rectangle 293" fill="#fff" stroke="#dadbe6" stroke-width="1">
@@ -71,14 +71,15 @@ const SearchInfo = () => {
 </g>
 </g>
 </svg>
+</div>
               <div className = 'searchBtns'>
                   <Link to='/RefillCheckOut'>
-                    <button className="activationInfoBtn" id='backSeed' >
+                    <button className="activationInfoBtn" id='backSeedSearch' >
                       Refill
                     </button>
                     </Link>
                     <Link to='/dashboard'>
-                    <button className="activationInfoBtn" id='backDash' >
+                    <button className="activationInfoBtn" id='backDashSearch' >
                       Back to SeedAlarm
                     </button>
                     </Link>
@@ -111,7 +112,7 @@ const SearchInfo = () => {
                 <br></br>
                 <br></br>
                 <br></br>
-               <Container style={{width :'90%', height: '95%'}} className="login-container">
+               <Container style={{width :'90%', height: '95%'}} className="searchCont">
 
 <svg xmlns="http://www.w3.org/2000/svg" margin= 'auto' width="500" className ='tryingTest' height="483" viewBox="0 0 608 483">
   <g id="Group_648" data-name="Group 648" transform="translate(-339 -277)">
@@ -142,12 +143,12 @@ const SearchInfo = () => {
 </svg>
                   <div className = 'searchBtns'>
                   <Link to='/RefillCheckOut'>
-                    <button className="activationInfoBtn" id='backSeed' >
+                    <button className="activationInfoBtn" id='backSeedSearch' >
                       Refill
                     </button>
                     </Link>
                     <Link to='/dashboard'>
-                    <button className="activationInfoBtn" id='backDash' >
+                    <button className="activationInfoBtn" id='backDashSearch' >
                       Back to SeedAlarm
                     </button>
                     </Link>

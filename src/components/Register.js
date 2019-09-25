@@ -77,7 +77,7 @@ const Register = ({ history }) => {
         <br></br>
         <br></br>
         <br></br>
-       <Container className="login-container">
+       <Container className="activateContainer">
        <Row>
          <Col lg="6">
            <h3 className = 'responsiveTitle'> Activate your SIM card </h3>
