@@ -242,6 +242,7 @@ h4 {
   max-width: 1150px;
   margin: auto;
   border-radius: 1rem;
+  margin-top: 3rem;
 }
 
 @media(max-width: 800px){
