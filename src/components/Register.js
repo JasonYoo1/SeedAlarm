@@ -80,18 +80,18 @@ const Register = ({ history }) => {
        <Container className="login-container">
        <Row>
          <Col lg="6">
-           <h3> Activate your SIM card </h3>
+           <h3 className = 'responsiveTitle'> Activate your SIM card </h3>
            <p>
             To activate, enter the 19 digit code located on the back of the SIM. Do not enter the letters, Please enter the numbers only.
                        <br/>
            <br/>
            <p>
-               <img width= "100%" src = {Sim2}></img>
+               <img className ='responsiveImg' width= "100%" src = {Sim2}></img>
             </p>
            </p>
          </Col>
          <Col lg="6">
-           <Form  onSubmit={handleSubmit}>
+           <Form className='responsiveForm' onSubmit={handleSubmit}>
            <FormGroup className = 'FormGroup' >
                <label htmlFor="#username">Full Name</label>
                <FormInput

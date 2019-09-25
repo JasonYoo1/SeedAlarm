@@ -75,6 +75,12 @@ h4 {
   margin-top: -3rem;
 }
 
+@media(max-width:800px){
+  .login-container{
+    margin-top: 13.5rem;
+  }
+}
+
 .blueSim{
   opacity: 200%;
   /* border: 1px solid red; */
@@ -498,9 +504,32 @@ h4 {
 }
 
 
-@media(max-width: 800px){
+@media(max-width: 850px){
   .footerSht{
     /* border: 1px solid blue; */
-    margin-top: 35rem;
+    margin-top: 36rem;
+  }
+}
+
+@media(max-width: 800px){
+  .RegCheckOut{
+    /* border: 1px solid red; */
+    margin-top: 13.5rem;
+  }
+}
+
+@media(max-width: 800px){
+  .responsiveForm{
+    /* border: 1px solid red; */
+    width: 80%;
+    height: 90%;
+    margin-top: -3rem;
+    margin-left: 3.5rem;
+  }
+}
+
+@media(max-width: 800px){
+  .responsiveTitle{
+    display: none;
   }
 }
