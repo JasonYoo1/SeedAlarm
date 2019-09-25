@@ -500,6 +500,7 @@ h4 {
 @media(max-width: 850px){
   .refillFont{
     color: black;
+    /* border: 1px solid blue; */
   }
 }
 
@@ -523,8 +524,9 @@ h4 {
     /* border: 1px solid red; */
     width: 80%;
     height: 90%;
-    margin-top: -3rem;
-    margin-left: 3.5rem;
+    margin-top: -2rem;
+    margin-left: 2rem;
+    padding-top: 1.5rem;
   }
 }
 
