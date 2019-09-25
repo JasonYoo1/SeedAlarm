@@ -565,8 +565,8 @@ h4 {
 @media(max-width: 800px){
   .actBtnCont{
     /* border: 10px solid red; */
-    width: 150%;
-    margin-left: -10rem;
+    width: 200%;
+    margin-left: -13.5rem;
   }
 }
 
