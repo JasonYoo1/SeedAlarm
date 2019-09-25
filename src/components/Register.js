@@ -91,7 +91,7 @@ const Register = ({ history }) => {
            </p>
          </Col>
          <Col lg="6">
-           <Form className='responsiveForm' onSubmit={handleSubmit}>
+           <Form className='responsiveRegForm' onSubmit={handleSubmit}>
            <FormGroup className = 'FormGroup' >
                <label htmlFor="#username">Full Name</label>
                <FormInput
