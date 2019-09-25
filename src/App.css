@@ -52,6 +52,7 @@ h4 {
   margin-top: -3rem;
   /* padding-left: -90rem;
   padding-right: -10rem; */
+  margin-bottom: 13rem;
 }
 
 .activateSimCard{
@@ -466,8 +467,9 @@ h4 {
 
 @media(max-width:800px){
   .refillText{
-    border: 1px solid green;
-    display: none;
+    /* border: 1px solid green; */
+    /* display: none; */
+    text-align: center;
   }
 }
 
@@ -557,7 +559,8 @@ h4 {
 @media(max-width: 800px){
   .RegCheckOut{
     /* border: 1px solid red; */
-    margin-top: 9.2rem;
+    margin-top: 11rem;
+    margin-bottom: 10rem;
   }
 }
 
