@@ -42,9 +42,9 @@ const ActivateInfo = (event) => {
         <br></br>
         <br></br>
        <Container style = {{}}className="login-container" id ='activationCont'>
-          <h1 className='congratsfont'>Congratulations!</h1>
+          <h1 className='congratsfont'>There was an error in your request</h1>
           <br/>
-          <p className='activationParagraph'>Your activation has been successful, thank you for choosing Seed Alarm. See your SIM cards phone number below. We recommend writing this number down for your reference</p>
+          {/* <p className='activationParagraph'>Not enough credits available</p> */}
           <br/>
           <h3 className='congratsfont'>Number: {newPhone}</h3>
           <div className = 'actBtnCont'>
