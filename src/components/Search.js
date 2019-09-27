@@ -148,7 +148,7 @@ const SearchInfo = () => {
                     </button>
                     </Link>
                     <Link to='/dashboard'>
-                    <button className="activationInfoBtn" id='backDashSearch' >
+                    <button className="activationInfoBtn" id='backDashSearch' block>
                       Back to SeedAlarm
                     </button>
                     </Link>
