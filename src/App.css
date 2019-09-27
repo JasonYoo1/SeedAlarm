@@ -860,3 +860,17 @@ margin-top: -3rem;
     flex-direction: column
   }
 }
+
+.nav-link{
+  margin-left: 2rem;
+}
+
+.navbar-brand{
+  margin-left: -8rem;
+}
+
+@media(max-width:800px){
+  .navbar-brand{
+    margin-left: 2rem;
+  }
+}
