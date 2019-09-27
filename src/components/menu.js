@@ -55,6 +55,7 @@ export default class Menu extends React.Component {
     return (
 
       <Navbar className='menuBar' collapseOnSelect expand="lg" overflow="visible">
+        {/* // <Navbar className='menuBar' collapseOnSelect expand="lg" variant="dark" overflow="visible"> */}
   <Navbar.Brand href="#home">
   <img width="50%" src= {newlogo} />
   </Navbar.Brand>
@@ -69,12 +70,12 @@ export default class Menu extends React.Component {
       </NavDropdown> */}
     </Nav>
     <Nav>
-      <Nav.Link href="https://www.seedalarm.com">Seed Alarm</Nav.Link>
-      <Nav.Link eventKey={2} href="/checkout">
+      <Nav.Link className='fontColorNav' href="https://www.seedalarm.com">Seed Alarm</Nav.Link>
+      <Nav.Link eventKey={2} href="/checkout" className='fontColorNav'>
         Activate
       </Nav.Link>
-      <Nav.Link href="/RefillCheckOut">Refill</Nav.Link>
-      <Nav.Link href="/dashboard">Account</Nav.Link>
+      <Nav.Link className='fontColorNav' href="/RefillCheckOut">Refill</Nav.Link>
+      <Nav.Link className='fontColorNav' href="/dashboard">Account</Nav.Link>
     </Nav>
   </Navbar.Collapse>
 </Navbar>
