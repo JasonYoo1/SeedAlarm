@@ -15,6 +15,7 @@ import {  Navbar,
 
 import Seed_Alarm___No_Background_01_A1_Rectangle_4_pattern from './Seed_Alarm___No_Background_01_A1_Rectangle_4_pattern.png'
 import Seed_Alarm___No_Background_01_A1_Rectangle_4_pattern2x from './Seed_Alarm___No_Background_01_A1_Rectangle_4_pattern2x.png'
+import newlogo from './newlogo.png'
 
 import "../App.css"
 
@@ -53,9 +54,9 @@ export default class Menu extends React.Component {
   render() {
     return (
 
-      <Navbar className='menuBar' collapseOnSelect expand="lg" bg="dark" variant="dark" overflow="visible">
+      <Navbar className='menuBar' collapseOnSelect expand="lg" overflow="visible">
   <Navbar.Brand href="#home">
-  <img width="50%" src= { Seed_Alarm___No_Background_01_A1_Rectangle_4_pattern2x } />
+  <img width="50%" src= {newlogo} />
   </Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
