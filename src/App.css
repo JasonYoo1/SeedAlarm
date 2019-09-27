@@ -860,3 +860,7 @@ margin-top: -3rem;
     flex-direction: column
   }
 }
+
+.nav-link{
+  margin-left: 2rem;
+}
