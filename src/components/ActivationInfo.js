@@ -1,18 +1,8 @@
 import React, { useState, useContext, useEffect } from "react";
-import axios from 'axios';
 import { Link } from "react-router-dom";
 
 import {
-  Form,
-  FormInput,
-  FormTextarea,
-  FormGroup,
-  Col,
-  CardHeader,
-  CardBody,
   Container,
-  Button,
-  Row
 } from "shards-react";
 
 import {
@@ -21,10 +11,6 @@ import {
 
 
 import bg_A1_Rectangle_2_pattern from './bg_A1_Rectangle_2_pattern@2x.png'
-import SIM_card_with_barcode_01_A1_Rectangle_13_pattern from './SIM_card_with_barcode_01_A1_Rectangle_13_pattern.png'
-import Seed_Alarm___No_Background_01_A1_Rectangle_4_pattern from './Seed_Alarm___No_Background_01_A1_Rectangle_4_pattern.png'
-import Sim2 from './Sim2.png'
-
 import '../App.css'
 
 
@@ -35,6 +21,7 @@ const ActivateInfo = (event) => {
       let newPhone = 'Error in registering. Please Try again'
       return (
         <div> 
+        {console.log(`written by Jason Yoo https://www.linkedin.com/in/jasonyoo1/ `)}
       <Card className="backgroundTesting">
       <Card.Img className="backgroundTest" src= {bg_A1_Rectangle_2_pattern } />
       <Card.ImgOverlay>
@@ -65,18 +52,18 @@ const ActivateInfo = (event) => {
         );
       }else{
         let register = localStorage.getItem('register')
-        console.log('this is from site', register)
+        // console.log('this is from site', register)
         let XMLParser = require('react-xml-parser');
         let xml = new XMLParser().parseFromString(register);
-        console.log(xml.children[3].value)
+        // console.log(xml.children[3].value)
         let newPhone = xml.children[3].value
         let plan = xml.children[4].value
         localStorage.setItem('newPhone', newPhone)
+        console.log(`written by Jason Yoo https://www.linkedin.com/in/jasonyoo1/ `)
 
-
-      
           return (
             <div> 
+              {console.log(`written by Jason Yoo https://www.linkedin.com/in/jasonyoo1/ `)}
             <Card className="backgroundTesting">
             <Card.Img className="backgroundTest" src= {bg_A1_Rectangle_2_pattern } />
             <Card.ImgOverlay >

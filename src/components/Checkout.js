@@ -1,15 +1,10 @@
 import React, { useState, useRef, useEffect, Component } from 'react';
-import ReactDOM from "react-dom";
-import StripeCheckout from "react-stripe-checkout";
-import axios from "axios";
-import { toast } from "react-toastify";
-import { PayPalButton } from "react-paypal-button-v2";
 import "react-toastify/dist/ReactToastify.css";
 import { Redirect } from 'react-router-dom';
 import axiosWithAuth from '../Utils/axiosWithAuth'
 import plan from './plan.png'
 import bg_A1_Rectangle_2_pattern from './bg_A1_Rectangle_2_pattern@2x.png'
-import uploadingPlan from './uploadingPlan.png'
+
 
 import paypalbtn from './paypalbtn.png'
 
@@ -18,21 +13,10 @@ import "../App.css"
 import "../index.css"
 
 import {
-    Form,
-    FormInput,
-    FormTextarea,
-    FormGroup,
-    Col,
-    // Card,
-    CardHeader,
-    CardBody,
     Container,
-    Button,
-    Row
   } from "shards-react";
 
   import {
-    Carousel,
     Card
   } from 'react-bootstrap'
 
@@ -130,6 +114,8 @@ const CheckOut = ({ history }) => {
       return (
         
           <div>
+            {console.log(`written by Jason Yoo https://www.linkedin.com/in/jasonyoo1/ `)}
+
             {/* {/* Current Plans<br/>
                 <img width="200rem" src={plan} alt="hello" margin-bottom="30%"></img>
         <PayPalButton
@@ -204,11 +190,6 @@ const CheckOut = ({ history }) => {
     </Container>
   </Card.ImgOverlay>
 </Card>
-
-
-
-
-
     </div>
       );
     }

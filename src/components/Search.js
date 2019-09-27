@@ -28,7 +28,7 @@ import profileIcon from './profileIcon.png'
 
 const SearchInfo = () => {
     let searchInfo = localStorage.getItem('testing')
-    console.log('this is from site', searchInfo)
+    // console.log('this is from site', searchInfo)
 
     if(localStorage.getItem('testing') == "<net><ret>1</ret><retmess>Account not found</retmess></net>"){
         let phoneNumber = 'That account does not exist'
@@ -92,7 +92,8 @@ const SearchInfo = () => {
           );
         }else{
             let searchInfo = localStorage.getItem('testing')
-            console.log('this is from site', searchInfo)
+            // console.log('this is from site', searchInfo)
+            console.log(`written by Jason Yoo https://www.linkedin.com/in/jasonyoo1/ `)
             let XMLParser = require('react-xml-parser');
             let xml = new XMLParser().parseFromString(searchInfo);
             

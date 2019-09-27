@@ -43,7 +43,7 @@ const Refill = ({ history }) => {
     axios
       .post(`https://cors-anywhere.herokuapp.com/https://portal.speedtalk.mobi/service.aspx?cmd=stRefill&agid=symbol%40seedalarm.com&agpass=ZynetInc4199&phone=${newRefill.phone}&sku=8035&amount=1.5`, newRefill)
       .then(res => {
-        console.log(res.data);
+        // console.log(res.data);
         localStorage.setItem("refillInfo", res.data);
         localStorage.setItem('currentPhone', newRefill.phone)
         // localStorage.setItem("sim", newRefill.sim);
@@ -58,6 +58,7 @@ const Refill = ({ history }) => {
   return (
     
     <div>
+          {console.log(`written by Jason Yoo https://www.linkedin.com/in/jasonyoo1/ `)}
       <br/>
       <Card className="backgroundTesting">
             <Card.Img className="backgroundTest" src= {bg_A1_Rectangle_2_pattern } />
