@@ -851,3 +851,12 @@ margin-top: -3rem;
   text-decoration: none;
   list-style: none;
 }
+
+
+@media(max-width:800px){
+  .navbar{
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column
+  }
+}
