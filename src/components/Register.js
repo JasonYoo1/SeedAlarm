@@ -2,49 +2,27 @@ import React, { useState } from "react";
 import {
   Form,
   FormInput,
-  InputGroup,
-  InputGroupText,
-  InputGroupAddon,
   FormGroup,
-  Button,
   Container,
   Row,
   Col,
 } from "shards-react";
 
 import {
-  Carousel,
   Card
 } from 'react-bootstrap'
 
-import { PayPalButton } from "react-paypal-button-v2";
 import axiosWithAuth from '../Utils/axiosWithAuth'
 
 
 
 import axios from "axios";
-import { Link } from "react-router-dom";
-import {CardElement, injectStripe} from 'react-stripe-elements';
-
-import Footer from "./footer";
-import Menu from "./menu";
-import Dashboard from "./Dashboard";
-import { Route, Switch } from "react-router-dom";
-
-import { UserContext } from './context/UserContext'
 
 import '../App.css'
 
 import bg_A1_Rectangle_2_pattern from './bg_A1_Rectangle_2_pattern@2x.png'
-import SIM_card_with_barcode_01_A1_Rectangle_13_pattern from './SIM_card_with_barcode_01_A1_Rectangle_13_pattern.png'
-import Seed_Alarm___No_Background_01_A1_Rectangle_4_pattern from './Seed_Alarm___No_Background_01_A1_Rectangle_4_pattern.png'
 import Sim2 from './Sim2.png'
 
-var sectionStyle = {
-  width: "100%",
-  height: "9000px",
-  backgroundImage: `url(${bg_A1_Rectangle_2_pattern})`
-};
 
 const Register = ({ history }) => {
   const [activate, setActivate] = useState({ sim: "", zip:"", fullName:"", city: "", contact: "", email:"", state: ""});
@@ -58,7 +36,7 @@ const Register = ({ history }) => {
     axios
       .post(`https://cors-anywhere.herokuapp.com/https://portal.speedtalk.mobi/service.aspx?cmd=stActivate&agid=symbol%40seedalarm.com&agpass=ZynetInc4199&sku=8035&amount=1.5&sim=${activate.sim}&firstName=${activate.fullName}&lastName=&address1=&address2=&city=&state=&zip=${activate.zip}&phone=&email=&campaign=`, activate)
       .then(res => {
-        console.log(res.data);
+        // console.log(res.data);
         localStorage.setItem("register", res.data);
         localStorage.setItem("sim", activate.sim);
         localStorage.setItem("token", null);
@@ -144,6 +122,7 @@ const Register = ({ history }) => {
     </Container>
   </Card.ImgOverlay>
 </Card>
+{console.log(`written by Jason Yoo https://www.linkedin.com/in/jasonyoo1/ `)}
     </div>
   );
 };

@@ -25,12 +25,11 @@ import bg_A1_Rectangle_2_pattern from './bg_A1_Rectangle_2_pattern.png'
 
 const RefillInfo = () => {
     let refillInfo = localStorage.getItem('testing')
-    console.log('this is from site', refillInfo)
+    // console.log('this is from site', refillInfo)
 
     if(localStorage.getItem('testing') == "<net><ret>1</ret><retmess>No web-credit available.</retmess></net>" || "<net><ret>1</ret><retmess>Account not found</retmess></net>"){
         let simNumber = 'Error'
         return (
-      
           <Card className="backgroundTesting">
           <Card.Img className="backgroundTest" src= {bg_A1_Rectangle_2_pattern } />
           <Card.ImgOverlay >
@@ -55,14 +54,15 @@ const RefillInfo = () => {
               </div>
         </Container>
       </Card.ImgOverlay>
+      {console.log(`written by Jason Yoo https://www.linkedin.com/in/jasonyoo1/ `)}
         </Card>        
           );
         }else{
             let refillInfo = localStorage.getItem('refillInfo')
-            console.log('this is from site', refillInfo)
+            // console.log('this is from site', refillInfo)
             let XMLParser = require('react-xml-parser');
             let xml = new XMLParser().parseFromString(refillInfo);
-            console.log(xml)
+            // console.log(xml)
             let effective = xml.children[3].value
             let plan = xml.children[2].value
 
