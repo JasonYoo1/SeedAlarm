@@ -56,7 +56,7 @@ export default class Menu extends React.Component {
 
       <Navbar className='menuBar' collapseOnSelect expand="lg" overflow="visible">
         {/* // <Navbar className='menuBar' collapseOnSelect expand="lg" variant="dark" overflow="visible"> */}
-  <Navbar.Brand href="#home">
+  <Navbar.Brand href="https://landingseedalarm.netlify.com/">
   <img width="50%" src= {newlogo} />
   </Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
