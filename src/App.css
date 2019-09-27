@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
+
 .App {
   text-align: center;
   font-family: 'Lato', sans-serif;
@@ -17,6 +18,7 @@
 
 .App-link {
   color: #61dafb;
+  /* border: 1px solid blue; */
 }
 
 @keyframes App-logo-spin {
@@ -109,6 +111,7 @@ h2, h3, h5,h6, p{
   background-color: white;
   background: white;
   /* margin-top: 3000px */
+  margin-bottom: 10rem;
 }
 
 .actualButton{
@@ -246,11 +249,17 @@ h2, h3, h5,h6, p{
 /* footer */
 
 .footer{
-  text-align: center;
+  /* text-align: center;
   max-width: 1150px;
   margin: auto;
   border-radius: 1rem;
-  margin-top: 3rem;
+  margin-top: 3rem; */
+  background: #f0f0f0;
+  padding: 1em 0 3em 0;
+  text-align: center;
+  /* margin-top: -20rem; */
+  max-width: 1150px;
+  margin: 10rem auto auto auto;
 }
 
 @media(max-width: 800px){
@@ -290,6 +299,7 @@ h2, h3, h5,h6, p{
 .card-container {
   display: grid;
   grid-template-columns: auto;
+  margin-bottom: 10rem;
 }
 
 #footerCard {
@@ -691,6 +701,7 @@ h2, h3, h5,h6, p{
   text-align: left;
   /* border: 30px solid black; */
   margin-top: -3rem;
+  margin-bottom: 20rem;
 }
 
 @media(max-width: 800px){
@@ -834,4 +845,9 @@ margin-top: -3rem;
   #backSeedSearch {
     display: none;
   }
+}
+
+.icons{
+  text-decoration: none;
+  list-style: none;
 }
