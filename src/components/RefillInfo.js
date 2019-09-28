@@ -65,9 +65,6 @@ const RefillInfo = () => {
             // console.log(xml)
             let effective = xml.children[3].value
             let plan = xml.children[2].value
-
-
-        
             return (
       
               <Card className="backgroundTesting">
