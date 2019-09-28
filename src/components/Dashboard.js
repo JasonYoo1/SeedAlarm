@@ -45,7 +45,7 @@ export default function Dashboard({history}) {
     axios
       .get(`https://cors-anywhere.herokuapp.com/https://portal.speedtalk.mobi/service.aspx?cmd=stCheckMDN&agid=symbol%40seedalarm.com&agpass=ZynetInc4199&phone=${searchCreds.phone}&sim=${searchCreds.searchSim}`)
       .then(res => {
-        console.log('intitial search request', res.data);
+        // console.log('intitial search request', res.data);
         localStorage.setItem("testing", res.data);
         // localStorage.setItem("sim", searchCreds.sim);
         history.push("/search");

@@ -17,7 +17,7 @@ import '../App.css'
 
 const ActivateInfo = (event) => {
 
-    if(localStorage.getItem('register') == "<net><ret>99</ret></net>"){
+    if(localStorage.getItem('register') == "<net><ret>99</ret></net>" || null){
       let newPhone = 'Error in registering. Please Try again'
       return (
         <div> 

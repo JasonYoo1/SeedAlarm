@@ -114,6 +114,12 @@ h2, h3, h5,h6, p{
   margin-bottom: 10rem;
 }
 
+@media(max-width: 800px){
+  .backgroundTesting{
+    border: 1px solid blue;
+  }
+}
+
 .actualButton{
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
@@ -265,6 +271,7 @@ h2, h3, h5,h6, p{
 @media(max-width: 800px){
   .footer{
     display: none;
+
   }
 }
 
@@ -857,7 +864,7 @@ margin-top: -3rem;
   .navbar{
     /* border: 1px solid blue; */
     display: flex;
-    flex-direction: column
+    flex-direction: column;
   }
 }
 
