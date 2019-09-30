@@ -985,3 +985,10 @@ margin-top: -3rem;
   margin: auto;
   font-family: 'Lato', sans-serif;
 }
+
+@media(max-width:800px){
+  #activateCheckoutCon{
+    margin: auto auto auto -3rem;
+  }
+}
+

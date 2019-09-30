@@ -206,8 +206,8 @@ const CheckOut = ({ history }) => {
     
   </Card.ImgOverlay>
 </Card> */}
-
-<Card style={{height: '10%'}}>
+<div className='ridBorder'>
+<Card  style={{height: '10%'}}>
       <Card.Img src= {bg_A1_Rectangle_2_pattern } />
       <Card.ImgOverlay>
         <br></br>
@@ -223,7 +223,7 @@ const CheckOut = ({ history }) => {
             <FormGroup className = 'refillFormGroup'>
               <Row className="activateBtn">
               <Card style={{ margin: 'auto', width: '15rem' }}>
-            <h3 className='paraText'>Security         <br></br>Plan</h3>
+            <h3 className='paraText'>Security Plan</h3>
              <p className='paraText' ><span role="img" aria-label="sheep">✔️</span> Texts something else </p>
             <p className='paraText' id ='paraborder'><span role="img" aria-label="sheep">✔️</span> DATA something else </p>
             <p className='paraText' id ='paraborder'><span role="img" aria-label="sheep">✔️</span> 30 Days</p>
@@ -269,6 +269,7 @@ const CheckOut = ({ history }) => {
     </Container>
   </Card.ImgOverlay>
 </Card>
+</div>
     </div>
       );
     }
