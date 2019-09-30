@@ -989,13 +989,19 @@ margin-top: -3rem;
 @media(max-width:800px){
   #activateCheckoutCon{
     margin-left: -2rem;
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
 
   }
 }
 
 @media(max-width: 800px){
   .ridBorder{
-    border: 3px solid green;
+    /* border: 3px solid green; */
+  }
+}
+
+@media(max-width:800px){
+  .theFooter{
+    margin-top: 30rem;
   }
 }
