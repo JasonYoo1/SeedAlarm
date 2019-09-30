@@ -48,7 +48,7 @@ const RefillCheckOut = ({ history }) => {
 <br></br>
 <Card >
       <Card.Img src= {bg_A1_Rectangle_2_pattern } />
-      <Card.ImgOverlay>
+      <Card.ImgOverlay style={{width: "90%", margin: 'auto'}}>
         <br></br>
         <br></br>
         <br></br>
@@ -56,6 +56,8 @@ const RefillCheckOut = ({ history }) => {
         <Container className="refillContainer">
        <Row >
          <Col className =' refillLeft' sm="4">
+         <br></br>
+        <br></br>
            <h3 className='refillText'>Refill</h3>
            <p className='refillText'>1. Pay to refill your Plan<br/><br/>
            2. Enter SIM card phone number<br/><br/>
@@ -85,7 +87,8 @@ const RefillCheckOut = ({ history }) => {
           <input type="hidden" name="hosted_button_id" value="85ZW2K2LS9RCA"/>
           <input type="image" width="100%" src={paypalbtn} border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"></input>
           </form>
-
+          <br></br>
+        <br></br>
         </div>
          </Col>
          <Col sm="4">
@@ -93,6 +96,8 @@ const RefillCheckOut = ({ history }) => {
            <p>Enter your 10 cellphone number you recieved when activating your SiM card or enter the 19 digit code located on the SIM. Do not enter the letters.(Numbers Only)</p> */}
            <Form >
             <FormGroup className = 'refillFormGroup'>
+            <br></br>
+        <br></br>
               <Row className="activateBtn">
               <Card style={{ margin: 'auto', width: '15rem' }}>
             <h3 className='paraText'>Plan 1</h3>
