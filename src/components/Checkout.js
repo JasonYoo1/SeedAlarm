@@ -3,22 +3,36 @@ import "react-toastify/dist/ReactToastify.css";
 import { Redirect } from 'react-router-dom';
 import axiosWithAuth from '../Utils/axiosWithAuth'
 import plan from './plan.png'
-import bg_A1_Rectangle_2_pattern from './bg_A1_Rectangle_2_pattern@2x.png'
+import bg_A1_Rectangle_2_pattern from './bg_A1_Rectangle_2_pattern@2x.png';
+import checkmark from './checkmark.png'
 
 
 import paypalbtn from './paypalbtn.png'
 
+import { PayPalButton } from "react-paypal-button-v2";
 
 import "../App.css"
 import "../index.css"
 
 import {
+    Form,
+    FormInput,
+    FormTextarea,
+    FormGroup,
+    Col,
+    // Card,
+    CardHeader,
+    CardBody,
     Container,
+    Button,
+    Row
   } from "shards-react";
 
   import {
     Card
   } from 'react-bootstrap'
+
+
 
 // toast.configure();
 
@@ -113,10 +127,10 @@ const CheckOut = ({ history }) => {
 
       return (
         
-          <div>
+          <div className='flexing'>
             {console.log(`written by Jason Yoo https://www.linkedin.com/in/jasonyoo1/ `)}
 
-            {/* {/* Current Plans<br/>
+            {/* Current Plans<br/>
                 <img width="200rem" src={plan} alt="hello" margin-bottom="30%"></img>
         <PayPalButton
           amount="0.01"
@@ -135,16 +149,15 @@ const CheckOut = ({ history }) => {
           options={{
             clientId: "Ac82qeONuJNMP32o8kE_DVQOpFZCoTtr2ovk5AM-oSotdXq6Xe1XdBCN1s_E-1NTEICVMSOJLwUaofOY"
           }}
-        /> */}
+        />
 
         {/* <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
         <input type="hidden" name="cmd" value="_s-xclick"></input>
         <input type="hidden" name="hosted_button_id" value="85ZW2K2LS9RCA"></input>
         <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"></input>
         <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"/>
-        </form> */} */}
-
-<Card className='checkoutCont'>
+        </form> */} 
+{/* <Card className='checkoutCont'>
       <Card.Img src= {bg_A1_Rectangle_2_pattern } />
       <Card.ImgOverlay>
         <br></br>
@@ -158,7 +171,7 @@ const CheckOut = ({ history }) => {
             <p className='paraText' id ='paraborder'>30 Days</p>
             <h3 className= 'paraText' id ='textamount'>$ 14.99</h3>
            </Card>
-           <br/>
+           <br/> */}
            {/* <PayPalButton
           amount="0.01"
           onSuccess={(details, data) => {
@@ -178,7 +191,7 @@ const CheckOut = ({ history }) => {
           }}
         /> */}
 
-           <p className = 'checkoutCard'>
+           {/* <p className = 'checkoutCard'>
                <div className = 'checkoutPay'>
                 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                 <input type="hidden" name="cmd" value="_s-xclick"></input>
@@ -187,6 +200,71 @@ const CheckOut = ({ history }) => {
                 </form>
                </div>
              </p>
+    </Container>
+    
+
+    
+  </Card.ImgOverlay>
+</Card> */}
+
+<Card >
+      <Card.Img src= {bg_A1_Rectangle_2_pattern } />
+      <Card.ImgOverlay>
+        <br></br>
+        <br></br>
+        <br></br>
+        {/* <br></br> */}
+        <Container className="refillContainer">
+       <Row >
+       <Col id='activateCheckoutCon' sm="4">
+           {/* <h2>Account</h2>
+           <p>Enter your 10 cellphone number you recieved when activating your SiM card or enter the 19 digit code located on the SIM. Do not enter the letters.(Numbers Only)</p> */}
+           <Form >
+            <FormGroup className = 'refillFormGroup'>
+              <Row className="activateBtn">
+              <Card style={{ margin: 'auto', width: '15rem' }}>
+            <h3 className='paraText'>Security Plan</h3>
+             <p className='paraText' ><span role="img" aria-label="sheep">✅</span> Texts</p>
+            <p className='paraText' id ='paraborder'><span role="img" aria-label="sheep">✅</span> DATA</p>
+            <p className='paraText' id ='paraborder'><span role="img" aria-label="sheep">✅</span> 30 Days</p>
+            <h3 className= 'paraText'>$ 14.99</h3>
+            <div className = 'checkoutPay'>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick"/>
+            <input type="hidden" name="hosted_button_id" value="LYBA5322PG3QY"/>
+            <input type="image" width="100%" src={paypalbtn} border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"></input>
+            </form>
+            </div>
+           </Card>
+            </Row>
+            </FormGroup>
+          </Form>
+        </Col>
+         <Col id='activateCheckoutCon' sm="4">
+           {/* <h2>Account</h2>
+           <p>Enter your 10 cellphone number you recieved when activating your SiM card or enter the 19 digit code located on the SIM. Do not enter the letters.(Numbers Only)</p> */}
+           <Form >
+            <FormGroup className = 'refillFormGroup'>
+              <Row className="activateBtn">
+              <Card style={{ margin: 'auto', width: '15rem' }}>
+            <h3 className='paraText'>Caregiver Plan</h3>
+             <p className='paraText' > <span role="img" aria-label="sheep">✅</span> Texts</p>
+            <p className='paraText' id ='paraborder'><span role="img" aria-label="sheep">✅</span> DATA</p>
+            <p className='paraText' id ='paraborder'> <span role="img" aria-label="sheep">✅</span>30 days</p>
+            <h3 className= 'paraText'>$ 5.99</h3>
+            <div className = 'checkoutPay'>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick"/>
+            <input type="hidden" name="hosted_button_id" value="JX6NZ5PRE64VL"/>
+            <input type="image" width="100%" src={paypalbtn} border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"></input>
+            </form>
+               </div>
+           </Card>
+            </Row>
+            </FormGroup>
+          </Form>
+        </Col>
+      </Row>
     </Container>
   </Card.ImgOverlay>
 </Card>

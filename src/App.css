@@ -55,7 +55,7 @@ h2, h3, h5,h6, p{
   padding: 30px;
   height: 35rem;
   opacity: 0.9;
-  margin: auto;
+  /* margin: auto; */
   text-align: left;
   /* border: 30px solid black; */
   margin-top: -3rem;
@@ -421,13 +421,14 @@ h2, h3, h5,h6, p{
 .paraText{
   color: black;
   text-align: center;
+  margin: 1rem;
 }
 
 #paraborder{
-  border-top: 1px solid black;
+  /* border-top: 1px solid black; */
   width: 80%;
-  margin-left: 2rem;
-  padding-top: 1rem;
+  /* margin-left: 2rem;
+  padding-top: 1rem; */
 }
 
 #textamount{
@@ -515,7 +516,7 @@ h2, h3, h5,h6, p{
 
 .refillFormGroup{
   /* border: 1px solid green; */
-  width: 80%;
+  width: 100%;
   /* margin-left: 8rem; */
 }
 
@@ -880,4 +881,17 @@ margin-top: -3rem;
   .navbar-brand{
     margin-left: 2rem;
   }
+}
+
+.flexing{
+  /* border: 3px solid blue; */
+}
+
+.checkoutCont{
+  border: 2px solid
+}
+
+#activateCheckoutCon{
+  /* border: 1px solid blue; */
+  margin: auto;
 }
