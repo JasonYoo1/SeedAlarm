@@ -129,7 +129,7 @@ const CheckOut = ({ history }) => {
         
           <div className='flexing'>
             {console.log(`written by Jason Yoo https://www.linkedin.com/in/jasonyoo1/ `)}
-
+            <h1 className='font'>Plans</h1>
             {/* Current Plans<br/>
                 <img width="200rem" src={plan} alt="hello" margin-bottom="30%"></img>
         <PayPalButton
@@ -207,7 +207,7 @@ const CheckOut = ({ history }) => {
   </Card.ImgOverlay>
 </Card> */}
 
-<Card >
+<Card style={{height: '10%'}}>
       <Card.Img src= {bg_A1_Rectangle_2_pattern } />
       <Card.ImgOverlay>
         <br></br>
@@ -224,9 +224,9 @@ const CheckOut = ({ history }) => {
               <Row className="activateBtn">
               <Card style={{ margin: 'auto', width: '15rem' }}>
             <h3 className='paraText'>Security         <br></br>Plan</h3>
-             <p className='paraText' ><span role="img" aria-label="sheep">✅</span> Texts something else </p>
-            <p className='paraText' id ='paraborder'><span role="img" aria-label="sheep">✅</span> DATA something else </p>
-            <p className='paraText' id ='paraborder'><span role="img" aria-label="sheep">✅</span> 30 Days</p>
+             <p className='paraText' ><span role="img" aria-label="sheep">✔️</span> Texts something else </p>
+            <p className='paraText' id ='paraborder'><span role="img" aria-label="sheep">✔️</span> DATA something else </p>
+            <p className='paraText' id ='paraborder'><span role="img" aria-label="sheep">✔️</span> 30 Days</p>
             {/* <br></br> */}
             <h3 className= 'paraText'>$ 14.99</h3>
            </Card>
@@ -249,9 +249,9 @@ const CheckOut = ({ history }) => {
               <Row className="activateBtn">
               <Card style={{ margin: 'auto', width: '15rem' }}>
             <h3 className='paraText'>Caregiver Plan</h3>
-             <p className='paraText' > <span role="img" aria-label="sheep">✅</span> Texts something else </p>
-            <p className='paraText' id ='paraborder'><span role="img" aria-label="sheep">✅</span> DATA something else </p>
-            <p className='paraText' id ='paraborder'> <span role="img" aria-label="sheep">✅</span> 30 days </p>
+             <p className='paraText' > <span role="img" aria-label="sheep">✔️</span> Texts something else </p>
+            <p className='paraText' id ='paraborder'><span role="img" aria-label="sheep">✔️</span> DATA something else </p>
+            <p className='paraText' id ='paraborder'> <span role="img" aria-label="sheep">✔️</span> 30 days </p>
             <h3 className= 'paraText'>$ 5.99</h3>
            </Card>
            <div className = 'checkoutPay'>
