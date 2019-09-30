@@ -61,7 +61,7 @@ const RefillCheckOut = ({ history }) => {
            2. Enter SIM card phone number<br/><br/>
            3. ENJOY! </p>
            <div className= "payPalBtnRefill">
-         <PayPalButton 
+         {/* <PayPalButton 
           amount="0.01"
           onSuccess={(details, data) => {
             alert("Transaction completed by " + details.payer.name.given_name);
@@ -78,7 +78,15 @@ const RefillCheckOut = ({ history }) => {
           options={{
             clientId: "Ac82qeONuJNMP32o8kE_DVQOpFZCoTtr2ovk5AM-oSotdXq6Xe1XdBCN1s_E-1NTEICVMSOJLwUaofOY"
           }}
-        /></div>
+        />
+         */}
+         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick"/>
+          <input type="hidden" name="hosted_button_id" value="85ZW2K2LS9RCA"/>
+          <input type="image" width="100%" src={paypalbtn} border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"></input>
+          </form>
+
+        </div>
          </Col>
          <Col sm="4">
            {/* <h2>Account</h2>
@@ -91,7 +99,7 @@ const RefillCheckOut = ({ history }) => {
              <p className='paraText' >Texts: 70</p>
             <p className='paraText' id ='paraborder'>DATA: 5 MB</p>
             <p className='paraText' id ='paraborder'>30 Days</p>
-            <h3 className= 'paraText' id ='textamount'>$ 14.99</h3>
+            <h3 className= 'paraText' id =''>$ 14.99</h3>
            </Card>
             </Row>
             </FormGroup>

@@ -11,6 +11,7 @@
 @media(max-width: 900px){
   .App{
     width: 500px;
+    font-family: 'Lato', sans-serif;
 
   }
 }
@@ -19,6 +20,7 @@
 .App-link {
   color: #61dafb;
   /* border: 1px solid blue; */
+  font-family: 'Lato', sans-serif;
 }
 
 @keyframes App-logo-spin {
@@ -68,6 +70,7 @@ h2, h3, h5,h6, p{
 .activateSimCard{
   /* border: 1px solid blue; */
   text-align: center;
+  font-family: 'Lato', sans-serif;
   
 }
 
@@ -84,6 +87,7 @@ h2, h3, h5,h6, p{
   text-align: left;
   /* border: 30px solid black; */
   margin-top: -3rem;
+  font-family: 'Lato', sans-serif;
 }
 
 
@@ -91,12 +95,14 @@ h2, h3, h5,h6, p{
 @media(max-width:800px){
   .login-container{
     margin-top: 13.5rem;
+    font-family: 'Lato', sans-serif;
   }
 }
 
 .blueSim{
   opacity: 200%;
   /* border: 1px solid red; */
+  font-family: 'Lato', sans-serif;
 }
 
 .backgroundTest{
@@ -105,6 +111,7 @@ h2, h3, h5,h6, p{
   background-color: white;
   color: white;
   /* border: 100px solid blue; */
+  font-family: 'Lato', sans-serif;
 }
 
 .backgroundTesting{
@@ -112,11 +119,13 @@ h2, h3, h5,h6, p{
   background: white;
   /* margin-top: 3000px */
   margin-bottom: 10rem;
+  font-family: 'Lato', sans-serif;
 }
 
 @media(max-width: 800px){
   .backgroundTesting{
     border: 1px solid blue;
+    font-family: 'Lato', sans-serif;
   }
 }
 
@@ -128,6 +137,7 @@ h2, h3, h5,h6, p{
   height: 3rem;
   /* background-color: white; */
   margin-top: 1rem;
+  font-family: 'Lato', sans-serif;
 }
 
 .dashboardBtn{
@@ -135,6 +145,7 @@ h2, h3, h5,h6, p{
   transition-duration: 0.4s;
   width: 95%;
   border-radius: 1rem;
+  font-family: 'Lato', sans-serif;
   height: 3rem;
   /* background-color: white; */
   /* margin-top: 1rem; */
@@ -151,12 +162,14 @@ h2, h3, h5,h6, p{
   /* margin-top: 1rem; */
   /* border: 1px solid red; */
   margin: auto 2px auto 2px;
+  font-family: 'Lato', sans-serif;
 }
 
 #backDash {
   /* border-color: #2196F3; */
   color: black;
   width: 20%;
+  font-family: 'Lato', sans-serif;
   /* border: 30px solid red; */
   margin-left: 30px;
   /* background-color: #d4d4d4; */
@@ -165,6 +178,7 @@ h2, h3, h5,h6, p{
 #backDash:hover {
   /* background: #2196F3;
   color: white; */
+  font-family: 'Lato', sans-serif;
 }
 
 
@@ -172,6 +186,7 @@ h2, h3, h5,h6, p{
   background-color: #00CCFF;
   color: white;
   width: 20%;
+  font-family: 'Lato', sans-serif;
   margin-left: 15rem;
 }
 
@@ -180,6 +195,7 @@ h2, h3, h5,h6, p{
   align-items: center;
   justify-content: center;
   width: 80%;
+  font-family: 'Lato', sans-serif;
   margin-left: 100px;
   margin-top: 3rem;
   /* border: 1px solid blue; */
@@ -194,12 +210,14 @@ h2, h3, h5,h6, p{
 .activationInfoBtn:hover{
   /* background-color:#00CCFF;
   color: white; */
+  font-family: 'Lato', sans-serif;
 }
 
 
 .actualButton:hover{
   background-color:#00CCFF;
   color: white;
+  font-family: 'Lato', sans-serif;
 }
 
 
@@ -207,15 +225,18 @@ h2, h3, h5,h6, p{
 
 .bg-primary {
   background-color: #286a93 !important;
+  font-family: 'Lato', sans-serif;
 }
 .navbar {
   /* background-color: #286a93; */
   /* overflow: visible; */
   /* margin-bottom: 2rem; */
+  font-family: 'Lato', sans-serif;
 }
 
 .menuBar{
   margin-bottom: 2rem;
+  font-family: 'Lato', sans-serif;
 }
 
 .nav a {
@@ -223,11 +244,13 @@ h2, h3, h5,h6, p{
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 2rem;
+    font-family: 'Lato', sans-serif;
   border: 1px solid black; */
 }
 .nav a:hover {
   /* text-decoration: underline;
   color: #bdc3c7; */
+  font-family: 'Lato', sans-serif;
 }
 /* .navbar-dark .navbar-nav .nav-link.active{
   margin-left: 50rem;
@@ -236,12 +259,14 @@ h2, h3, h5,h6, p{
 .FormGroup{
   /* border: 1px solid blue; */
   width: 90%;
+  font-family: 'Lato', sans-serif;
 }
 
 /* Login/Signup */
 
 .activateBtn {
   margin-top: 30px;
+  font-family: 'Lato', sans-serif;
   /* border: 1px solid red; */
   width: 103%;
   padding-left: 1rem;
@@ -250,6 +275,7 @@ h2, h3, h5,h6, p{
 
 #activationCont{
   margin-top: 30px;
+  font-family: 'Lato', sans-serif;
 }
 
 /* footer */
@@ -261,6 +287,7 @@ h2, h3, h5,h6, p{
   border-radius: 1rem;
   margin-top: 3rem; */
   background: #f0f0f0;
+  font-family: 'Lato', sans-serif;
   padding: 1em 0 3em 0;
   text-align: center;
   /* margin-top: -20rem; */
@@ -271,6 +298,7 @@ h2, h3, h5,h6, p{
 @media(max-width: 800px){
   .footer{
     display: none;
+    font-family: 'Lato', sans-serif;
 
   }
 }
@@ -278,10 +306,12 @@ h2, h3, h5,h6, p{
 .footerContainer{
   margin: auto;
   text-align: center;
+  font-family: 'Lato', sans-serif;
 }
 @media(max-width: 800px){
   .footerContainer{
     display: none;
+    font-family: 'Lato', sans-serif;
   }
 }
 
@@ -290,6 +320,7 @@ h2, h3, h5,h6, p{
 
 .checkoutCard{
   display: flex;
+  font-family: 'Lato', sans-serif;
   flex-direction: column;
   justify-content: center;
 }
@@ -297,14 +328,17 @@ h2, h3, h5,h6, p{
   /* border: 3px solid red; */
   /* margin-left: 1.5rem; */
   display: flex;
+  font-family: 'Lato', sans-serif;
   /* flex-direction: column; */
   justify-content: center;
+  
 }
 
 /* Activity Card Styles */
 
 .card-container {
   display: grid;
+  font-family: 'Lato', sans-serif;
   grid-template-columns: auto;
   margin-bottom: 10rem;
 }
@@ -315,6 +349,7 @@ h2, h3, h5,h6, p{
 .footerText{
   /* border: 1px solid blue; */
   margin: auto;
+  
   font-family: 'Lato', sans-serif;
 
 }
@@ -329,12 +364,14 @@ h2, h3, h5,h6, p{
 .card-header {
   font-size: 2em;
   color:Black;
+  font-family: 'Lato', sans-serif;
   background: #efefef;
 }
 
 .card-body {
   background: #286a93;
   color: #efefef;
+  font-family: 'Lato', sans-serif;
   font-size: 1.5em;
 }
 
@@ -344,6 +381,7 @@ h2, h3, h5,h6, p{
   padding: 40px 80px 40px 80px;
   margin-top: 40px;
   border-radius: 10px;
+  font-family: 'Lato', sans-serif;
 }
 /* .rf-username {
   margin-bottom: 40px !important;
@@ -351,18 +389,22 @@ h2, h3, h5,h6, p{
 /* Activity Update Form */
 .update-form-container {
   margin-top: 40px;
+  font-family: 'Lato', sans-serif;
 }
 .energize-select {
   margin-top: 20px;
   margin-bottom: 40px;
+  font-family: 'Lato', sans-serif;
 }
 .engage-select {
   margin-top: 20px;
+  font-family: 'Lato', sans-serif;
   margin-bottom: 40px;
 }
 .activity-form {
   margin-top: 10px;
   margin-bottom: 30px;
+  font-family: 'Lato', sans-serif;
 }
 .btn-outline-success {
   border-color: transparent !important;
@@ -372,25 +414,30 @@ h2, h3, h5,h6, p{
 }
 .activity-btns {
   padding: 10px;
+  font-family: 'Lato', sans-serif;
 }
 .btn-outline-success a {
   color: #2c7fb3;
+  font-family: 'Lato', sans-serif;
 }
 
 .btn-outline-success a:hover {
   color: #2c7fb3;
+  font-family: 'Lato', sans-serif;
 }
 
 .user-input-field {
   display: block;
   width: 50vw;
   text-align: center;
+  font-family: 'Lato', sans-serif;
   margin: 40px auto 0 auto;
 }
 
 .user-input-button {
   margin-top: 40px;
   width: 50vw;
+  font-family: 'Lato', sans-serif;
   color: white;
   background: #286a93;
   transition: 0.6s;
@@ -398,12 +445,14 @@ h2, h3, h5,h6, p{
 
 .user-input-button:hover {
   color: #286a93;
+  font-family: 'Lato', sans-serif;
   background: palegoldenrod;
 }
 
 /* Dashboard */
 .dashboard-buttons {
   margin-top: 40px;
+  font-family: 'Lato', sans-serif;
 }
 
 .dashImg{
@@ -421,14 +470,17 @@ h2, h3, h5,h6, p{
 .paraText{
   color: black;
   text-align: center;
-  margin: 1rem;
+  font-family: 'Lato', sans-serif;
+  margin: auto;
+  padding: 1rem;
 }
 
 #paraborder{
-  /* border-top: 1px solid black; */
-  width: 80%;
-  /* margin-left: 2rem;
-  padding-top: 1rem; */
+  border-top: 1.5px solid gray;
+  font-family: 'Lato', sans-serif;
+  width: 90%;
+  /* margin-bottom: .5rem; */
+  /* padding-top: 1.5rem; */
 }
 
 #textamount{
@@ -436,12 +488,14 @@ h2, h3, h5,h6, p{
   text-align: center;
   height: 5rem;
   padding-top: 1rem;
+  font-family: 'Lato', sans-serif;
 }
 
 .tryingTest{
   /* border: 1px solid green; */
   margin-top: -1.5rem;
   margin-left: 12rem;
+  font-family: 'Lato', sans-serif;
 }
 
 .searchBtns{
@@ -449,6 +503,7 @@ h2, h3, h5,h6, p{
   /* border: 1px solid blue; */
   align-items: center;
   justify-content: center;
+  font-family: 'Lato', sans-serif;
   width: 100%;
   /* margin-top: 3rem; */
   /* border: 1px solid blue; */
@@ -459,14 +514,16 @@ h2, h3, h5,h6, p{
 
 .accountImg{
   border: 100px solid blue;
+  font-family: 'Lato', sans-serif;
 }
-
-.fitCont{
+.font{
+  font-family: 'Lato', sans-serif;
 }
 
 .congratsRefill{
   color: black;
   font-family: 'Lato', sans-serif;
+  
   margin: 4rem auto auto auto;
   text-align: center;
 }
@@ -476,6 +533,7 @@ h2, h3, h5,h6, p{
   transition-duration: 0.4s;
   width: 95%;
   border-radius: 1rem;
+  font-family: 'Lato', sans-serif;
   height: 3rem;
   /* background-color: white; */
   margin-top: 1rem;
@@ -484,17 +542,20 @@ h2, h3, h5,h6, p{
 
 .refillBtn:hover {
   background: #2196F3;
+  font-family: 'Lato', sans-serif;
   color: white;
 }
 
 .refillText{
   /* border: 1px solid black; */
   color: black;
+  font-family: 'Lato', sans-serif;
 }
 
 
 .refillLeft{
   margin-left: 14rem;
+  font-family: 'Lato', sans-serif;
   /* border: 1px solid blue; */
 
 }
@@ -503,6 +564,7 @@ h2, h3, h5,h6, p{
   .refillLeft{
     /* border: 1px solid blue; */
     margin-left: -0.3rem;
+    font-family: 'Lato', sans-serif;
   }
 }
 
@@ -511,12 +573,14 @@ h2, h3, h5,h6, p{
     /* border: 1px solid green; */
     /* display: none; */
     text-align: center;
+    font-family: 'Lato', sans-serif;
   }
 }
 
 .refillFormGroup{
   /* border: 1px solid green; */
   width: 100%;
+  font-family: 'Lato', sans-serif;
   /* margin-left: 8rem; */
 }
 
@@ -529,6 +593,7 @@ h2, h3, h5,h6, p{
 
 .refillPay{
   border: 1px solid black;
+  font-family: 'Lato', sans-serif;
 }
 
 @media(max-width: 850px){
@@ -544,6 +609,7 @@ h2, h3, h5,h6, p{
   border-radius: 10px;
   overflow: visible;
   padding: 20px;
+  font-family: 'Lato', sans-serif;
   opacity: 0.9;
   margin: auto;
   text-align: left;
@@ -557,34 +623,40 @@ h2, h3, h5,h6, p{
       /* border: 10px solid blue; */
       margin-top: 12rem;
       height: 25rem;
+      font-family: 'Lato', sans-serif;
   }
 }
 
 @media(max-width: 850px){
   .responsiveForm{
     /* border: 1px solid red; */
+    font-family: 'Lato', sans-serif;
   }
 }
 
 .responsiveImg{
   /* border: 1px solid green; */
+  font-family: 'Lato', sans-serif;
 }
 
 @media(max-width: 850px){
   .responsiveImg{
     display: none;
+    font-family: 'Lato', sans-serif;
   }
 }
 
 @media(max-width: 850px){
   .backgroundTest{
     height: 100%;
+    font-family: 'Lato', sans-serif;
   }
 }
 
 @media(max-width: 850px){
   .refillFont{
     color: black;
+    font-family: 'Lato', sans-serif;
     /* border: 1px solid blue; */
   }
 }
@@ -601,6 +673,7 @@ h2, h3, h5,h6, p{
   .RegCheckOut{
     /* border: 1px solid red; */
     margin-top: 15rem;
+    font-family: 'Lato', sans-serif;
     margin-bottom: 10rem;
   }
 }
@@ -612,6 +685,7 @@ h2, h3, h5,h6, p{
     height: 90%;
     margin-top: -2rem;
     margin-left: 2rem;
+    font-family: 'Lato', sans-serif;
     padding-top: 1.5rem;
   }
 }
@@ -619,6 +693,7 @@ h2, h3, h5,h6, p{
 @media(max-width: 800px){
   .responsiveTitle{
     display: none;
+    font-family: 'Lato', sans-serif;
   }
 }
 
@@ -628,6 +703,7 @@ h2, h3, h5,h6, p{
     width: 80%;
     height: 90%;
     margin-top: -4rem;
+    font-family: 'Lato', sans-serif;
     margin-left: 3.5rem;
     padding-top: 1.5rem;
   }
@@ -637,6 +713,7 @@ h2, h3, h5,h6, p{
   #activationCont{
     /* border: 1px solid red; */
     margin-top: 15rem;
+    font-family: 'Lato', sans-serif;
     margin-bottom: 10rem;
   }
 }
@@ -647,6 +724,7 @@ h2, h3, h5,h6, p{
   text-align: center;
   margin: auto;
   color: black;
+  font-family: 'Lato', sans-serif;
 }
 
 @media(max-width: 800px){
@@ -654,6 +732,7 @@ h2, h3, h5,h6, p{
     /* border: 10px solid red; */
     width: 100%;
     margin-left: -13.5rem;
+    font-family: 'Lato', sans-serif;
   }
 }
 
@@ -661,6 +740,7 @@ h2, h3, h5,h6, p{
   .activationInfoBtn{
     /* border: 10px solid blue; */
     width: 80%;
+    font-family: 'Lato', sans-serif;
     margin-top: 3rem;
   }
 }
@@ -670,6 +750,7 @@ h2, h3, h5,h6, p{
     /* display: none; */
     width: 30%;
     margin-left: 30%;
+    font-family: 'Lato', sans-serif;
   }
 }
 
@@ -677,6 +758,7 @@ h2, h3, h5,h6, p{
   background-color: #d4d4d4;
   border-radius: 10px;
   overflow: visible;
+  font-family: 'Lato', sans-serif;
   padding: 20px;
   opacity: 0.9;
   /* margin: auto; */
@@ -703,7 +785,7 @@ h2, h3, h5,h6, p{
   background-color: #d4d4d4;
   border-radius: 10px;
   overflow: visible;
-  padding: 20px;
+  padding: 2px;
   opacity: 0.9;
   margin: auto;
   text-align: left;
@@ -741,6 +823,7 @@ h2, h3, h5,h6, p{
 border-radius: 10px;
 overflow: visible;
 padding: 20px;
+font-family: 'Lato', sans-serif;
 opacity: 0.9;
 margin: auto;
 text-align: left;
@@ -764,6 +847,7 @@ margin-top: -3rem;
   overflow: visible;
   padding: 20px;
   opacity: 0.9;
+  font-family: 'Lato', sans-serif;
   margin: auto;
   text-align: left;
   /* border: 30px solid black; */
@@ -800,6 +884,7 @@ margin-top: -3rem;
   overflow: visible;
   padding: 20px;
   opacity: 0.9;
+  font-family: 'Lato', sans-serif;
   margin: auto;
   text-align: left;
   /* border: 30px solid black; */
@@ -824,6 +909,7 @@ margin-top: -3rem;
 
 #backDashSearch {
   /* border-color: #2196F3; */
+  font-family: 'Lato', sans-serif;
   /* color: black; */
   width: 20%;
   /* border: 30px solid red; */
@@ -845,6 +931,7 @@ margin-top: -3rem;
 
 #backSeedSearch{
   background-color: #00CCFF;
+  font-family: 'Lato', sans-serif;
   color: white;
   width: 20%;
   margin-left: 15rem;
@@ -857,6 +944,7 @@ margin-top: -3rem;
 
 .icons{
   text-decoration: none;
+  font-family: 'Lato', sans-serif;
   list-style: none;
 }
 
@@ -888,10 +976,12 @@ margin-top: -3rem;
 }
 
 .checkoutCont{
-  border: 2px solid
+  border: 2px solid;
+  font-family: 'Lato', sans-serif;
 }
 
 #activateCheckoutCon{
   /* border: 1px solid blue; */
   margin: auto;
+  font-family: 'Lato', sans-serif;
 }
