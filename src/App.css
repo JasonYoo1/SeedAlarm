@@ -1002,6 +1002,6 @@ margin-top: -3rem;
 
 @media(max-width:800px){
   .theFooter{
-    margin-top: 30rem;
+    display: none;
   }
 }
