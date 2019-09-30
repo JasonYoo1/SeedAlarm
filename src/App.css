@@ -988,7 +988,9 @@ margin-top: -3rem;
 
 @media(max-width:800px){
   #activateCheckoutCon{
-    margin: auto auto auto -3rem;
+    margin-left: -2rem;
+    border: 3px solid blue;
+
   }
 }
 
