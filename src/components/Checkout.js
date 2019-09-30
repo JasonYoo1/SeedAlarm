@@ -206,8 +206,8 @@ const CheckOut = ({ history }) => {
     
   </Card.ImgOverlay>
 </Card> */}
-
-<Card style={{height: '10%'}}>
+<div className='ridBorder'>
+<Card  style={{height: '10%'}}>
       <Card.Img src= {bg_A1_Rectangle_2_pattern } />
       <Card.ImgOverlay>
         <br></br>
@@ -269,6 +269,7 @@ const CheckOut = ({ history }) => {
     </Container>
   </Card.ImgOverlay>
 </Card>
+</div>
     </div>
       );
     }
