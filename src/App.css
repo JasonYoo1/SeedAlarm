@@ -554,9 +554,10 @@ h2, h3, h5,h6, p{
 
 
 .refillLeft{
-  margin-left: 14rem;
+  margin-left: 11rem;
   font-family: 'Lato', sans-serif;
   /* border: 1px solid blue; */
+  text-align: center;
 
 }
 
@@ -587,7 +588,7 @@ h2, h3, h5,h6, p{
 @media(max-width:800px){
   .refillFormGroup{
     /* border: 1px solid green; */
-    margin-left: 2.5rem;
+    /* margin-left: rem; */
   }
 }
 
