@@ -1030,3 +1030,12 @@ margin-top: -3rem;
 .theFooter{
   margin-top: 15rem;
 }
+
+@media(max-width:800px){
+  .tmobilemap{
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    /* border: 3px solid blue; */
+  }
+}
