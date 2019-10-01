@@ -27,7 +27,7 @@ const RefillInfo = () => {
     let refillInfo = localStorage.getItem('testing')
     // console.log('this is from site', refillInfo)
 
-    if(localStorage.getItem('testing') == "<net><ret>1</ret><retmess>No web-credit available.</retmess></net>" || "<net><ret>1</ret><retmess>Account not found</retmess></net>"){
+    if(localStorage.getItem('refillInfo') == "<net><ret>1</ret><retmess>No web-credit available.</retmess></net>" || "<net><ret>1</ret><retmess>Account not found</retmess></net>" || "<net><ret>1</ret><retmess>Error in the refill process. Failed to restore.</retmess></net>"){
         let simNumber = 'Error'
         return (
           <Card className="backgroundTesting">

@@ -43,7 +43,7 @@ const Refill = ({ history }) => {
     axios
       .post(`https://cors-anywhere.herokuapp.com/https://portal.speedtalk.mobi/service.aspx?cmd=stAutorefill&agid=symbol%40seedalarm.com&agpass=ZynetInc4199&phone=${newRefill.phone}overage=&overageCash=&anniversary=1&sku=8035`, newRefill)
       .then(res => {
-        // console.log(res.data);
+        console.log(res.data);
         localStorage.setItem("refillInfo", res.data);
         localStorage.setItem('currentPhone', newRefill.phone)
         // localStorage.setItem("sim", newRefill.sim);
