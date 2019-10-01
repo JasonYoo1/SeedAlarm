@@ -86,8 +86,9 @@ h2, h3, h5,h6, p{
   margin: auto;
   text-align: left;
   /* border: 30px solid black; */
-  margin-top: -3rem;
+  margin-top: -1rem;
   font-family: 'Lato', sans-serif;
+  padding-top: 3rem;
 }
 
 

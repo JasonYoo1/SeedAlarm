@@ -46,7 +46,7 @@ const RefillCheckOut = ({ history }) => {
           <div>
             {console.log(`written by Jason Yoo https://www.linkedin.com/in/jasonyoo1/ `)}
 <br></br>
-<Card >
+{/* <Card >
       <Card.Img src= {bg_A1_Rectangle_2_pattern } />
       <Card.ImgOverlay style={{width: "90%", margin: 'auto'}}>
         <br></br>
@@ -63,25 +63,6 @@ const RefillCheckOut = ({ history }) => {
            2. Enter SIM card phone number<br/><br/>
            3. ENJOY! </p>
            <div className= "payPalBtnRefill">
-         {/* <PayPalButton 
-          amount="0.01"
-          onSuccess={(details, data) => {
-            alert("Transaction completed by " + details.payer.name.given_name);
-            localStorage.setItem("token", true);
-            axiosWithAuth()
-            window.location.href='/refill'
-            return fetch("/paypal-transaction-complete", {
-              method: "post",
-              body: JSON.stringify({
-                orderId: data.orderID
-              }),
-            });
-          }}
-          options={{
-            clientId: "Ac82qeONuJNMP32o8kE_DVQOpFZCoTtr2ovk5AM-oSotdXq6Xe1XdBCN1s_E-1NTEICVMSOJLwUaofOY"
-          }}
-        />
-         */}
          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
           <input type="hidden" name="cmd" value="_s-xclick"/>
           <input type="hidden" name="hosted_button_id" value="85ZW2K2LS9RCA"/>
@@ -92,8 +73,6 @@ const RefillCheckOut = ({ history }) => {
         </div>
          </Col>
          <Col sm="4">
-           {/* <h2>Account</h2>
-           <p>Enter your 10 cellphone number you recieved when activating your SiM card or enter the 19 digit code located on the SIM. Do not enter the letters.(Numbers Only)</p> */}
            <Form >
             <FormGroup className = 'refillFormGroup'>
             <br></br>
@@ -113,9 +92,75 @@ const RefillCheckOut = ({ history }) => {
       </Row>
     </Container>
   </Card.ImgOverlay>
+</Card> */}
+
+<Card  style={{height: '10%'}}>
+      <Card.Img src= {bg_A1_Rectangle_2_pattern } />
+      <Card.ImgOverlay>
+        <br></br>
+        <br></br>
+        {/* <br></br> */}
+        {/* <br></br> */}
+        <Container className="refillContainer">
+       <Row >
+       <Col id='activateCheckoutCon' sm="4">
+           {/* <h2>Account</h2>
+           <p>Enter your 10 cellphone number you recieved when activating your SiM card or enter the 19 digit code located on the SIM. Do not enter the letters.(Numbers Only)</p> */}
+           <Form >
+            <FormGroup className = 'refillFormGroup'>
+              <Row className="activateBtn">
+              <Card style={{ margin: 'auto', width: '15rem' }}>
+            <h3 className='paraText'>Security Plan</h3>
+             <p className='paraText' ><span role="img" aria-label="sheep">✔️</span> Texts something else </p>
+            <p className='paraText' id ='paraborder'><span role="img" aria-label="sheep">✔️</span> DATA something else </p>
+            <p className='paraText' id ='paraborder'><span role="img" aria-label="sheep">✔️</span> 30 Days</p>
+            {/* <br></br> */}
+            <h3 className= 'paraText'>$ 14.99</h3>
+           </Card>
+           <div className = 'checkoutPay'>
+
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick"/>
+            <input type="hidden" name="hosted_button_id" value="VS7Q35U928MNL"/>
+            <input type="image" width="100%" src={paypalbtn} border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"></input>
+            </form>
+
+            </div>
+            </Row>
+            </FormGroup>
+          </Form>
+        </Col>
+         <Col id='activateCheckoutCon' sm="4">
+           {/* <h2>Account</h2>
+           <p>Enter your 10 cellphone number you recieved when activating your SiM card or enter the 19 digit code located on the SIM. Do not enter the letters.(Numbers Only)</p> */}
+           <Form >
+            <FormGroup className = 'refillFormGroup'>
+              <Row className="activateBtn">
+              <Card style={{ margin: 'auto', width: '15rem' }}>
+            <h3 className='paraText'>Caregiver Plan</h3>
+             <p className='paraText' > <span role="img" aria-label="sheep">✔️</span> Texts something else </p>
+            <p className='paraText' id ='paraborder'><span role="img" aria-label="sheep">✔️</span> DATA something else </p>
+            <p className='paraText' id ='paraborder'> <span role="img" aria-label="sheep">✔️</span> 30 days </p>
+            <h3 className= 'paraText'>$ 5.99</h3>
+           </Card>
+           <div className = 'checkoutPay'>
+
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick"/>
+            <input type="hidden" name="hosted_button_id" value="WQQNXR6L28RSS"/>
+            <input type="image" width="100%" src={paypalbtn} border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"></input>
+            </form>
+
+
+               </div>
+            </Row>
+            </FormGroup>
+          </Form>
+        </Col>
+      </Row>
+    </Container>
+  </Card.ImgOverlay>
 </Card>
-
-
 
 
 
