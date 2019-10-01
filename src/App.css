@@ -304,7 +304,7 @@ h2, h3, h5,h6, p{
 }
 
 .footerContainer{
-  margin: auto;
+  margin: 1rem auto -.5rem auto;
   text-align: center;
   font-family: 'Lato', sans-serif;
 }
@@ -1005,4 +1005,8 @@ margin-top: -3rem;
   .theFooter{
     display: none;
   }
+}
+
+.linkingBack{
+  color:#00CCFF;
 }

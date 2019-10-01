@@ -18,7 +18,6 @@ export default class Footer extends React.Component {
   <Container className='footerContainer'>
     <h6 className='footerText'><h2 className='footerText'>Need Help?</h2>info@seedalarm.com<br/>
     1.800.201.0674</h6>
-
   </Container>
 </Navbar>
 </div>
