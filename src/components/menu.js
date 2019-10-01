@@ -70,7 +70,7 @@ export default class Menu extends React.Component {
     </Nav>
     <Nav>
       <Nav.Link className='fontColorNav' href="https://www.seedalarm.com">Seed Alarm</Nav.Link>
-      <Nav.Link eventKey={2} href="/checkout" className='fontColorNav'>
+      <Nav.Link eventKey={2} href="/activate" className='fontColorNav'>
         Activate
       </Nav.Link>
       <Nav.Link className='fontColorNav' href="/RefillCheckOut">Refill</Nav.Link>
