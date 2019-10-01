@@ -20,6 +20,8 @@ import Refill from './components/Refill'
 import RefillInfo from './components/RefillInfo'
 import ActivateInfo from './components/ActivationInfo'
 import RefillCheckOut from './components/RefillCheckOut'
+import SimpleMap from './components/Maps'
+
 
 function App() {
   // const [creds, setCreds] = useState([]);
@@ -57,6 +59,7 @@ function App() {
             <Route exact path="/refillinfo" component={RefillInfo} />
             <Route exact path="/activationinfo" component={ActivateInfo}/>
             <Route exact path="/RefillCheckOut" component={RefillCheckOut}/>
+            <Route exact path="/coverage" component={SimpleMap}/>
           </Switch>
           <Footer/>
         </div>
