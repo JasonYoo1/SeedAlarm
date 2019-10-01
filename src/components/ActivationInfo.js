@@ -40,7 +40,7 @@ const ActivateInfo = ({history}) => {
         localStorage.setItem("refillInfo", res.data);
         localStorage.setItem('currentPhone', newRefill.phone)
         // localStorage.setItem("sim", newRefill.sim);
-        localStorage.setItem("token", false);
+        localStorage.setItem("token", undefined);
         history.push("/dashboard");
       })
       .catch(err => console.log(err.response));
