@@ -71,7 +71,7 @@ export default function Dashboard({history}) {
           <Form onSubmit={handleSubmit}>
             <FormGroup>
             <h2 className='dashText'>Account</h2>
-           <p className='dashText'>Enter your 10 cellphone number you recieved when activating your SiM card or enter the 19 digit code located on the SIM. Do not enter the letters.(Numbers Only)</p>
+           <p className='dashText'>Enter your 10 digit cellphone number you recieved when activating your SiM card or enter the 19 digit code located on the SIM. Do not enter the letters.(Numbers Only)</p>
               <label htmlFor="#searchSim">Search By Sim</label>
               <FormInput
                 id="#searchSim"

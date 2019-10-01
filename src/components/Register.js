@@ -91,11 +91,11 @@ const Register = ({ history }) => {
               />
             </FormGroup>
             <FormGroup className = 'FormGroup'>
-              <label htmlFor="#username">Required: ZIP CODE</label>
+              <label htmlFor="#username">City Zip Code</label>
               <FormInput
                 id="#zip"
                 name="zip"
-                placeholder="City Zip Code"
+                placeholder="Enter Zip Code to generate Phone Area Code"
                 onChange={handleChange}
                 value={activate.zip}
               />
