@@ -1039,3 +1039,22 @@ margin-top: -3rem;
     /* border: 3px solid blue; */
   }
 }
+
+.actRefillBtn{
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  width: 30%;
+  border-radius: 1rem;
+  font-family: 'Lato', sans-serif;
+  height: 3rem;
+  /* background-color: white; */
+  margin: auto;
+  /* border: 1px solid green; */
+
+}
+
+.actRefillFont{
+  color: black;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}

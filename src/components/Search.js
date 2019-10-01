@@ -96,7 +96,7 @@ const SearchInfo = () => {
             console.log(`written by Jason Yoo https://www.linkedin.com/in/jasonyoo1/ `)
             let XMLParser = require('react-xml-parser');
             let xml = new XMLParser().parseFromString(searchInfo);
-            console.log(xml)
+            // console.log(xml)
             let phoneNumber = xml.children[2].value
             // let simNumber = xml.children[1].value
             let status = xml.children[4].value
