@@ -27,7 +27,7 @@ const RefillInfo = () => {
     let refillInfo = localStorage.getItem('testing')
     // console.log('this is from site', refillInfo)
 
-    if(localStorage.getItem('testing') == "<net><ret>1</ret><retmess>No web-credit available.</retmess></net>" || "<net><ret>1</ret><retmess>Account not found</retmess></net>"){
+    if(localStorage.getItem('refillInfo') == "<net><ret>1</ret><retmess>No web-credit available.</retmess></net>" || "<net><ret>1</ret><retmess>Account not found</retmess></net>" || "<net><ret>1</ret><retmess>Error in the refill process. Failed to restore.</retmess></net>"){
         let simNumber = 'Error'
         return (
           <Card className="backgroundTesting">
@@ -77,7 +77,7 @@ const RefillInfo = () => {
                <Container className="refillInfoCont">
                   <h1 className='congratsRefill'>Congratulations!</h1>
                   <br/>
-                  <p className='congratsRefill'>Your refill has been successful! Your refill is effective: {effective} Thank you for choosing Seed Alarm.</p>
+                  <p className='congratsRefill'>Your automactic refill has been successful and effective : {effective} and will be charged monthly 3-days prior to the current plan end date.</p>
                   <br/>
                   <div className = 'actBtnCont'>
                   <Link to='/dashboard'>

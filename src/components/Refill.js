@@ -41,9 +41,9 @@ const Refill = ({ history }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     axios
-      .post(`https://cors-anywhere.herokuapp.com/https://portal.speedtalk.mobi/service.aspx?cmd=stRefill&agid=symbol%40seedalarm.com&agpass=ZynetInc4199&phone=${newRefill.phone}&sku=8035&amount=1.5`, newRefill)
+      .post(`https://cors-anywhere.herokuapp.com/https://portal.speedtalk.mobi/service.aspx?cmd=stAutorefill&agid=symbol%40seedalarm.com&agpass=ZynetInc4199&phone=${newRefill.phone}overage=&overageCash=&anniversary=1&sku=8035`, newRefill)
       .then(res => {
-        // console.log(res.data);
+        console.log(res.data);
         localStorage.setItem("refillInfo", res.data);
         localStorage.setItem('currentPhone', newRefill.phone)
         // localStorage.setItem("sim", newRefill.sim);
@@ -81,7 +81,7 @@ const Refill = ({ history }) => {
         <Col lg="6">
           <Form className='responsiveForm' onSubmit={handleSubmit}>
             <FormGroup>
-              <h1 htmlFor="#username">Refill</h1>
+              <h1 htmlFor="#username">Auto Refill</h1>
               <p className='refillFont'>Enter your 10 digit cellphone number you recived when activating your SIM card or enter the 19 digit code located on the SIM. Do not enter the letters. Only Numbers.</p>
               <FormInput
                 id="#phone"
