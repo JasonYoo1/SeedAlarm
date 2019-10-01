@@ -95,7 +95,7 @@ const Register = ({ history }) => {
               <FormInput
                 id="#zip"
                 name="zip"
-                placeholder="Enter Zip Code to generate Phone Area Code"
+                placeholder="This will generate your area code"
                 onChange={handleChange}
                 value={activate.zip}
               />
