@@ -96,7 +96,7 @@ const SearchInfo = () => {
             console.log(`written by Jason Yoo https://www.linkedin.com/in/jasonyoo1/ `)
             let XMLParser = require('react-xml-parser');
             let xml = new XMLParser().parseFromString(searchInfo);
-            console.log(xml)
+            // console.log(xml)
             let phoneNumber = xml.children[2].value
             // let simNumber = xml.children[1].value
             let status = xml.children[4].value
@@ -271,12 +271,12 @@ const SearchInfo = () => {
   <text id="Usage" transform="translate(64 182)" fill="#9597a6" font-size="12" font-family="Helvetica-Bold, Helvetica" font-weight="700" letter-spacing="0.1em"><tspan x="0" y="9">USAGE</tspan></text>
   <text id="_555-555-5555" data-name="555-555-5555" transform="translate(208 133)" fill="#9597a6" font-size="16" font-family="Helvetica"><tspan x="0" y="0">{phoneNumber}</tspan></text>
   <text id="Ends_August_15_2019" data-name="Ends August 15, 2019" transform="translate(208 250)" fill="#9597a6" font-size="16" font-family="Helvetica"><tspan x="0" y="0">{endDate}</tspan></text>
-  <text id="_70_SMS_5MB" data-name="70 SMS, 5MB" transform="translate(208 312)" fill="#9597a6" font-size="16" font-family="Helvetica"><tspan x="0" y="0">70 SMS, 5MB</tspan></text>
+  <text id="_70_SMS_5MB" data-name="70 SMS, 5MB" transform="translate(208 312)" fill="#9597a6" font-size="16" font-family="Helvetica"><tspan x="0" y="0"> </tspan></text>
   <text id="_10_Texts" data-name="10 Texts" transform="translate(241 193)" fill="#9597a6" font-size="16" font-family="Helvetica"><tspan x="-29.652" y="0">{useageSMS} Texts</tspan></text>
   <text id="_3_MB_Data" data-name="3 MB Data" transform="translate(355 193)" fill="#9597a6" font-size="16" font-family="Helvetica"><tspan x="-37.793" y="0">{useageData} MB Data</tspan></text>
-  <text id="Plan" transform="translate(64 300)" fill="#9597a6" font-size="12" font-family="Helvetica-Bold, Helvetica" font-weight="700" letter-spacing="0.1em"><tspan x="0" y="9">PLAN</tspan></text>
-  <text id="Billed_monthly" data-name="Billed monthly" transform="translate(358 354)" fill="#9597a6" font-size="16" font-family="Helvetica"><tspan x="86.398" y="12">Billed monthly</tspan></text>
-  <text id="Total_14.99_month" data-name="Total $14.99/month" transform="translate(290 371)" font-size="25" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="-224.585" y="0">Total $14.99/month</tspan></text>
+  <text id="Plan" transform="translate(64 300)" fill="#9597a6" font-size="12" font-family="Helvetica-Bold, Helvetica" font-weight="700" letter-spacing="0.1em"><tspan x="0" y="9"> </tspan></text>
+  <text id="Billed_monthly" data-name="Billed monthly" transform="translate(358 354)" fill="#9597a6" font-size="16" font-family="Helvetica"><tspan x="86.398" y="12"></tspan></text>
+  <text id="Total_14.99_month" data-name="Total $14.99/month" transform="translate(290 371)" font-size="16" font-family="Arial-BoldMT, Arial" font-weight="600"><tspan x="-224.585" y="0">To deactivate your account email us at info@seedalarm.com</tspan></text>
   <line id="Line_175" data-name="Line 175" x2="480.836" transform="translate(64 160)" fill="none" stroke="#dadbe6" stroke-width="1"/>
   <line id="Line_176" data-name="Line 176" x2="480.836" transform="translate(64.5 216.5)" fill="none" stroke="#dadbe6" stroke-width="1"/>
   <line id="Line_177" data-name="Line 177" x2="480.836" transform="translate(64.5 272.5)" fill="none" stroke="#dadbe6" stroke-width="1"/>
