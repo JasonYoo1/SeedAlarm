@@ -39,10 +39,10 @@ const ActivateInfo = (event) => {
                     <button className="activationInfoBtn" id='backSeed' >
                       Account Dashboard
                     </button>
+                    </Link>
                     <button className="activationInfoBtn" id='backDash' >
-                      Back to SeedAlarm
+                    <a className ='linkingBack' href="https://landingseedalarm.netlify.com/">Back to Seed Alarm</a>
                     </button>
-          </Link>
           </div>
     </Container>
   </Card.ImgOverlay>

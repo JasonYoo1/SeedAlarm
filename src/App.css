@@ -237,6 +237,7 @@ h2, h3, h5,h6, p{
 .menuBar{
   margin-bottom: 2rem;
   font-family: 'Lato', sans-serif;
+  /* border: 1px solid blue; */
 }
 
 .nav a {
@@ -304,7 +305,7 @@ h2, h3, h5,h6, p{
 }
 
 .footerContainer{
-  margin: auto;
+  margin: 1rem auto -.5rem auto;
   text-align: center;
   font-family: 'Lato', sans-serif;
 }
@@ -604,6 +605,8 @@ h2, h3, h5,h6, p{
       
   }
 }
+
+
 
 .refillCont{
   background-color: #d4d4d4;
@@ -1005,4 +1008,18 @@ margin-top: -3rem;
   .theFooter{
     display: none;
   }
+}
+
+.linkingBack{
+  color:#00CCFF;
+}
+
+.fontColorNav{
+  /* border: 1px solid black; */
+  padding-top: 3rem;
+  margin-top: 3rem;
+}
+
+.theFooter{
+  margin-top: 15rem;
 }
