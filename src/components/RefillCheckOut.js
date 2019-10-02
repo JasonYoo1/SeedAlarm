@@ -93,7 +93,7 @@ const RefillCheckOut = ({ history }) => {
     </Container>
   </Card.ImgOverlay>
 </Card> */}
-
+<h1>Refill</h1>
 <Card  style={{height: '10%'}}>
       <Card.Img src= {bg_A1_Rectangle_2_pattern } />
       <Card.ImgOverlay>

@@ -153,6 +153,11 @@ h2, h3, h5,h6, p{
   margin-left: 15px
 }
 
+.dashboardBtn:hover{
+  background-color: #00CCFF;
+  color: white;
+}
+
 .activationInfoBtn{
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
@@ -543,7 +548,7 @@ h2, h3, h5,h6, p{
 }
 
 .refillBtn:hover {
-  background: #2196F3;
+  background: #00CCFF;
   font-family: 'Lato', sans-serif;
   color: white;
 }
