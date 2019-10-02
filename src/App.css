@@ -1064,3 +1064,16 @@ margin-top: -3rem;
   font-family: 'Lato', sans-serif;
   text-align: center;
 }
+
+@media(max-width:800px){
+  .logo{
+    /* border: 1px solid blue; */
+    float: left;
+  }
+}
+@media(max-width:800px){
+  .navbar-toggler{
+    margin-left: 30rem;
+    margin-top: -4rem;
+  }
+}
