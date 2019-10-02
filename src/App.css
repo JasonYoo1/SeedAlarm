@@ -1069,6 +1069,7 @@ margin-top: -3rem;
   .logo{
     /* border: 1px solid blue; */
     float: left;
+    margin-left: -3rem;
   }
 }
 @media(max-width:800px){
