@@ -16,7 +16,7 @@ export default class Footer extends React.Component {
 <div className='theFooter'>
       <Navbar className='footer' expand="lg" variant="light" bg="light">
   <Container className='footerContainer'>
-    <h6 className='footerText'><h2 className='footerText'>Need Help?</h2>info@seedalarm.com<br/>
+    <h6 className='footerText'><h2 className='footerText'>Need Help?</h2><a href="mailto:info@seedalarm.com" >info@seedalarm.com</a><br/>
     1.800.201.0674</h6>
   </Container>
 </Navbar>
