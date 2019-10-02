@@ -608,7 +608,7 @@ h2, h3, h5,h6, p{
   .menuBar{
       /* border: 10px solid green; */
       width: 500px;
-      
+      margin-bottom: 0;
   }
 }
 
@@ -1074,7 +1074,7 @@ margin-top: -3rem;
 }
 @media(max-width:800px){
   .navbar-toggler{
-    margin-left: 25rem;
+    margin-left: 26.5rem;
     margin-top: -4rem;
   }
 }
