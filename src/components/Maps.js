@@ -14,7 +14,7 @@ class SimpleMap extends Component {
   render() {
     return (
       <div className='tmobilemap'>
-      <embed src="https://maps.t-mobile.com/pcc.html?map=mvno-noroam-34l"style={{width:'90%', height: "650px"}} ></embed>
+      <embed src="https://maps.t-mobile.com/pcc.html?map=mvno-noroam-34l"style={{width:'87%', height: "650px"}} ></embed>
       </div>
     );
   }
