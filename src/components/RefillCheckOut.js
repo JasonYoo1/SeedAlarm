@@ -39,61 +39,17 @@ import {
 
 
 const RefillCheckOut = ({ history }) => {
-  
+
+  function handleClick(e) {
+    localStorage.setItem("token", true);
+  }
 
       return (
         
           <div>
             {console.log(`written by Jason Yoo https://www.linkedin.com/in/jasonyoo1/ `)}
 <br></br>
-{/* <Card >
-      <Card.Img src= {bg_A1_Rectangle_2_pattern } />
-      <Card.ImgOverlay style={{width: "90%", margin: 'auto'}}>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <Container className="refillContainer">
-       <Row >
-         <Col className =' refillLeft' sm="4">
-         <br></br>
-        <br></br>
-           <h3 className='refillText'>Refill</h3>
-           <p className='refillText'>1. Pay to refill your Plan<br/><br/>
-           2. Enter SIM card phone number<br/><br/>
-           3. ENJOY! </p>
-           <div className= "payPalBtnRefill">
-         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-          <input type="hidden" name="cmd" value="_s-xclick"/>
-          <input type="hidden" name="hosted_button_id" value="85ZW2K2LS9RCA"/>
-          <input type="image" width="100%" src={paypalbtn} border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"></input>
-          </form>
-          <br></br>
-        <br></br>
-        </div>
-         </Col>
-         <Col sm="4">
-           <Form >
-            <FormGroup className = 'refillFormGroup'>
-            <br></br>
-        <br></br>
-              <Row className="activateBtn">
-              <Card style={{ margin: 'auto', width: '15rem' }}>
-            <h3 className='paraText'>Plan 1</h3>
-             <p className='paraText' >Texts: 70</p>
-            <p className='paraText' id ='paraborder'>DATA: 5 MB</p>
-            <p className='paraText' id ='paraborder'>30 Days</p>
-            <h3 className= 'paraText' id =''>$ 14.99</h3>
-           </Card>
-            </Row>
-            </FormGroup>
-          </Form>
-        </Col>
-      </Row>
-    </Container>
-  </Card.ImgOverlay>
-</Card> */}
-<h1>Refill</h1>
+<h1 className='Title'>Refill</h1>
 <Card  style={{height: '10%'}}>
       <Card.Img src= {bg_A1_Rectangle_2_pattern } />
       <Card.ImgOverlay>
@@ -117,14 +73,12 @@ const RefillCheckOut = ({ history }) => {
             {/* <br></br> */}
             <h3 className= 'paraText'>$ 14.99</h3>
            </Card>
-           <div className = 'checkoutPay'>
-
+           <div onClick={handleClick} id='myBtn' className = 'checkoutPay'>
             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
             <input type="hidden" name="cmd" value="_s-xclick"/>
             <input type="hidden" name="hosted_button_id" value="VS7Q35U928MNL"/>
             <input type="image" width="100%" src={paypalbtn} border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"></input>
             </form>
-
             </div>
             </Row>
             </FormGroup>
@@ -143,15 +97,12 @@ const RefillCheckOut = ({ history }) => {
             <p className='paraText' id ='paraborder'> <span role="img" aria-label="sheep">✔️</span> 30 days </p>
             <h3 className= 'paraText'>$ 5.99</h3>
            </Card>
-           <div className = 'checkoutPay'>
-
+           <div onClick={handleClick} className = 'checkoutPay'>
             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
             <input type="hidden" name="cmd" value="_s-xclick"/>
             <input type="hidden" name="hosted_button_id" value="WQQNXR6L28RSS"/>
             <input type="image" width="100%" src={paypalbtn} border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"></input>
             </form>
-
-
                </div>
             </Row>
             </FormGroup>
@@ -161,8 +112,6 @@ const RefillCheckOut = ({ history }) => {
     </Container>
   </Card.ImgOverlay>
 </Card>
-
-
 
     </div>
       );

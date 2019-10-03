@@ -31,6 +31,10 @@ const ActivateInfo = ({history}) => {
     setnewRefill({ ...newRefill, [event.target.name]: event.target.value });
   };
 
+  function handleClick(e) {
+    localStorage.removeItem('token');
+  }
+
   const handleSubmit = (event) => {
     event.preventDefault();
     axios
@@ -65,11 +69,11 @@ const ActivateInfo = ({history}) => {
           <h3 className='congratsfont'>Number: {newPhone}</h3>
           <div className = 'actBtnCont'>
           <Link to='/dashboard'>
-                    <button className="activationInfoBtn" id='backSeed' >
+                    <button onClick={handleClick} className="activationInfoBtn" id='backSeed' >
                       Account Dashboard
                     </button>
                     </Link>
-                    <button className="activationInfoBtn" id='backDash' >
+                    <button onClick={handleClick} className="activationInfoBtn" id='backDash' >
                     <a className ='linkingBack' href="https://landingseedalarm.netlify.com/">Back to Seed Alarm</a>
                     </button>
           </div>
@@ -102,7 +106,7 @@ const ActivateInfo = ({history}) => {
                 <h1 className='congratsfont'><br/>Congratulations!</h1>
                 <br/>
                 <h3 className='congratsfont'><svg xmlns="http://www.w3.org/2000/svg" width="520" height="72" viewBox="0 0 520 72">
-                <text id="Your_activation_has_been_successful_thank_you_for_choosing_Seed_Alarm._See_your_SIM_cards_phone_number_below._We_recommend_writing_down_for_your_reference." data-name="Your activation has been successful, thank you for choosing Seed Alarm. See your SIM cards phone number below. We recommend writing down for your reference." font-size="16" font-family="ArialMT, Arial"><tspan x="0" y="14">Your activation has been successful, thank you for choosing Seed Alarm. </tspan><tspan x="0" y="39">See your SIM cards phone number below. We recommend writing down </tspan><tspan x="0" y="64">for your reference.</tspan></text>
+                <text id="Your_activation_has_been_successful_thank_you_for_choosing_Seed_Alarm._See_your_SIM_cards_phone_number_below._We_recommend_writing_down_for_your_reference." data-name="Your activation has been successful, thank you for choosing Seed Alarm. See your SIM cards phone number below. We recommend writing down for your reference." font-size="16" font-family="ArialMT, Arial"><tspan x="0" y="14">Your activation has been successful, Thank You for choosing Seed Alarm. </tspan><tspan x="0" y="39">See your SIM cards phone number below. We recommend writing down </tspan><tspan x="0" y="64">for your reference.</tspan></text>
                 </svg>
                 </h3>
                 <br/>
@@ -111,7 +115,7 @@ const ActivateInfo = ({history}) => {
                 <div className = 'actBtnCont'>
                 <Form className='responsiveForm' onSubmit={handleSubmit}>
             <FormGroup>
-              <p className='actRefillFont'>Enter your 10 digit cellphone number.</p>
+              <p className='actRefillFont'>Enter your 10 digit cellphone number to complete your activation:</p>
               <FormInput
                 id="#phone"
                 name="phone"
@@ -121,7 +125,7 @@ const ActivateInfo = ({history}) => {
                 style={{width: "40%", margin:'auto'}}
               />
             </FormGroup>
-            <Row className="login-btn">
+            <Row onClick={handleClick} className="login-btn">
             <button className="actRefillBtn" block>
                 Confirm
               </button>

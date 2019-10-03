@@ -69,13 +69,13 @@ export default class Menu extends React.Component {
       </NavDropdown> */}
     </Nav>
     <Nav>
-      <Nav.Link className='fontColorNav' href="https://www.seedalarm.com">Seed Alarm</Nav.Link>
-      <Nav.Link eventKey={2} href="/activate" className='fontColorNav'>
+      <Nav.Link style={{color: "black"}} className='fontColorNav' href="https://www.seedalarm.com">Seed Alarm</Nav.Link>
+      <Nav.Link style={{color: "black"}} eventKey={2} href="/activate" className='fontColorNav'>
         Activate
       </Nav.Link>
-      <Nav.Link className='fontColorNav' href="/RefillCheckOut">Refill</Nav.Link>
-      <Nav.Link className='fontColorNav' href="/coverage">Coverage</Nav.Link>
-      <Nav.Link className='fontColorNav' href="/dashboard">Account</Nav.Link>
+      <Nav.Link style={{color: "black"}}className='fontColorNav' href="/RefillCheckOut"><bold>Refill</bold></Nav.Link>
+      <Nav.Link style={{color: "black"}}className='fontColorNav' href="/coverage"><bold>Coverage</bold></Nav.Link>
+      <Nav.Link style={{color: "black"}}className='fontColorNav' href="/dashboard">Account</Nav.Link>
     </Nav>
   </Navbar.Collapse>
 </Navbar>

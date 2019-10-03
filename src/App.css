@@ -1023,7 +1023,8 @@ margin-top: -3rem;
 .fontColorNav{
   /* border: 1px solid black; */
   padding-top: 3rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
+  /* border: 1px solid blue; */
 }
 
 @media(max-width:800px){
@@ -1036,6 +1037,7 @@ margin-top: -3rem;
 .theFooter{
   margin-top: 11rem;
 }
+
 
 @media(max-width:800px){
   .tmobilemap{
@@ -1077,4 +1079,14 @@ margin-top: -3rem;
     margin-left: 26.5rem;
     margin-top: -4rem;
   }
+}
+
+
+.fontColorNav{
+  /* border: 1px solid blue; */
+  font-size: 19px;
+}
+
+.Title{
+  font-family: 'Lato', sans-serif;
 }
