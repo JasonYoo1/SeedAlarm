@@ -1037,6 +1037,7 @@ margin-top: -3rem;
   margin-top: 11rem;
 }
 
+
 @media(max-width:800px){
   .tmobilemap{
     width: 80%;
@@ -1069,7 +1070,7 @@ margin-top: -3rem;
   .logo{
     /* border: 1px solid blue; */
     float: left;
-    margin-left: -3rem;
+    margin-left: -4rem;
   }
 }
 @media(max-width:800px){
