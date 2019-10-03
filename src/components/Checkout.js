@@ -124,88 +124,16 @@ import {
 
 const CheckOut = ({ history }) => {
   
+  function handleClick(e) {
+    localStorage.setItem("token", true);
+  }
 
       return (
         
           <div className='flexing'>
             {console.log(`written by Jason Yoo https://www.linkedin.com/in/jasonyoo1/ `)}
             <h1 className='font'>Plans</h1>
-            {/* Current Plans<br/>
-                <img width="200rem" src={plan} alt="hello" margin-bottom="30%"></img>
-        <PayPalButton
-          amount="0.01"
-          onSuccess={(details, data) => {
-            alert("Transaction completed by " + details.payer.name.given_name);
-            localStorage.setItem("token", true);
-            axiosWithAuth()
-            window.location.href='/activate'
-            return fetch("/paypal-transaction-complete", {
-              method: "post",
-              body: JSON.stringify({
-                orderId: data.orderID
-              }),
-            });
-          }}
-          options={{
-            clientId: "Ac82qeONuJNMP32o8kE_DVQOpFZCoTtr2ovk5AM-oSotdXq6Xe1XdBCN1s_E-1NTEICVMSOJLwUaofOY"
-          }}
-        />
 
-        {/* <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-        <input type="hidden" name="cmd" value="_s-xclick"></input>
-        <input type="hidden" name="hosted_button_id" value="85ZW2K2LS9RCA"></input>
-        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"></input>
-        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"/>
-        </form> */} 
-{/* <Card className='checkoutCont'>
-      <Card.Img src= {bg_A1_Rectangle_2_pattern } />
-      <Card.ImgOverlay>
-        <br></br>
-        <br></br>
-        <br></br>
-       <Container style={{  width: '20rem' }} className="RegCheckOut">
-           <Card style={{ margin: 'auto', width: '15rem' }}>
-            <h3 className='paraText'>Plan 1</h3>
-             <p className='paraText' >Texts: 70</p>
-            <p className='paraText' id ='paraborder'>DATA: 5 MB</p>
-            <p className='paraText' id ='paraborder'>30 Days</p>
-            <h3 className= 'paraText' id ='textamount'>$ 14.99</h3>
-           </Card>
-           <br/> */}
-           {/* <PayPalButton
-          amount="0.01"
-          onSuccess={(details, data) => {
-            alert("Transaction completed by " + details.payer.name.given_name);
-            localStorage.setItem("token", true);
-            axiosWithAuth()
-            window.location.href='/activate'
-            return fetch("/paypal-transaction-complete", {
-              method: "post",
-              body: JSON.stringify({
-                orderId: data.orderID
-              }),
-            });
-          }}
-          options={{
-            clientId: "Ac82qeONuJNMP32o8kE_DVQOpFZCoTtr2ovk5AM-oSotdXq6Xe1XdBCN1s_E-1NTEICVMSOJLwUaofOY"
-          }}
-        /> */}
-
-           {/* <p className = 'checkoutCard'>
-               <div className = 'checkoutPay'>
-                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                <input type="hidden" name="cmd" value="_s-xclick"></input>
-                <input type="hidden" name="hosted_button_id" value="85ZW2K2LS9RCA"></input>
-                <input type="image" width="100%" src={paypalbtn} border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"></input>
-                </form>
-               </div>
-             </p>
-    </Container>
-    
-
-    
-  </Card.ImgOverlay>
-</Card> */}
 <div className='ridBorder'>
 <Card  style={{height: '10%'}}>
       <Card.Img src= {bg_A1_Rectangle_2_pattern } />
@@ -230,7 +158,7 @@ const CheckOut = ({ history }) => {
             {/* <br></br> */}
             <h3 className= 'paraText'>$ 14.99</h3>
            </Card>
-           <div className = 'checkoutPay'>
+           <div onClick={handleClick} className = 'checkoutPay'>
 
             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
             <input type="hidden" name="cmd" value="_s-xclick"/>
@@ -256,7 +184,7 @@ const CheckOut = ({ history }) => {
             <p className='paraText' id ='paraborder'> <span role="img" aria-label="sheep">✔️</span> 30 days </p>
             <h3 className= 'paraText'>$ 5.99</h3>
            </Card>
-           <div className = 'checkoutPay'>
+           <div onClick={handleClick} className = 'checkoutPay'>
 
             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
             <input type="hidden" name="cmd" value="_s-xclick"/>

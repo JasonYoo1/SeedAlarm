@@ -24,6 +24,11 @@ import bg_A1_Rectangle_2_pattern from './bg_A1_Rectangle_2_pattern.png'
 
 
 const RefillInfo = () => {
+  function handleClick(e) {
+    localStorage.removeItem('token');
+  }
+
+
     let refillInfo = localStorage.getItem('testing')
     // console.log('this is from site', refillInfo)
 
@@ -44,7 +49,7 @@ const RefillInfo = () => {
               <br/>
               <div className = 'actBtnCont'>
               <Link to='/dashboard'>
-                <button className="activationInfoBtn" id='backSeed' >
+                <button onClick={handleClick} className="activationInfoBtn" id='backSeed' >
                   Account Dashboard
                 </button>
                 <button className="activationInfoBtn" id='backDash' >
@@ -81,10 +86,10 @@ const RefillInfo = () => {
                   <br/>
                   <div className = 'actBtnCont'>
                   <Link to='/dashboard'>
-                    <button className="activationInfoBtn" id='backSeed' >
+                    <button  onClick={handleClick} className="activationInfoBtn" id='backSeed' >
                       Account Dashboard
                     </button>
-                    <button className="activationInfoBtn" id='backDash' >
+                    <button onClick={handleClick} className="activationInfoBtn" id='backDash' >
                       Back to SeedAlarm
                     </button>
                   </Link>

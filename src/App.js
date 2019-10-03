@@ -54,9 +54,9 @@ function App() {
             <Route exact path="/activate" component={Registration} />
             <Route exact path ="/search" component={SearchInfo}/>
             <Route exact path="/checkout" component={CheckOut} />
-            <Route exact path="/refill" component={Refill} />
+            <PrivateRoute exact path="/refill" component={Refill} />
             <Route exact path="/refillinfo" component={RefillInfo} />
-            <Route exact path="/activationinfo" component={ActivateInfo}/>
+            <PrivateRoute exact path="/activationinfo" component={ActivateInfo}/>
             <Route exact path="/RefillCheckOut" component={RefillCheckOut}/>
             <Route exact path="/coverage" component={SimpleMap}/>
           </Switch>
