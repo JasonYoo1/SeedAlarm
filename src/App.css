@@ -1024,6 +1024,7 @@ margin-top: -3rem;
   /* border: 1px solid black; */
   padding-top: 3rem;
   margin-top: 3rem;
+  /* border: 1px solid blue; */
 }
 
 @media(max-width:800px){
@@ -1070,7 +1071,7 @@ margin-top: -3rem;
   .logo{
     /* border: 1px solid blue; */
     float: left;
-    margin-left: -4rem;
+    margin-left: -3rem;
   }
 }
 @media(max-width:800px){
