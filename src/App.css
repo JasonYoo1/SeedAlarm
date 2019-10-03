@@ -1024,7 +1024,7 @@ margin-top: -3rem;
   /* border: 1px solid black; */
   padding-top: 3rem;
   margin-top: 2rem;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 
 @media(max-width:800px){
@@ -1079,4 +1079,10 @@ margin-top: -3rem;
     margin-left: 26.5rem;
     margin-top: -4rem;
   }
+}
+
+
+.fontColorNav{
+  /* border: 1px solid blue; */
+  font-size: 19px;
 }
