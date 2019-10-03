@@ -52,7 +52,7 @@ const RefillInfo = () => {
                 <button onClick={handleClick} className="activationInfoBtn" id='backSeed' >
                   Account Dashboard
                 </button>
-                <button className="activationInfoBtn" id='backDash' >
+                <button onClick={handleClick}  className="activationInfoBtn" id='backDash' >
                   Back to SeedAlarm
                 </button>
               </Link>
