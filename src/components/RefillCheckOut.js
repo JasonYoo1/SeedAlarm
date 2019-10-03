@@ -11,7 +11,7 @@ import plan from './plan.png'
 import bg_A1_Rectangle_2_pattern from './bg_A1_Rectangle_2_pattern@2x.png'
 import uploadingPlan from './uploadingPlan.png'
 
-import paypalbtn from './paypalbtn.png'
+import paypalbtn from './paypalbtn1.png'
 
 
 import "../App.css"
@@ -92,8 +92,8 @@ const RefillCheckOut = ({ history }) => {
               <Row className="activateBtn">
               <Card style={{ margin: 'auto', width: '15rem' }}>
             <h3 className='paraText'>Caregiver Plan</h3>
-             <p className='paraText' > <span role="img" aria-label="sheep">✔️</span> Texts something else </p>
-            <p className='paraText' id ='paraborder'><span role="img" aria-label="sheep">✔️</span> DATA something else </p>
+             <p className='paraText' > <span role="img" aria-label="sheep">✔️</span> Texts </p>
+            <p className='paraText' id ='paraborder'><span role="img" aria-label="sheep">✔️</span> DATA  </p>
             <p className='paraText' id ='paraborder'> <span role="img" aria-label="sheep">✔️</span> 30 days </p>
             <h3 className= 'paraText'>$ 5.99</h3>
            </Card>
@@ -104,6 +104,7 @@ const RefillCheckOut = ({ history }) => {
             <input type="image" width="100%" src={paypalbtn} border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"></input>
             </form>
                </div>
+
             </Row>
             </FormGroup>
           </Form>

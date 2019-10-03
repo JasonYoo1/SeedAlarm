@@ -7,7 +7,7 @@ import bg_A1_Rectangle_2_pattern from './bg_A1_Rectangle_2_pattern@2x.png';
 import checkmark from './checkmark.png'
 
 
-import paypalbtn from './paypalbtn.png'
+import paypalbtn from './paypalbtn1.png'
 
 import { PayPalButton } from "react-paypal-button-v2";
 
