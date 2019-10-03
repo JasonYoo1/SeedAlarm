@@ -73,9 +73,9 @@ export default class Menu extends React.Component {
       <Nav.Link style={{color: "black"}} eventKey={2} href="/activate" className='fontColorNav'>
         Activate
       </Nav.Link>
-      <Nav.Link style={{color: "black"}}className='fontColorNav' href="/RefillCheckOut">Refill</Nav.Link>
-      <Nav.Link style={{color: "black"}}className='fontColorNav' href="/coverage">Coverage</Nav.Link>
-      <Nav.Link style={{color: "black"}}className='fontColorNav' href="/dashboard">Account</Nav.Link>
+      <Nav.Link style={{color: "black"}}className='fontColorNav' href="/RefillCheckOut"><bold>Refill</bold></Nav.Link>
+      <Nav.Link style={{color: "black"}}className='fontColorNav' href="/coverage"><bold>Coverage</bold></Nav.Link>
+      <Nav.Link style={{color: "black"}}className='fontColorNav' href="/dashboard"><bold>Account</bold></Nav.Link>
     </Nav>
   </Navbar.Collapse>
 </Navbar>
