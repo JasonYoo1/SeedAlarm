@@ -74,7 +74,7 @@ const ActivateInfo = ({history}) => {
                     </button>
                     </Link>
                     <button onClick={handleClick} className="activationInfoBtn" id='backDash' >
-                    <a className ='linkingBack' href="https://landingseedalarm.netlify.com/">Back to Seed Alarm</a>
+                    <a onClick={handleClick} className ='linkingBack' href="https://landingseedalarm.netlify.com/">Back to Seed Alarm</a>
                     </button>
           </div>
     </Container>
