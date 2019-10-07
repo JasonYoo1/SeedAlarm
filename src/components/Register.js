@@ -36,11 +36,14 @@ const Register = ({ history }) => {
     axios
       .post(`https://cors-anywhere.herokuapp.com/https://portal.speedtalk.mobi/service.aspx?cmd=stActivate&agid=symbol%40seedalarm.com&agpass=ZynetInc4199&sku=8035&amount=1.5&sim=${activate.sim}&firstName=${activate.fullName}&lastName=&address1=&address2=&city=&state=&zip=${activate.zip}&phone=&email=&campaign=`, activate)
       .then(res => {
-        // console.log(res.data);
+        console.log(res.data);
         localStorage.setItem("register", res.data);
         localStorage.setItem("sim", activate.sim);
         localStorage.setItem("token", null);
-        history.push("/checkout");
+        if(localStorage.getItem('register') == '<net><ret>99</ret></net>'){
+          history.push("/activationInfo");
+        }else{
+        history.push("/checkout");}
       })
       .catch(err => console.log(err.response));
   };
@@ -94,6 +97,7 @@ const Register = ({ history }) => {
               <label htmlFor="#username">City Zip Code</label>
               <FormInput
                 id="#zip"
+                // type='number'
                 name="zip"
                 placeholder="This will generate your area code"
                 onChange={handleChange}
@@ -105,6 +109,7 @@ const Register = ({ history }) => {
               <FormInput
                 id="#email"
                 name="email"
+                type='email'
                 placeholder="Email"
                 onChange={handleChange}
                 value={activate.email}
