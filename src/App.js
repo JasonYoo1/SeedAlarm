@@ -43,6 +43,7 @@ function App() {
   // useEffect(() => {
   //   getUserInfo();
   // }, []);
+  const TITLE = 'My Page Title'
 
   return (
     // <ReflectionContext.Provider value={{ reflectionsArray }}>
@@ -50,7 +51,7 @@ function App() {
         <div className="App">
           <Menu/>
           <Switch>
-            <Route exact path="/dashboard" component={Dashboard} />
+            <Route exact path="/dashboard" title="Index Page" component={Dashboard} />
             <Route exact path="/activate" component={Registration} />
             <Route exact path ="/search" component={SearchInfo}/>
             <Route exact path="/checkout" component={CheckOut} />
@@ -68,3 +69,4 @@ function App() {
   );
 }
 export default App;
+
