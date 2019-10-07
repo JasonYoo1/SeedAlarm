@@ -160,11 +160,16 @@ const CheckOut = ({ history }) => {
            </Card>
            <div onClick={handleClick} className = 'checkoutPay'>
 
-            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            {/* <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
             <input type="hidden" name="cmd" value="_s-xclick"/>
             <input type="hidden" name="hosted_button_id" value="94VU4QSDD9QZL"/>
             <input type="image" width="100%" src={paypalbtn} border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"></input>
-            </form>
+            </form> */}
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick"/>
+<input type="hidden" name="hosted_button_id" value="ZTQNV6LP9XXAL"/>
+<input type="image" width="100%" src={paypalbtn} border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"></input>
+</form>
 
             </div>
             </Row>
@@ -186,11 +191,18 @@ const CheckOut = ({ history }) => {
            </Card>
            <div onClick={handleClick} className = 'checkoutPay'>
 
-            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            {/* <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
             <input type="hidden" name="cmd" value="_s-xclick"/>
             <input type="hidden" name="hosted_button_id" value="HECCT5GQ82F4S"/>
             <input type="image" width="100%" src={paypalbtn} border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"></input>
-            </form>
+            </form> */}
+
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick"/>
+<input type="hidden" name="hosted_button_id" value="ZTQNV6LP9XXAL"/>
+<input type="image" width="100%" src={paypalbtn} border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"></input>
+</form>
+
 
 
                </div>
