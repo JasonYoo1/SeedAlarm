@@ -1099,3 +1099,7 @@ margin-top: -3rem;
 .collapsing{
   /* border: 1px solid blue; */
 }
+.fontRED{
+  color: lightcoral;
+  font-family: 'Lato', sans-serif;
+}

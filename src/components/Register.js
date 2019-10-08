@@ -41,14 +41,14 @@ const Register = ({ history }) => {
     axios
       .post(`https://cors-anywhere.herokuapp.com/https://portal.speedtalk.mobi/service.aspx?cmd=stActivate&agid=symbol%40seedalarm.com&agpass=ZynetInc4199&sku=8035&amount=1.5&sim=${activate.sim}&firstName=${activate.fullName}&lastName=&address1=&address2=&city=&state=&zip=${activate.zip}&phone=&email=&campaign=`, activate)
       .then(res => {
-        // console.log(res.data);
-        // localStorage.setItem("register", res.data);
-        // localStorage.setItem("sim", activate.sim);
-        // localStorage.setItem("token", null);
-        // if(localStorage.getItem('register') == '<net><ret>99</ret></net>'){
-        //   history.push("/activationInfo");
-        // }else{
-        // history.push("/checkout");}
+        console.log(res.data);
+        localStorage.setItem("register", res.data);
+        localStorage.setItem("sim", activate.sim);
+        localStorage.setItem("token", null);
+        if(localStorage.getItem('register') == '<net><ret>99</ret></net>'){
+          history.push("/activationInfo");
+        }else{
+        history.push("/checkout");}
       })
       .catch(err => console.log(err.response));
   };
@@ -59,7 +59,7 @@ const Register = ({ history }) => {
     var x = document.getElementById("myDIV");
     console.log('click click')
     if (x.innerHTML === "ACTIVATE") {
-      x.innerHTML = `<img className ='responsiveImg' width= "10%" src = ${Blocks}/> Activating Sim`
+      x.innerHTML = `<img className ='responsiveImg' width= "45rem" src = ${Blocks}/> Activating Sim ... Please Wait`
     } 
   }
 
@@ -68,6 +68,7 @@ const Register = ({ history }) => {
       <Card className="backgroundTesting">
       <Card.Img className="backgroundTest" src= {bg_A1_Rectangle_2_pattern } />
       <Card.ImgOverlay>
+        <br></br>
         <br></br>
         <br></br>
        <Container className="activateContainer">
@@ -98,12 +99,17 @@ const Register = ({ history }) => {
             <FormGroup className = 'FormGroup'>
               <label htmlFor="#username">Sim Card Number</label>
               <FormInput
+                onClick={toggle}
                 id="#sim"
                 name="sim"
                 placeholder = 'SIM Card Number'
                 onChange={handleChange}
                 value={activate.sim}
-              />
+              /><Collapse open={activate.collapse}>
+              <div c>
+                <h5 className ='fontRED'>😄 Only Numbers Please!</h5>
+              </div>
+            </Collapse>
             </FormGroup>
             <FormGroup className = 'FormGroup'>
               <label htmlFor="#username">City Zip Code</label>
