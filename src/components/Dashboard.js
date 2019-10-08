@@ -29,7 +29,7 @@ import SimpleMap from './Maps'
 import Refill from './Refill'
 import dashboardimage from './dashboardimage.png'
 import bg_A1_Rectangle_2_pattern from './bg_A1_Rectangle_2_pattern.png'
-
+import Blocks from './Blocks2.gif'
 
 
 export default function Dashboard({history}) {
@@ -53,6 +53,15 @@ export default function Dashboard({history}) {
       })
       .catch(err => console.log(err.response));
   };
+
+
+  let myFunction= () => {
+    var x = document.getElementById("myDIV");
+    console.log('click click')
+    if (x.innerHTML === "Search") {
+      x.innerHTML = `<img className ='responsiveImg' width= "45rem" src = ${Blocks}/> Searching ... Please Wait`
+    } 
+  }
 
   return (
       <div>
@@ -92,7 +101,7 @@ export default function Dashboard({history}) {
               />
             </FormGroup>
             <Row className="login-btn">
-            <button width='80%' className="dashboardBtn" block>
+            <button id="myDIV" onClick={myFunction} width='80%' className="dashboardBtn" block>
                 Search
               </button>
             </Row>
