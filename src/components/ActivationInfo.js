@@ -115,11 +115,11 @@ const ActivateInfo = ({history}) => {
                 <div className = 'actBtnCont'>
                 <Form className='responsiveForm' onSubmit={handleSubmit}>
             <FormGroup>
-              <p className='actRefillFont'>Enter your 10 digit cellphone number to complete your activation:</p>
+              <p className='actRefillFont'>Enter your 10 digit cellphone number to complete your activation: {newPhone}</p>
               <FormInput
                 id="#phone"
                 name="phone"
-                placeholder="Phone Number"
+                placeholder="Please enter your NEW phone number"
                 onChange={handleChange}
                 value={newRefill.phone}
                 style={{width: "40%", margin:'auto'}}
