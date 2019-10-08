@@ -55,6 +55,14 @@ const Register = ({ history }) => {
 
   let sim = localStorage.getItem('sim')
 
+  let myFunction= () => {
+    var x = document.getElementById("myDIV");
+    console.log('click click')
+    if (x.innerHTML === "ACTIVATE") {
+      x.innerHTML = `<img className ='responsiveImg' width= "10%" src = ${Blocks}/> Activating Sim`
+    } 
+  }
+
   return (
     <div>
       <Card className="backgroundTesting">
@@ -119,14 +127,10 @@ const Register = ({ history }) => {
                 value={activate.email}
               />
               <Row className="activateBtn">
-              <button onClick={toggle} className="actualButton" block>
+              <button id="myDIV" onClick={myFunction} className="actualButton" block>
                 ACTIVATE
               </button>
-              <Collapse open={activate.collapse}>
-          <div className="s">
-          <h5><img className ='responsiveImg' width= "30%" src = {Blocks}></img>Activating SIM</h5>
-          </div>
-        </Collapse>
+
             </Row>
             </FormGroup>
 
@@ -140,5 +144,6 @@ const Register = ({ history }) => {
     </div>
   );
 };
+
 
 export default Register;
