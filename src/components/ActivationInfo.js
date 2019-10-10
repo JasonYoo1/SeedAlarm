@@ -54,7 +54,7 @@ const ActivateInfo = ({history}) => {
       let newPhone = 'Error in registering. Please Try again'
       return (
         <div> 
-        {console.log(`written by Jason Yoo https://www.linkedin.com/in/jasonyoo1/ `)}
+        {console.log(` https://www.linkedin.com/in/jasonyoo1/ `)}
       <Card className="backgroundTesting">
       <Card.Img className="backgroundTest" src= {bg_A1_Rectangle_2_pattern } />
       <Card.ImgOverlay>
@@ -92,7 +92,7 @@ const ActivateInfo = ({history}) => {
         let newPhone = xml.children[3].value
         let plan = xml.children[4].value
         localStorage.setItem('newPhone', newPhone)
-        console.log(`written by Jason Yoo https://www.linkedin.com/in/jasonyoo1/ `)
+        console.log(` https://www.linkedin.com/in/jasonyoo1/ `)
 
           return (
             <div> 

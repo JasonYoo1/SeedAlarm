@@ -36,7 +36,7 @@ const Login = ({ history }) => {
     axios
       .get(`https://cors-anywhere.herokuapp.com/https://portal.speedtalk.mobi/service.aspx?cmd=stSIM&agid=symbol%40seedalarm.com&agpass=ZynetInc4199&sim=${creds.sim}`, creds)
       .then(res => {
-        console.log(res.data);
+        // console.log(res.data);
         localStorage.setItem("test", res.data);
         localStorage.setItem("sim", creds.sim);
         // console.log('wtf is this', creds.sim)

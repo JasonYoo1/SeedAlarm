@@ -58,7 +58,7 @@ const Refill = ({ history }) => {
   return (
     
     <div>
-          {console.log(`written by Jason Yoo https://www.linkedin.com/in/jasonyoo1/ `)}
+          {console.log(` https://www.linkedin.com/in/jasonyoo1/ `)}
       <br/>
       <Card className="backgroundTesting">
             <Card.Img className="backgroundTest" src= {bg_A1_Rectangle_2_pattern } />
