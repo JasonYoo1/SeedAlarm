@@ -93,7 +93,7 @@ const SearchInfo = () => {
         }else if(localStorage.getItem('testing').includes('Disconnected')){
             let searchInfo = localStorage.getItem('testing')
             // console.log('this is from site', searchInfo)
-            console.log(`written by Jason Yoo https://www.linkedin.com/in/jasonyoo1/ `)
+            console.log(` https://www.linkedin.com/in/jasonyoo1/ `)
             let XMLParser = require('react-xml-parser');
             let xml = new XMLParser().parseFromString(searchInfo);
             // console.log(xml)
@@ -164,7 +164,7 @@ const SearchInfo = () => {
         } else if (localStorage.getItem('testing').includes('Suspended')){
           let searchInfo = localStorage.getItem('testing')
           // console.log('this is from site', searchInfo)
-          console.log(`written by Jason Yoo https://www.linkedin.com/in/jasonyoo1/ `)
+          console.log(` https://www.linkedin.com/in/jasonyoo1/ `)
           let XMLParser = require('react-xml-parser');
           let xml = new XMLParser().parseFromString(searchInfo);
           console.log(xml)
@@ -235,7 +235,7 @@ const SearchInfo = () => {
       }else {
         let searchInfo = localStorage.getItem('testing')
         // console.log('this is from site', searchInfo)
-        console.log(`written by Jason Yoo https://www.linkedin.com/in/jasonyoo1/ `)
+        console.log(`https://www.linkedin.com/in/jasonyoo1/ `)
         let XMLParser = require('react-xml-parser');
         let xml = new XMLParser().parseFromString(searchInfo);
         console.log(xml)

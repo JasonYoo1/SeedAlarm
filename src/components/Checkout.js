@@ -131,7 +131,7 @@ const CheckOut = ({ history }) => {
       return (
         
           <div className='flexing'>
-            {console.log(`written by Jason Yoo https://www.linkedin.com/in/jasonyoo1/ `)}
+            {console.log(` https://www.linkedin.com/in/jasonyoo1/ `)}
             <h1 className='font'>Plans</h1>
 
 <div className='ridBorder'>
