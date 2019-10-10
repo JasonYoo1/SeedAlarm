@@ -1,68 +1,93 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# SEED ALARM
 
-## Available Scripts
+## Description
+This application allows users to Activate, enroll in recurring payments, refill data, and check status of a SIM card provided by Speed Talk.
 
-In the project directory, you can run:
+## Getting Started
+For an example of how to implement this code on the client side see the link below: 
+https://github.com/JasonYoo1/SeedAlarm
 
-### `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Prerequisites
+All of the below dependencies can be installed using:
+npm install
+npm add < name_of_dependency >
+npm start
+for dev dependencies simply add --dev after the < name_of_dependency >
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Installation
+This project was created using yarn and designed for react client side. Other dependencies include:
+```
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.25",
+    "@fortawesome/free-brands-svg-icons": "^5.11.2",
+    "@fortawesome/free-solid-svg-icons": "^5.11.2",
+    "axios": "^0.19.0",
+    "bootstrap": "^4.3.1",
+    "google-map-react": "^1.1.4",
+    "google-maps-react": "^2.0.2",
+    "react": "^16.9.0",
+    "react-bootstrap": "^1.0.0-beta.12",
+    "react-dom": "^16.9.0",
+    "react-loading": "^2.0.3",
+    "react-paypal-button-v2": "^2.4.1",
+    "react-paypal-express-checkout": "^1.0.5",
+    "react-private-route": "^1.1.2",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.1.1",
+    "react-stripe-checkout": "^2.6.3",
+    "react-stripe-elements": "^5.0.0",
+    "react-toastify": "^5.3.2",
+    "react-xml-parser": "^1.1.3",
+    "shards-react": "^1.0.3",
+    "shards-vue": "^1.0.7",
+    "styled-components": "^4.3.2"
+  },
+```
 
-### `npm test`
+Examples of Tables
+```
+User table {
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+SIM <-- Required
+Full Name <-- Required
+}
+Usage
+EndPoints (activate, dashboard, activationInfo, refill, refillInfo, checkout, refillCheckout)
+User
+```
 
-### `npm run build`
+## Register a SIM - POST
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+https://avtivatesaapi.com/activate
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## Check Status - POST
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+https://avtivatesaapi.com/dashboard
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Dashboard -POST
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+https://avtivatesaapi.com/dashboard
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Add Data -POST
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+https://avtivatesaapi.com/RefillCheckOut
 
-## Learn More
+## Payment Activation -POST
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+https://avtivatesaapi.com/checkout
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## Support
+- GITHUB: https://github.com/JasonYoo1 
+- email: jyoojs@gmail.com
 
-### Analyzing the Bundle Size
+## Authors and acknowledgment
+This application was made by Jason Yoo 
+https://www.linkedin.com/in/jasonyoo1/
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Project status
+This project may have updates from time to time to keep it up to date so if you have an issue see the support section.
