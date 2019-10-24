@@ -21,53 +21,14 @@ import {
 const UserInfo = () => {
   //dashboard info state
   const [userInfo, setUserInfo] = useState([]);
-
   //new account state
   const [newAccountInfo, setNewAccountInfo] = useState ({ phone: "", sku: "", amount:"" })
-
-
   const simCard = localStorage.getItem("sim");
-    // const password = localStorage.getItem("password");
-    // console.log(simCard)
-  //this is for the dashboard info
-  // const getUserInfo = () => {
-  //   return axios
-  //     .get(`https://portal.speedtalk.mobi/service.aspx?cmd=agInformation&agid=${username}&agpass=${password}&review=${Date.now()*.13}`)
-  //     .then(res => {
-  //       // console.log("act req", res.data);
-  //       setUserInfo(res.data);
-  //       localStorage.setItem("info", res.data);
-  //     })
-  //     .catch(err => {
-  //       console.log("This is bad", err.response);
-  //     });
-  // };
-  // useEffect(() => {
-  //   getUserInfo();
-  // }, []);
-
-  //SAVE JUST IN CASE
-  //this is for the new account
-//   const handleSubmit = e => {
-//     e.preventDefault();
-//   return axios
-//   .post(`https://portal.speedtalk.mobi/service.aspx?cmd=stRefill&agid=symbol%seedalarm.com&agpass=ZynetInc4199&phone=${newAccountInfo.phone}&sku=${newAccountInfo.sku}&amount=${newAccountInfo.amount}`)
-//   .then(res => {
-//     console.log("act req", res);
-//     // setNewAccountInfo(res.data);
-//     // localStorage.setItem("info", res.data);
-//   })
-//   .catch(err => {
-//     console.log("This is bad", err.response);
-//   });
-// };
-
-//this is the info for the new account
+ 
 
 
-
+//storing account info to the key 'test'
 let accInfo = localStorage.getItem('test')
-// console.log('this is acc', accInfo)
 
 
 
@@ -75,6 +36,7 @@ const handleChange = event => {
   setNewAccountInfo({ ...newAccountInfo, [event.target.name]: event.target.value });
 };
 
+//statement === NULL
 if(localStorage.getItem('test')===null){
   let currentInfo = null
   return (
@@ -98,8 +60,10 @@ if(localStorage.getItem('test')===null){
 
   );
 } else {
+  //this is the XML parser
   var XMLParser = require('react-xml-parser');
 var xml = new XMLParser().parseFromString(accInfo);    // Assume xmlText contains the example XML
+//this is going through the data being given back. console log XML to see children
 let currentInfo= xml.children[1].value;
 return (
   <Container className="card-container">
@@ -123,21 +87,9 @@ return (
   </Form>
     </CardBody>
   </Container>
-  //this is the activate sim below:
 
 );
 }
-
-  // console.log('onchange',this.state)
-
-// const text = localStorage.getItem('info');
-// // console.log('this is local storage', text)  
-
-// var XMLParser =  require('react-xml-parser');
-// var xml = new XMLParser().parseFromString(text)
-
-
-
 };
 
 export default UserInfo;
