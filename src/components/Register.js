@@ -146,7 +146,6 @@ const Register = ({ history }) => {
     </Container>
   </Card.ImgOverlay>
 </Card>
-{console.log(` https://www.linkedin.com/in/jasonyoo1/ `)}
     </div>
   );
 };

@@ -47,7 +47,6 @@ const RefillCheckOut = ({ history }) => {
       return (
         
           <div>
-            {console.log(` https://www.linkedin.com/in/jasonyoo1/ `)}
 <br></br>
 <h1 className='Title'>Refill</h1>
 <Card  style={{height: '10%'}}>
