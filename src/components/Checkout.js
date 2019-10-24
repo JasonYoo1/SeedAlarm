@@ -2,7 +2,6 @@ import React, { useState, useRef, useEffect, Component } from 'react';
 import "react-toastify/dist/ReactToastify.css";
 import { Redirect } from 'react-router-dom';
 import axiosWithAuth from '../Utils/axiosWithAuth'
-import plan from './plan.png'
 import bg_A1_Rectangle_2_pattern from './bg_A1_Rectangle_2_pattern@2x.png';
 import checkmark from './checkmark.png'
 

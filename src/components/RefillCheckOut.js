@@ -7,7 +7,6 @@ import { PayPalButton } from "react-paypal-button-v2";
 import "react-toastify/dist/ReactToastify.css";
 import { Redirect } from 'react-router-dom';
 import axiosWithAuth from '../Utils/axiosWithAuth'
-import plan from './plan.png'
 import bg_A1_Rectangle_2_pattern from './bg_A1_Rectangle_2_pattern@2x.png'
 import uploadingPlan from './uploadingPlan.png'
 
