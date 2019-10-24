@@ -59,7 +59,6 @@ const RefillInfo = () => {
               </div>
         </Container>
       </Card.ImgOverlay>
-      {console.log(` https://www.linkedin.com/in/jasonyoo1/ `)}
         </Card>        
           );
         }else{

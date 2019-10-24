@@ -9,7 +9,6 @@ import { UserContext } from "./components/context/UserContext";
 
 // Components
 import Footer from "./components/footer";
-import Login from "./components/Login";
 import Menu from "./components/menu";
 import Dashboard from "./components/Dashboard";
 import Registration from './components/Register'
